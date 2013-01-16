@@ -26,14 +26,12 @@
     <NTUN>
       <F1>WP Dist</F1>
       <F2>Target Bear</F2>
-      <F3>Long Err</F3>
-      <F4>Lat Err</F4>
+      <F3>Lat Err</F3>
+      <F4>Lon Err</F4>
       <F5>Nav Pitch</F5>
       <F6>Nav Roll</F6>
-      <F7>X Speed</F7>
-      <F8>Y Speed</F8>
-      <F9>nav lon I</F9>
-      <F10>nav lat I</F10>
+      <F7>Lat Speed</F7>
+      <F8>Lon Speed</F8>
     </NTUN>
     <CTUN>
       <F1>Thr IN</F1>
@@ -48,22 +46,21 @@
       <F10>Thr iInt</F10>
     </CTUN>
     <PM>
-      <F1>Not used</F1>
-      <F2>DCM renorms</F2>
-      <F3>DCM Blowups</F3>
-      <F4>GPS Fix Count</F4>
-      <F5>Num SlowLoops</F5>
-      <F6>Tot Num Loops</F6>
-      <F7>Slowest Loop</F7>
+      <F1>DCM renorms</F1>
+      <F2>DCM Blowups</F2>
+      <F3>GPS Fix Count</F3>
+      <F4>Num SlowLoops</F4>
+      <F5>Tot Num Loops</F5>
+      <F6>Slowest Loop</F6>
     </PM>
-    <RAW>
+    <IMU>
       <F1>Gyro X</F1>
       <F2>Gyro Y</F2>
       <F3>Gyro Z</F3>
       <F4>Accel X</F4>
       <F5>Accel Y</F5>
       <F6>Accel Z</F6>
-    </RAW>
+    </IMU>
     <CURR>
       <F1>Thr IN</F1>
       <F2>Thr int</F2>
@@ -88,7 +85,7 @@
       <F4>X cm</F4>
       <F5>Y cm</F5>
       <F6>Lat</F6>
-      <F7>Long</F7>
+      <F7>Lon</F7>
       <F8>Roll Cmd</F8>
       <F9>Pitch Cmd</F9>
     </OF>
@@ -97,18 +94,15 @@
       <F2>Thr Cruise</F2>
     </MOD>
     <ITERM>
-      <F1>Stab Roll</F1>
-      <F2>Stab Pitch</F2>
-      <F3>Stab Yaw</F3>
-      <F4>Rate Roll</F4>
-      <F5>Rate Pitch</F5>
-      <F6>Rate Yaw</F6>
-      <F7>Nav Lat</F7>
-      <F8>Nav Lon</F8>
-      <F9>Loit Rate Lat</F9>
-      <F10>Loit Rate Lon</F10>
-      <F11>Thr</F11>
-      <F12>Thr Cruise</F12>
+      <F1>Rate Roll</F1>
+      <F2>Rate Pitch</F2>
+      <F3>Rate Yaw</F3>
+      <F4>Accel Thr</F4>
+      <F5>Nav Lat</F5>
+      <F6>Nav Lon</F6>
+      <F7>Loit Rate Lat</F7>
+      <F8>Loit Rate Lon</F8>
+      <F9>Thr Cruise</F9>
     </ITERM>
     <INAV>
       <F1>Baro Alt</F1>
