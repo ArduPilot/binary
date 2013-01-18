@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <options>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AP-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AP-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AP-2560-2.hex</url2560-2>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AP-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AP-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AP-2560-2.hex</url2560-2>
     <name>ArduPlane V2.68  </name>
     <desc></desc>
     <format_version>13</format_version>
   </Firmware>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/APHIL-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/APHIL-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/APHIL-2560-2.hex</url2560-2>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/APHIL-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/APHIL-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/APHIL-2560-2.hex</url2560-2>
     <name>ArduPlane V2.68 HIL</name>
     <desc>
 #define FLIGHT_MODE_CHANNEL	8
@@ -44,10 +44,10 @@
     <format_version>13</format_version>
   </Firmware>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AR2-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AR2-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AR2-2560-2.hex</url2560-2>
-    <name>APMrover v2.20b JL NAUDIN AR2</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AR2-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AR2-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AR2-2560-2.hex</url2560-2>
+    <name>ArduRover v2.20b</name>
     <desc>
 #define LITE  DISABLED
 
@@ -64,10 +64,10 @@
     <format_version>13</format_version>
   </Firmware>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Quad-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Quad-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Quad-2560-2.hex</url2560-2>
-    <name>ArduCopter V2.8.1 Quad</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Quad-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Quad-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Quad-2560-2.hex</url2560-2>
+    <name>ArduCopter V2.9-dev Quad</name>
     <desc>
 #define FRAME_CONFIG QUAD_FRAME
 
@@ -75,10 +75,10 @@
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Tri-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Tri-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Tri-2560-2.hex</url2560-2>
-    <name>ArduCopter V2.8.1 Tri</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Tri-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Tri-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Tri-2560-2.hex</url2560-2>
+    <name>ArduCopter V2.9-dev Tri</name>
     <desc>
 #define FRAME_CONFIG TRI_FRAME
 
@@ -86,10 +86,10 @@
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Hexa-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Hexa-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Hexa-2560-2.hex</url2560-2>
-    <name>ArduCopter V2.8.1 Hexa</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Hexa-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Hexa-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Hexa-2560-2.hex</url2560-2>
+    <name>ArduCopter V2.9-dev Hexa</name>
     <desc>
 #define FRAME_CONFIG HEXA_FRAME
 
@@ -97,10 +97,10 @@
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Y6-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Y6-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Y6-2560-2.hex</url2560-2>
-    <name>ArduCopter V2.8.1 Y6</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Y6-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Y6-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Y6-2560-2.hex</url2560-2>
+    <name>ArduCopter V2.9-dev Y6</name>
     <desc>
 #define FRAME_CONFIG Y6_FRAME
 
@@ -108,10 +108,10 @@
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Octav-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Octav-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Octav-2560-2.hex</url2560-2>
-    <name>ArduCopter V2.8.1 Octa V</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octav-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octav-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octav-2560-2.hex</url2560-2>
+    <name>ArduCopter V2.9-dev Octa V</name>
     <desc>
 #define FRAME_CONFIG OCTA_FRAME
 #define FRAME_ORIENTATION V_FRAME
@@ -120,10 +120,10 @@
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Octa-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Octa-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Octa-2560-2.hex</url2560-2>
-    <name>ArduCopter V2.8.1 Octa</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-2560-2.hex</url2560-2>
+    <name>ArduCopter V2.9-dev Octa</name>
     <desc>
 #define FRAME_CONFIG OCTA_FRAME
 
@@ -131,57 +131,21 @@
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Heli-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Heli-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-Heli-2560-2.hex</url2560-2>
-    <name>ArduCopter V2.7.3 Heli (2560 only)</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Heli-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Heli-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Heli-2560-2.hex</url2560-2>
+    <name>ArduCopter V2.9-rc2 Heli (2560 only)</name>
     <desc>
-#define AUTO_RESET_LOITER 0
 #define FRAME_CONFIG HELI_FRAME
 
-// DEFAULT PIDS
-
-// roll
-#define STABILIZE_ROLL_P 0.70
-#define STABILIZE_ROLL_I 0.025
-#define STABILIZE_ROLL_D 0.04
-#define STABILIZE_ROLL_IMAX 7
-
-//pitch
-#define STABILIZE_PITCH_P 0.70
-#define STABILIZE_PITCH_I 0.025
-#define STABILIZE_PITCH_D 0.04
-#define STABILIZE_PITCH_IMAX 7
-
-// yaw stablise
-#define STABILIZE_YAW_P  0.7
-#define STABILIZE_YAW_I  0.02
-#define STABILIZE_YAW_D  0.0
-
-// yaw rate
-#define RATE_YAW_P  0.135   
-#define RATE_YAW_I  0.0
-#define RATE_YAW_D  0.0
-
-// throttle
-#define THROTTLE_P 0.2
-#define THROTTLE_I 0.001
-#define THROTTLE_IMAX 100
-
-// navigation
-#define NAV_LOITER_P  1.1
-#define NAV_LOITER_I  0.03
-#define NAV_LOITER_D  0.02
-#define NAV_LOITER_IMAX  10
-
 </desc>
-    <format_version>0</format_version>
+    <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-QUADHIL-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-QUADHIL-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-QUADHIL-2560-2.hex</url2560-2>
-    <name>ArduCopter V2.8.1 Quad Hil</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-QUADHIL-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-QUADHIL-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-QUADHIL-2560-2.hex</url2560-2>
+    <name>ArduCopter V2.9-dev Quad Hil</name>
     <desc>
 #define FRAME_CONFIG QUAD_FRAME
 #define FRAME_ORIENTATION PLUS_FRAME
@@ -194,55 +158,18 @@
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-HELHIL-1280.hex</url>
-    <url2560>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-HELHIL-2560.hex</url2560>
-    <url2560-2>http://meee146-planner.googlecode.com/git/Tools/ArdupilotMegaPlanner/Firmware/AC2-HELHIL-2560-2.hex</url2560-2>
-    <name>ArduCopter V2.7.3 Heli Hil</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-HELHIL-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-HELHIL-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-HELHIL-2560-2.hex</url2560-2>
+    <name>ArduCopter V2.9-rc2 Heli Hil</name>
     <desc>
 
 #define HIL_MODE            HIL_MODE_ATTITUDE
 #define ALLOW_RC_OVERRIDE ENABLED
 
-#define AUTO_RESET_LOITER 0
 #define FRAME_CONFIG HELI_FRAME
 
-// DEFAULT PIDS
-
-// roll
-#define STABILIZE_ROLL_P 0.70
-#define STABILIZE_ROLL_I 0.025
-#define STABILIZE_ROLL_D 0.04
-#define STABILIZE_ROLL_IMAX 7
-
-//pitch
-#define STABILIZE_PITCH_P 0.70
-#define STABILIZE_PITCH_I 0.025
-#define STABILIZE_PITCH_D 0.04
-#define STABILIZE_PITCH_IMAX 7
-
-// yaw stablise
-#define STABILIZE_YAW_P  0.7
-#define STABILIZE_YAW_I  0.02
-#define STABILIZE_YAW_D  0.0
-
-// yaw rate
-#define RATE_YAW_P  0.135   
-#define RATE_YAW_I  0.0
-#define RATE_YAW_D  0.0
-
-// throttle
-#define THROTTLE_P 0.2
-#define THROTTLE_I 0.001
-#define THROTTLE_IMAX 100
-
-// navigation
-#define NAV_LOITER_P  1.1
-#define NAV_LOITER_I  0.03
-#define NAV_LOITER_D  0.02
-#define NAV_LOITER_IMAX  10
-
-
 </desc>
-    <format_version>0</format_version>
+    <format_version>120</format_version>
   </Firmware>
 </options>
