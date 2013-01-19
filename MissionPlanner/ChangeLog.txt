@@ -1,4 +1,26 @@
-﻿* Mission Planner 1.2.29
+﻿* Mission Planner 1.2.32
+mods for ac 2.9 release
+failsafe screen.
+firmware screen message
+add simple mode
+remove dampening
+add sonar ch7
+remove datetime from message
+mod flightmode screen for ardurover
+
+* Mission Planner 1.2.31
+fix update url
+
+* Mission Planner 1.2.30
+fixup accel calib
+disable roll pitch lock on heli
+thememanager mods
+remove geofence tab
+update for github move
+allow logview to be open more than once
+dataflashlog.xml update
+
+* Mission Planner 1.2.29
 rename DistToMAV to DistToHome
 update df log INAV
 fix terminal/log issue
