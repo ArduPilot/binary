@@ -1,4 +1,12 @@
-﻿* Mission Planner 1.2.32
+﻿* Mission Planner 1.2.33
+fix guided mode alt to accept things other than m
+fix terminal > log download issue.
+fix hud overlay video
+add config to change log directory
+add auto connect method - for mavlink only, no terminal or firmware upload
+rearange joystick disable code
+
+* Mission Planner 1.2.32
 mods for ac 2.9 release
 failsafe screen.
 firmware screen message
