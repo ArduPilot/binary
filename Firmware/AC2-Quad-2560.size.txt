@@ -339,7 +339,7 @@
 0000000a r test_wp(unsigned char, Menu::arg const*)::__c
 0000000a r test_mag(unsigned char, Menu::arg const*)::__c
 0000000a B camera
-0000000b r CSWTCH.1671
+0000000b r CSWTCH.1688
 0000000b r reboot_apm()::__c
 0000000b r test_relay(unsigned char, Menu::arg const*)::__c
 0000000b r test_wp_nav(unsigned char, Menu::arg const*)::__c
@@ -414,7 +414,6 @@
 0000000f r init_ardupilot()::__c
 0000000f r print_log_menu()::__c
 0000000f r print_log_menu()::__c
-00000010 r __menu_name__main_menu
 00000010 V vtable for DerivativeFilter<float, (unsigned char)7>
 00000010 V vtable for AP_Baro
 00000010 r test_sonar(unsigned char, Menu::arg const*)::__c
@@ -430,6 +429,7 @@
 00000012 t erase_logs(unsigned char, Menu::arg const*)
 00000012 t copter_leds_GPS_on()
 00000012 t copter_leds_GPS_off()
+00000012 r __menu_name__main_menu
 00000012 W AverageFilter<long, float, (unsigned char)4>::reset()
 00000012 W AverageFilter<long, float, (unsigned char)5>::reset()
 00000012 W FilterWithBuffer<int, (unsigned char)3>::reset()
@@ -502,7 +502,6 @@
 0000001f r test_battery(unsigned char, Menu::arg const*)::__c
 0000001f r init_barometer()::__c
 0000001f r print_log_menu()::__c
-0000001f r Log_Read(int, int)::__c
 0000001f r test_mag(unsigned char, Menu::arg const*)::__c
 00000020 r set_throttle_mode(unsigned char)::__c
 00000020 r arm_motors()::__c
@@ -513,6 +512,7 @@
 00000021 r limits_loop()::__c
 00000021 r Log_Read_Current()::__c
 00000021 r Log_Read_Attitude()::__c
+00000021 r Log_Read(int, int)::__c
 00000022 T perf_info_reset()
 00000022 t init_barometer()
 00000022 t print_hit_enter()
@@ -527,7 +527,6 @@
 00000026 t print_blanks(int)
 00000026 W FilterWithBuffer<long, (unsigned char)4>::reset()
 00000026 r limits_loop()::__c
-00000026 r init_ardupilot()::__c
 00000026 r print_wp(Location*, unsigned char)::__c
 00000027 r test_logging(unsigned char, Menu::arg const*)::__c
 00000027 B limits
@@ -536,6 +535,7 @@
 00000028 W FilterWithBuffer<int, (unsigned char)3>::apply(int)
 00000028 r Log_Read_Cmd()::__c
 00000028 r Log_Read_PID()::__c
+00000028 r init_ardupilot()::__c
 0000002a T set_compass_healthy(bool)
 0000002a T set_throttle_accel_target(int)
 0000002a t setup_declination(unsigned char, Menu::arg const*)
@@ -557,10 +557,10 @@
 0000002f r setup_range(unsigned char, Menu::arg const*)::__c
 0000002f r setup_factory(unsigned char, Menu::arg const*)::__c
 00000030 t init_commands()
-00000030 t _ZL15gcs_send_text_P12gcs_severityPK11prog_char_t.constprop.47
+00000030 t _ZL15gcs_send_text_P12gcs_severityPK11prog_char_t.constprop.48
 00000030 r setup_radio(unsigned char, Menu::arg const*)::__c
 00000030 r Log_Read_Optflow()::__c
-00000030 t mavlink_msg_mission_ack_send.constprop.49
+00000030 t mavlink_msg_mission_ack_send.constprop.50
 00000031 r init_ardupilot()::__c
 00000032 T dump_state()
 00000032 t reset_wind_I()
@@ -631,7 +631,6 @@
 0000005c t startup_ground()
 0000005e B g_gps_driver
 00000060 T read_receiver_rssi()
-00000060 t setup_accel_scale(unsigned char, Menu::arg const*)
 00000060 T __vector_25
 00000060 T __vector_36
 00000060 T __vector_54
@@ -677,7 +676,7 @@
 00000092 t setup_mode(unsigned char, Menu::arg const*)
 00000092 t copter_leds_on()
 00000092 t copter_leds_off()
-00000096 t _ZL19calc_location_errorP8Location.constprop.59
+00000096 t _ZL19calc_location_errorP8Location.constprop.60
 00000096 B barometer
 0000009a t Log_Write_Attitude()
 0000009c t setup_sonar(unsigned char, Menu::arg const*)
@@ -741,6 +740,7 @@
 0000014a T roll_flip()
 0000014a t test_gps(unsigned char, Menu::arg const*)
 00000150 t send_nav_controller_output(mavlink_channel_t)
+00000162 t get_pilot_desired_throttle(int)
 00000164 t get_yaw_rate_stabilized_ef(long)
 00000164 B ahrs
 00000168 t send_gps_raw(mavlink_channel_t)
@@ -749,8 +749,9 @@
 00000170 T roll_pitch_toy()
 0000017a T GCS_MAVLINK::data_stream_send()
 0000017e t get_rate_roll(long)
-00000188 T set_throttle_mode(unsigned char)
+00000182 t setup_accel_scale(unsigned char, Menu::arg const*)
 0000018c t init_home()
+0000018e T set_throttle_mode(unsigned char)
 00000192 t get_throttle_althold_with_slew(int, int, int)
 00000196 t report_radio()
 0000019c t select_logs(unsigned char, Menu::arg const*)
@@ -758,8 +759,8 @@
 000001b8 t send_location(mavlink_channel_t)
 000001ba t test_battery(unsigned char, Menu::arg const*)
 000001be T update_rate_contoller_targets()
-000001d0 t read_radio()
 000001d4 t _ZL24mavlink_try_send_message17mavlink_channel_t10ap_messagej.isra.26
+000001de t read_radio()
 000001e0 t setup_flightmodes(unsigned char, Menu::arg const*)
 000001e2 t get_angle_boost(int)
 000001e4 T update_simple_mode()
@@ -774,7 +775,7 @@
 000002ce t update_nav_wp()
 000002ce t execute_nav_command()
 00000308 t read_battery()
-0000030a b g
+0000030c b g
 00000326 W AP_AHRS_DCM::AP_AHRS_DCM(AP_InertialSensor*, GPS*&)
 00000326 W AP_AHRS_DCM::AP_AHRS_DCM(AP_InertialSensor*, GPS*&)
 0000033c t set_mode(unsigned char)
@@ -783,14 +784,14 @@
 00000470 t calc_loiter(int, int)
 00000512 t _GLOBAL__sub_I_Serial
 000005b2 t tuning()
-000005d6 T update_throttle_mode()
+000005d4 T update_throttle_mode()
 0000067c T run_rate_controllers()
-00000724 W Parameters::Parameters()
-00000724 W Parameters::Parameters()
-000007ea T setup
+00000728 W Parameters::Parameters()
+00000728 W Parameters::Parameters()
+000007f6 T setup
 00000a52 t update_navigation()
-00000a73 R var_info
+00000a8c R var_info
 00000d1c T update_roll_pitch_mode()
 00000db4 t Log_Read_Process(int, int)
-000019e8 T GCS_MAVLINK::handleMessage(__mavlink_message*)
-00002616 T loop
+00001bb8 T GCS_MAVLINK::handleMessage(__mavlink_message*)
+00002620 T loop
