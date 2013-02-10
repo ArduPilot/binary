@@ -1,0 +1,168 @@
+%% ArduCopter.cpp
+%% ArduCopter.o
+In file included from /home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:33:0,
+                 from /home/ubuntu/apm/ardupilot-mega/ArduCopter/ArduCopter.pde:111:
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/APM_Config.h:10:0: warning: "CONFIG_HAL_BOARD" redefined [enabled by default]
+<command-line>:0:0: note: this is the location of the previous definition
+In file included from /home/ubuntu/apm/ardupilot-mega/ArduCopter/ArduCopter.pde:111:0:
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:55:5: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:68:7: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:75:7: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:84:7: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:167:5: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:179:7: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:191:7: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:203:7: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:215:7: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:241:5: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/config.h:250:7: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/ArduCopter.pde:154:5: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/ArduCopter.pde:156:7: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/ArduCopter.pde:158:7: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/ArduCopter.pde:297:7: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/GCS_Mavlink.pde:235:5: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/GCS_Mavlink.pde:295:5: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/GCS_Mavlink.pde:670:5: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/Log.pde:1247:6: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/Log.pde:1249:8: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/Parameters.pde:1010:5: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:210:6: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:231:6: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:278:6: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:297:6: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/motors.pde:110:38: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/motors.pde:176:38: error: token "=" is not valid in preprocessor expressions
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/ArduCopter.pde: In function 'void update_altitude()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/ArduCopter.pde:2077:13: warning: unused variable 'old_sonar_alt' [-Wunused-variable]
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/Parameters.pde: At global scope:
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/Parameters.pde:169:5: error: 'BATTERY_VOLT_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/Parameters.pde:176:5: error: 'BATTERY_CURR_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void update_GPS_light()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:25:30: error: 'C_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:25:41: error: 'LED_ON' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:27:30: error: 'C_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:27:41: error: 'LED_OFF' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:35:34: error: 'C_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:35:45: error: 'LED_OFF' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:37:34: error: 'C_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:37:45: error: 'LED_ON' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:44:26: error: 'C_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:44:37: error: 'LED_OFF' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void update_motor_light()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:56:30: error: 'A_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:56:41: error: 'LED_ON' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:58:30: error: 'A_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:58:41: error: 'LED_OFF' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:63:30: error: 'A_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:63:41: error: 'LED_ON' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void dancing_light()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:78:26: error: 'C_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:78:37: error: 'LED_OFF' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:79:26: error: 'A_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:79:37: error: 'LED_ON' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:84:26: error: 'B_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void clear_leds()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:95:22: error: 'A_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:95:33: error: 'LED_OFF' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:96:22: error: 'B_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:97:22: error: 'C_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void copter_leds_reset()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:196:22: error: 'COPTER_LED_1' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:197:22: error: 'COPTER_LED_2' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:198:22: error: 'COPTER_LED_3' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:199:22: error: 'COPTER_LED_4' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:200:22: error: 'COPTER_LED_5' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:201:22: error: 'COPTER_LED_6' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:202:22: error: 'COPTER_LED_7' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:203:22: error: 'COPTER_LED_8' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void copter_leds_on()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:208:26: error: 'COPTER_LED_1' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:215:22: error: 'COPTER_LED_2' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:218:26: error: 'COPTER_LED_3' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:220:22: error: 'COPTER_LED_4' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:221:22: error: 'COPTER_LED_5' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:222:22: error: 'COPTER_LED_6' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:223:22: error: 'COPTER_LED_7' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:224:22: error: 'COPTER_LED_8' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void copter_leds_off()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:229:26: error: 'COPTER_LED_1' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:236:22: error: 'COPTER_LED_2' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:239:26: error: 'COPTER_LED_3' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:241:22: error: 'COPTER_LED_4' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:242:22: error: 'COPTER_LED_5' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:243:22: error: 'COPTER_LED_6' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:244:22: error: 'COPTER_LED_7' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:245:22: error: 'COPTER_LED_8' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void copter_leds_oscillate()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:276:30: error: 'COPTER_LED_1' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:283:26: error: 'COPTER_LED_2' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:286:30: error: 'COPTER_LED_3' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:288:26: error: 'COPTER_LED_4' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:289:26: error: 'COPTER_LED_5' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:290:26: error: 'COPTER_LED_6' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:291:26: error: 'COPTER_LED_7' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:292:26: error: 'COPTER_LED_8' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:295:30: error: 'COPTER_LED_1' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:302:26: error: 'COPTER_LED_2' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:305:30: error: 'COPTER_LED_3' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:307:26: error: 'COPTER_LED_4' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:308:26: error: 'COPTER_LED_5' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:309:26: error: 'COPTER_LED_6' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:310:26: error: 'COPTER_LED_7' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:311:26: error: 'COPTER_LED_8' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void copter_leds_GPS_on()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:319:22: error: 'COPTER_LED_3' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void copter_leds_GPS_off()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:323:22: error: 'COPTER_LED_3' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void copter_leds_aux_off()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:350:22: error: 'COPTER_LED_1' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde: In function 'void copter_leds_aux_on()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/leds.pde:354:22: error: 'COPTER_LED_1' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/motors.pde: In function 'void init_arm_motors()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/motors.pde:157:18: error: 'A_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/motors.pde:157:29: error: 'LED_ON' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde: In function 'void init_ardupilot()':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:118:13: error: 'A_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:119:29: error: 'LED_OFF' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:121:13: error: 'B_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:124:13: error: 'C_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:131:13: error: 'PUSHBUTTON_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:137:13: error: 'COPTER_LED_1' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:138:13: error: 'COPTER_LED_2' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:139:13: error: 'COPTER_LED_3' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:140:13: error: 'COPTER_LED_4' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:141:13: error: 'COPTER_LED_5' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:142:13: error: 'COPTER_LED_6' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:143:13: error: 'COPTER_LED_7' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:144:13: error: 'COPTER_LED_8' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde: In function 'void flash_leds(bool)':
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:619:18: error: 'A_LED_PIN' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:619:34: error: 'LED_OFF' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:619:44: error: 'LED_ON' was not declared in this scope
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/system.pde:620:18: error: 'C_LED_PIN' was not declared in this scope
+autogenerated: At global scope:
+autogenerated:58:18: warning: 'int16_t get_heli_rate_roll(int32_t)' declared 'static' but never defined [-Wunused-function]
+autogenerated:59:18: warning: 'int16_t get_heli_rate_pitch(int32_t)' declared 'static' but never defined [-Wunused-function]
+autogenerated:60:18: warning: 'int16_t get_heli_rate_yaw(int32_t)' declared 'static' but never defined [-Wunused-function]
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/GCS_Mavlink.pde:28:13: warning: 'void gcs_check_delay()' defined but not used [-Wunused-function]
+autogenerated:102:23: warning: 'void send_simstate(mavlink_channel_t)' declared 'static' but never defined [-Wunused-function]
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/Log.pde:273:13: warning: 'void Log_Write_IMU()' defined but not used [-Wunused-function]
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/Log.pde:1002:13: warning: 'void Log_Write_Data(uint8_t, uint32_t)' defined but not used [-Wunused-function]
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/Log.pde:1029:13: warning: 'void Log_Write_Data(uint8_t, float)' defined but not used [-Wunused-function]
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/Log.pde:1104:13: warning: 'void Log_Write_DMP()' defined but not used [-Wunused-function]
+autogenerated:343:15: warning: 'void ReadSCP1000()' declared 'static' but never defined [-Wunused-function]
+autogenerated:344:14: warning: 'void init_sonar()' declared 'static' but never defined [-Wunused-function]
+autogenerated:345:15: warning: 'void init_barometer()' declared 'static' but never defined [-Wunused-function]
+autogenerated:346:17: warning: 'int32_t read_barometer()' declared 'static' but never defined [-Wunused-function]
+autogenerated:347:17: warning: 'int16_t read_sonar()' declared 'static' but never defined [-Wunused-function]
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/setup.pde:275:13: warning: 'void setup_wait_key()' defined but not used [-Wunused-function]
+autogenerated:362:14: warning: 'void report_heli()' declared 'static' but never defined [-Wunused-function]
+autogenerated:363:15: warning: 'void report_gyro()' declared 'static' but never defined [-Wunused-function]
+autogenerated:370:23: warning: 'RC_Channel* heli_get_servo(int16_t)' declared 'static' but never defined [-Wunused-function]
+autogenerated:371:17: warning: 'int16_t read_num_from_serial()' declared 'static' but never defined [-Wunused-function]
+autogenerated:384:14: warning: 'bool check_startup_for_CLI()' declared 'static' but never defined [-Wunused-function]
+autogenerated:386:14: warning: 'void check_usb_mux()' declared 'static' but never defined [-Wunused-function]
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/ArduCopter.pde:654:16: warning: 'climb_rate_error' defined but not used [-Wunused-variable]
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/setup.pde:267:13: warning: 'void setup_printf_P(const prog_char_t*, ...)' defined but not used [-Wunused-function]
+/home/ubuntu/apm/ardupilot-mega/ArduCopter/test.pde:36:17: warning: 'int8_t test_rawgps(uint8_t, const Menu::arg*)' declared 'static' but never defined [-Wunused-function]
+make: *** [/tmp/ArduCopter.build/ArduCopter.o] Error 1
