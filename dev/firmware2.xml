@@ -47,7 +47,7 @@
     <url>https://raw.github.com/diydrones/binary/master/dev/DEVAR2-1280.hex</url>
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAR2-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAR2-2560-2.hex</url2560-2>
-    <name>Please Update</name>
+    <name>ArduRover v2.30 AR2</name>
     <desc>
 #define LITE  DISABLED
 
@@ -61,7 +61,7 @@
 #include "APM_Config_Rover.h"
 
 </desc>
-    <format_version>0</format_version>
+    <format_version>15</format_version>
   </Firmware>
   <Firmware>
     <url>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Quad-1280.hex</url>
@@ -134,12 +134,12 @@
     <url>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Heli-1280.hex</url>
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Heli-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Heli-2560-2.hex</url2560-2>
-    <name>Please Update</name>
+    <name>ArduCopter V2.9-dev Heli (2560 only)</name>
     <desc>
 #define FRAME_CONFIG HELI_FRAME
 
 </desc>
-    <format_version>0</format_version>
+    <format_version>120</format_version>
   </Firmware>
   <Firmware>
     <url>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-QUADHIL-1280.hex</url>
@@ -161,7 +161,7 @@
     <url>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-HELHIL-1280.hex</url>
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-HELHIL-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-HELHIL-2560-2.hex</url2560-2>
-    <name>Please Update</name>
+    <name>ArduCopter V2.9-dev Heli Hil</name>
     <desc>
 
 #define HIL_MODE            HIL_MODE_ATTITUDE
@@ -170,6 +170,6 @@
 #define FRAME_CONFIG HELI_FRAME
 
 </desc>
-    <format_version>0</format_version>
+    <format_version>120</format_version>
   </Firmware>
 </options>
