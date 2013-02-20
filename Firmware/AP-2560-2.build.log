@@ -28,7 +28,6 @@
 %% libraries/AP_GPS/AP_GPS_406.o
 %% libraries/AP_GPS/AP_GPS_Auto.o
 %% libraries/AP_GPS/AP_GPS_HIL.o
-%% libraries/AP_GPS/AP_GPS_MTK16.o
 %% libraries/AP_GPS/AP_GPS_MTK19.o
 %% libraries/AP_GPS/AP_GPS_MTK.o
 %% libraries/AP_GPS/AP_GPS_NMEA.o
