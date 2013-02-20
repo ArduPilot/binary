@@ -4,7 +4,7 @@
     <url>https://raw.github.com/diydrones/binary/master/Firmware/AP-1280.hex</url>
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AP-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AP-2560-2.hex</url2560-2>
-    <name>ArduPlane V2.69  </name>
+    <name>ArduPlane V2.70  </name>
     <desc></desc>
     <format_version>13</format_version>
   </Firmware>
@@ -12,7 +12,7 @@
     <url>https://raw.github.com/diydrones/binary/master/Firmware/APHIL-1280.hex</url>
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/APHIL-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/APHIL-2560-2.hex</url2560-2>
-    <name>ArduPlane V2.69 HIL</name>
+    <name>ArduPlane V2.70 HIL</name>
     <desc>
 #define FLIGHT_MODE_CHANNEL	8
 #define FLIGHT_MODE_1		AUTO

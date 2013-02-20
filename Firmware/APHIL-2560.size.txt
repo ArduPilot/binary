@@ -311,6 +311,7 @@
 0000001a t gcs_update()
 0000001a t gcs_data_stream_send()
 0000001a W AP_AHRS_HIL::update()
+0000001a W AP_ParamT<int, (ap_var_type)2>::set_and_save_ifchanged(int)
 0000001a r Log_Read_GPS()::__c
 0000001a r test_logging(unsigned char, Menu::arg const*)::__c
 0000001a r Log_Read_Startup()::__c
@@ -363,8 +364,6 @@
 00000022 r report_compass()::__c
 00000023 r print_gyro_offsets()::__c
 00000023 r verify_loiter_turns()::__c
-00000024 T GCS_MAVLINK::GCS_MAVLINK()
-00000024 T GCS_MAVLINK::GCS_MAVLINK()
 00000024 r load_parameters()::__c
 00000024 r startup_INS_ground(bool)::__c
 00000024 r dump_log(unsigned char, Menu::arg const*)::__c
@@ -382,6 +381,8 @@
 0000002c t print_done()
 0000002c t demo_servos(unsigned char)
 0000002c t print_hit_enter()
+0000002c T GCS_MAVLINK::GCS_MAVLINK()
+0000002c T GCS_MAVLINK::GCS_MAVLINK()
 0000002d r startup_INS_ground(bool)::__c
 0000002d r Log_Read_Performance()::__c
 0000002d r process_next_command()::__c
@@ -439,7 +440,6 @@
 00000065 B ahrs
 00000066 t calc_bearing_error()
 00000068 t Log_Read(int, int)
-00000068 W AP_AHRS::set_trim(Vector3<float>)
 0000006a b barometer
 0000006b B camera_mount
 00000072 t send_ahrs(mavlink_channel_t)
@@ -476,7 +476,6 @@
 000000b4 t get_cmd_with_index(int)
 000000b6 t send_wind(mavlink_channel_t)
 000000be t send_radio_out(mavlink_channel_t)
-000000be t setup_accel_scale(unsigned char, Menu::arg const*)
 000000c0 t print_flight_mode(unsigned char)
 000000c6 T print_latlon(AP_HAL::BetterStream*, long)
 000000ce t report_batt_monitor()
@@ -505,6 +504,7 @@
 00000110 t send_radio_in(mavlink_channel_t)
 00000110 t read_control_switch()
 00000120 T failsafe_check(unsigned long)
+00000124 t setup_accel_scale(unsigned char, Menu::arg const*)
 0000012a t test_logging(unsigned char, Menu::arg const*)
 00000134 t stabilize_pitch(float)
 00000138 t send_attitude(mavlink_channel_t)
@@ -535,8 +535,8 @@
 00000236 t update_loiter()
 0000024a t _ZL11set_next_WPP8Location.constprop.35
 00000254 t _ZL21send_extended_status117mavlink_channel_tj.isra.23
+00000266 t _GLOBAL__sub_I_cliSerial
 0000027d b g
-0000027e t _GLOBAL__sub_I_cliSerial
 0000027e t update_crosstrack()
 000002ac t setup_radio(unsigned char, Menu::arg const*)
 000002ae T GCS_MAVLINK::update()
@@ -549,8 +549,8 @@
 00000526 t geofence_check(bool)
 0000071c t set_servos()
 00000730 T setup()
-00000772 t process_next_command()
+00000788 t process_next_command()
 000008d2 t log_callback(unsigned char)
 00000b22 R var_info
-00001c74 T loop()
-000023d0 T GCS_MAVLINK::handleMessage(__mavlink_message*)
+00001c50 T loop()
+000022a0 T GCS_MAVLINK::handleMessage(__mavlink_message*)

@@ -325,6 +325,7 @@
 0000001a T delay(unsigned long)
 0000001a t gcs_update()
 0000001a t gcs_data_stream_send()
+0000001a W AP_ParamT<int, (ap_var_type)2>::set_and_save_ifchanged(int)
 0000001a r Log_Read_GPS()::__c
 0000001a r test_logging(unsigned char, Menu::arg const*)::__c
 0000001a r Log_Read_Startup()::__c
@@ -378,8 +379,6 @@
 00000023 r test_pressure(unsigned char, Menu::arg const*)::__c
 00000023 r print_gyro_offsets()::__c
 00000023 r verify_loiter_turns()::__c
-00000024 T GCS_MAVLINK::GCS_MAVLINK()
-00000024 T GCS_MAVLINK::GCS_MAVLINK()
 00000024 W FilterWithBuffer<float, (unsigned char)7>::get_sample(unsigned char)
 00000024 r load_parameters()::__c
 00000024 r dump_log(unsigned char, Menu::arg const*)::__c
@@ -398,6 +397,8 @@
 0000002a r verify_nav_command()::__c
 0000002c t print_done()
 0000002c t print_hit_enter()
+0000002c T GCS_MAVLINK::GCS_MAVLINK()
+0000002c T GCS_MAVLINK::GCS_MAVLINK()
 0000002d r startup_INS_ground(bool)::__c
 0000002d r Log_Read_Performance()::__c
 0000002d r process_next_command()::__c
@@ -496,12 +497,10 @@
 000000b4 t send_raw_imu2(mavlink_channel_t)
 000000b4 t get_cmd_with_index(int)
 000000be t calc_nav_pitch()
-000000be t setup_accel_scale(unsigned char, Menu::arg const*)
 000000c0 t print_flight_mode(unsigned char)
 000000c5 b compass
 000000c6 T print_latlon(AP_HAL::BetterStream*, long)
 000000c8 t send_wind(mavlink_channel_t)
-000000ce t startup_INS_ground(bool)
 000000ce t report_batt_monitor()
 000000ce r setup_mode(unsigned char, Menu::arg const*)::__c
 000000d0 t send_heartbeat(mavlink_channel_t)
@@ -531,8 +530,10 @@
 00000110 t send_radio_in(mavlink_channel_t)
 00000110 r test_menu_commands
 00000110 t read_control_switch()
+00000114 t startup_INS_ground(bool)
 0000011a t test_gps(unsigned char, Menu::arg const*)
 00000120 T failsafe_check(unsigned long)
+00000124 t setup_accel_scale(unsigned char, Menu::arg const*)
 0000012a t test_logging(unsigned char, Menu::arg const*)
 00000134 t stabilize_pitch(float)
 0000013c t report_ins()
@@ -580,11 +581,11 @@
 000003f6 t print_log_menu()
 0000040e t read_radio()
 00000518 t geofence_check(bool)
-00000586 t _GLOBAL__sub_I_cliSerial
-00000772 t process_next_command()
+00000562 t _GLOBAL__sub_I_cliSerial
+00000788 t process_next_command()
 000007de t set_servos()
 00000816 T setup()
 000008d2 t log_callback(unsigned char)
 00000b6d R var_info
-00001ae6 T GCS_MAVLINK::handleMessage(__mavlink_message*)
-00001d80 T loop()
+00001b1c T GCS_MAVLINK::handleMessage(__mavlink_message*)
+00001d5c T loop()
