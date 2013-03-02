@@ -61,7 +61,7 @@
 #include "APM_Config_Rover.h"
 
 </desc>
-    <format_version>15</format_version>
+    <format_version>16</format_version>
   </Firmware>
   <Firmware>
     <url>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Quad-1280.hex</url>

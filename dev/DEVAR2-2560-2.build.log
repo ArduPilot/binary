@@ -1,7 +1,7 @@
 %% APMrover2.cpp
 %% APMrover2.o
 In file included from /home/ubuntu/apm/ardupilot-mega/APMrover2/config.h:29:0,
-                 from /home/ubuntu/apm/ardupilot-mega/APMrover2/APMrover2.pde:114:
+                 from /home/ubuntu/apm/ardupilot-mega/APMrover2/APMrover2.pde:86:
 /home/ubuntu/apm/ardupilot-mega/APMrover2/APM_Config.h:11:30: fatal error: APM_Config_Rover.h: No such file or directory
 compilation terminated.
 make: *** [/tmp/APMrover2.build/APMrover2.o] Error 1
