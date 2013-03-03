@@ -28,7 +28,6 @@
 %% libraries/AP_GPS/AP_GPS_406.o
 %% libraries/AP_GPS/AP_GPS_Auto.o
 %% libraries/AP_GPS/AP_GPS_HIL.o
-%% libraries/AP_GPS/AP_GPS_MTK16.o
 %% libraries/AP_GPS/AP_GPS_MTK19.o
 %% libraries/AP_GPS/AP_GPS_MTK.o
 %% libraries/AP_GPS/AP_GPS_NMEA.o
@@ -111,6 +110,7 @@
 %% libraries/AP_Mount/AP_Mount.o
 %% libraries/AP_Param/AP_Param.o
 %% libraries/AP_Progmem/AP_Progmem_AVR.o
+%% libraries/AP_RangeFinder/AP_RangeFinder_analog.o
 %% libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.o
 %% libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarXL.o
 %% libraries/AP_RangeFinder/AP_RangeFinder_SharpGP2Y.o
@@ -118,7 +118,7 @@
 %% libraries/AP_Relay/AP_Relay.o
 %% libraries/DataFlash/DataFlash_APM1.o
 %% libraries/DataFlash/DataFlash_APM2.o
-%% libraries/DataFlash/DataFlash.o
+%% libraries/DataFlash/DataFlash_Block.o
 %% libraries/DataFlash/DataFlash_Empty.o
 %% libraries/DataFlash/DataFlash_SITL.o
 %% libraries/DataFlash/LogFile.o
@@ -136,7 +136,6 @@
 %% libraries/AP_HAL_AVR/utility/pins_arduino_mega.o
 %% libraries/AP_HAL_AVR/utility/ftoa_engine.o
 %% libraries/AP_HAL_AVR/utility/ultoa_invert.o
-%% arduino/core.a
 %% ArduPlane.elf
 %% ArduPlane.eep
 %% ArduPlane.hex
