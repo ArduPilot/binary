@@ -4,6 +4,7 @@
 00000001 b rtl_complete
 00000001 b gps_fix_count
 00000001 b have_position
+00000001 b receiver_rssi
 00000001 b demoing_servos
 00000001 b mavlink_active
 00000001 b nav_command_ID
@@ -348,6 +349,7 @@
 00000044 r report_throttle()::__c
 00000046 T GCS_MAVLINK::init(AP_HAL::UARTDriver*)
 00000048 t Log_Write_Attitude(int, int, unsigned int)
+0000004a T read_receiver_rssi()
 0000004a t send_hwstatus(mavlink_channel_t)
 0000004b r setup_factory(unsigned char, Menu::arg const*)::__c
 0000004e t send_meminfo(mavlink_channel_t)
@@ -382,6 +384,7 @@
 00000092 t print_mode(unsigned char)
 0000009a T mavlink_send_text(mavlink_channel_t, gcs_severity, char const*)
 0000009a t demo_servos(unsigned char)
+0000009c t send_servo_out(mavlink_channel_t)
 000000a0 r setup_menu_commands
 000000a2 t setup_level(unsigned char, Menu::arg const*)
 000000b4 t send_heartbeat(mavlink_channel_t)
@@ -393,12 +396,11 @@
 000000d2 t _ZL20mavlink_send_message17mavlink_channel_t10ap_messagej.isra.15
 000000d4 t _ZL11set_next_WPP8Location.constprop.25
 000000d4 t test_modeswitch(unsigned char, Menu::arg const*)
-000000d6 t send_servo_out(mavlink_channel_t)
 000000d8 t update_events()
 000000de t test_relay(unsigned char, Menu::arg const*)
 000000e0 t test_radio_pwm(unsigned char, Menu::arg const*)
 000000e0 r test_menu_commands
-000000e1 b compass
+000000e2 b compass
 000000e6 t map_baudrate(signed char, unsigned long)
 000000ea t startup_INS_ground(bool)
 000000ec t setup_accel_scale(unsigned char, Menu::arg const*)
@@ -412,15 +414,16 @@
 000000fc t mavlink_delay_cb()
 00000102 t send_ahrs(mavlink_channel_t)
 00000106 t send_radio_out(mavlink_channel_t)
-00000108 t send_radio_in(mavlink_channel_t)
 0000010a T failsafe_check(unsigned long)
 0000010a t set_cmd_with_index(Location, int)
+00000110 t send_radio_in(mavlink_channel_t)
 00000118 t calc_nav_steer()
 0000011a t test_gps(unsigned char, Menu::arg const*)
 00000124 t get_cmd_with_index(int)
 00000128 T init_home()
 0000012e t test_wp(unsigned char, Menu::arg const*)
 00000146 t select_logs(unsigned char, Menu::arg const*)
+00000152 t read_battery()
 00000154 t setup_flightmodes(unsigned char, Menu::arg const*)
 00000154 t send_nav_controller_output(mavlink_channel_t)
 00000154 t dump_log(unsigned char, Menu::arg const*)
@@ -433,28 +436,27 @@
 00000180 t test_radio(unsigned char, Menu::arg const*)
 00000180 t send_attitude(mavlink_channel_t)
 00000186 t test_battery(unsigned char, Menu::arg const*)
-0000019f b g
-000001a6 t read_battery()
+0000019d b g
 000001a8 t send_raw_imu1(mavlink_channel_t)
 000001b2 t _ZL24mavlink_try_send_message17mavlink_channel_t10ap_messagej.isra.14
 000001b8 t send_location(mavlink_channel_t)
 000001d0 t test_failsafe(unsigned char, Menu::arg const*)
 000001d8 t send_raw_imu3(mavlink_channel_t)
-000001dc t set_servos()
-000001fe t read_radio()
 00000220 t setup_show(unsigned char, Menu::arg const*)
 0000022e t test_ins(unsigned char, Menu::arg const*)
 0000023a t _ZL21send_extended_status117mavlink_channel_tj.isra.13
 00000272 t _ZL13calc_throttlef.part.11
 00000298 T GCS_MAVLINK::update()
+000002ac t set_servos()
 000002ac t setup_radio(unsigned char, Menu::arg const*)
-000002d0 t report_radio()
+000002c8 t report_radio()
 0000033c t test_mag(unsigned char, Menu::arg const*)
+00000372 t read_radio()
 00000400 t print_log_menu()
-00000672 R var_info
+0000068b R var_info
 000006aa t process_next_command()
 000006cc t _GLOBAL__sub_I_cliSerial
 0000071a T setup()
 000007b0 t log_callback(unsigned char)
-00001242 T loop()
+00001246 T loop()
 000017bc T GCS_MAVLINK::handleMessage(__mavlink_message*)
