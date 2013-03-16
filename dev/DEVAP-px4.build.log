@@ -1,0 +1,143 @@
+make -C /home/ubuntu/apm/PX4Firmware EXTERNAL_APPS=/home/ubuntu/apm/ardupilot-mega/ArduPlane EXTERNAL_SCRIPTS=/home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/scripts/rc.APM~init.d/rc.APM CONFIG_APM=y
+make[1]: Entering directory `/home/ubuntu/apm/PX4Firmware'
+Generating ROMFS
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/ROMFS'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/ROMFS'
+Building /home/ubuntu/apm/PX4Firmware/Images/px4fmu.bin for px4fmu
+LN: include/arch/board to configs/px4fmu/include
+LN: include/arch/chip to arch/arm/include/stm32
+LN: arch/arm/src/chip to arch/arm/src/stm32
+LN: include/apps to ../apps/include
+make[5]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+Register: ArduPlane
+make[3]: Nothing to be done for `depend'.
+/bin/sh: 1: arm-none-eabi-gcc: not found
+make[3]: Nothing to be done for `depend'.
+make[5]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+make[4]: *** [.depend] Error 4
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+make[4]: *** [.depend] Error 4
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+make[4]: *** [.depend] Error 4
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+make[4]: *** [.depend] Error 4
+/home/ubuntu/apm/PX4Firmware/nuttx/tools/mkdeps.sh: line 98: arm-none-eabi-gcc: command not found
+make[4]: *** [.depend] Error 4
+%% ArduPlane.cpp
+gawk -v mode=header '  BEGIN { scanning = 1; printing = (mode ~ "header") ? 1 : 0; } { toggles = 1 } (FNR == 1) && printing { printf "#line %d \"%s\"\n", FNR, FILENAME; } /^[[:space:]]*\/\*/,/\*\// { toggles = 0; } /^[[:space:]]*$/ || /^[[:space:]]*\/\/.*/ || /^\#.*$/ { toggles = 0; } scanning && toggles { scanning = 0; printing = !printing; if (printing) { printf "#line %d \"%s\"\n", FNR, FILENAME; } } printing'   /home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Parameters.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/climb_rate.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_logic.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_process.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/compat.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/control_modes.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/events.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/failsafe.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/geofence.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/radio.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/system.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde >  /tmp/ArduPlane.build/ArduPlane.cpp
+echo "#line 1 \"autogenerated\""                              >> /tmp/ArduPlane.build/ArduPlane.cpp
+gawk                '  BEGIN { RS="{"; type       = "((\\n)|(^))[[:space:]]*[[:alnum:]_]+[[:space:]]+"; qualifiers = "([[:alnum:]_\\*&]+[[:space:]]*)*"; name       = "[[:alnum:]_]+[[:space:]]*"; args       = "\\([[:space:][:alnum:]_,&\\*\\[\\]]*\\)"; bodycuddle = "[[:space:]]*$"; pattern    = type qualifiers name args bodycuddle; } match($0, pattern) { proto = substr($0, RSTART, RLENGTH); gsub("\n", " ", proto); printf "%s;\n", proto; }' /home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Parameters.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/climb_rate.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_logic.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_process.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/compat.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/control_modes.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/events.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/failsafe.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/geofence.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/radio.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/system.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde >> /tmp/ArduPlane.build/ArduPlane.cpp
+gawk -v mode=body   '  BEGIN { scanning = 1; printing = (mode ~ "header") ? 1 : 0; } { toggles = 1 } (FNR == 1) && printing { printf "#line %d \"%s\"\n", FNR, FILENAME; } /^[[:space:]]*\/\*/,/\*\// { toggles = 0; } /^[[:space:]]*$/ || /^[[:space:]]*\/\/.*/ || /^\#.*$/ { toggles = 0; } scanning && toggles { scanning = 0; printing = !printing; if (printing) { printf "#line %d \"%s\"\n", FNR, FILENAME; } } printing'   /home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Parameters.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/climb_rate.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_logic.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_process.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/compat.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/control_modes.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/events.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/failsafe.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/geofence.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/radio.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/system.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde >> /tmp/ArduPlane.build/ArduPlane.cpp
+/bin/sh: 1: arm-none-eabi-g++: not found
+make[4]: *** [.depend] Error 127
+make[3]: *** [.depend] Error 2
+make[3]: Nothing to be done for `depend'.
+make[3]: Nothing to be done for `depend'.
+make[3]: Nothing to be done for `depend'.
+make[3]: Nothing to be done for `depend'.
+make[3]: Nothing to be done for `depend'.
+make[3]: Nothing to be done for `depend'.
+make[3]: `libsched.a' is up to date.
+/bin/sh: 1: arm-none-eabi-gcc: not found
+make[3]: `libarch.a' is up to date.
+make[3]: `libmm.a' is up to date.
+make[3]: `libc.a' is up to date.
+make[3]: `libcxx.a' is up to date.
+AR:   builtin.o builtin_list.o exec_builtin.o
+/bin/sh: 1: arm-none-eabi-ar: not found
+arm-none-eabi-ar rcs  ../libapps.a FAILED!
+make[4]: *** [.built] Error 1
+make[3]: *** [builtin] Error 2
+make[2]: *** [../apps/libapps.a] Error 2
+make[1]: *** [/home/ubuntu/apm/PX4Firmware/Images/px4fmu.bin] Error 2
+make[1]: Leaving directory `/home/ubuntu/apm/PX4Firmware'
+make: *** [px4] Error 2
