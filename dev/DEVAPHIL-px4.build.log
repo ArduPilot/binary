@@ -2044,5 +2044,6 @@ CC:  empty.c
 AR:   empty.o
 LD: nuttx
 CP: nuttx.bin
-Generating /home/ubuntu/apm/PX4Firmware/Images/px4fmu.px4
+make[1]: *** No rule to make target `/home/ubuntu/apm/PX4Firmware/Images/px4fmu.prototype', needed by `/home/ubuntu/apm/PX4Firmware/Images/px4fmu.px4'.  Stop.
 make[1]: Leaving directory `/home/ubuntu/apm/PX4Firmware'
+make: *** [px4] Error 2
