@@ -113,17 +113,16 @@
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octav-1280.hex</url>
-    <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octav-2560.hex</url2560>
-    <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octav-2560-2.hex</url2560-2>
-    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/DEVAC2-Octav-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1-dev Octa V</name>
+    <url>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octaquad-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octaquad-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octaquad-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/DEVAC2-Octaquad-px4.px4</urlpx4>
+    <name>Please Update</name>
     <desc>
-#define FRAME_CONFIG OCTA_FRAME
-#define FRAME_ORIENTATION V_FRAME
+#define FRAME_CONFIG OCTA_QUAD_FRAME
 
 </desc>
-    <format_version>120</format_version>
+    <format_version>0</format_version>
   </Firmware>
   <Firmware>
     <url>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octa-1280.hex</url>
