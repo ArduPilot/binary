@@ -118,12 +118,12 @@
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octaquad-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octaquad-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octaquad-px4.px4</urlpx4>
-    <name>Please Update</name>
+    <name>ArduCopter V2.9.1 Octa Quad</name>
     <desc>
 #define FRAME_CONFIG OCTA_QUAD_FRAME
 
 </desc>
-    <format_version>0</format_version>
+    <format_version>120</format_version>
   </Firmware>
   <Firmware>
     <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-1280.hex</url>

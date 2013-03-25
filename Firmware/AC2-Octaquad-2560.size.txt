@@ -339,7 +339,7 @@
 0000000a r test_wp(unsigned char, Menu::arg const*)::__c
 0000000a r test_mag(unsigned char, Menu::arg const*)::__c
 0000000a B camera
-0000000b r CSWTCH.1688
+0000000b r CSWTCH.1687
 0000000b r reboot_apm()::__c
 0000000b r test_relay(unsigned char, Menu::arg const*)::__c
 0000000b r test_wp_nav(unsigned char, Menu::arg const*)::__c
@@ -359,7 +359,6 @@
 0000000c V vtable for FilterWithBuffer<long, (unsigned char)4>
 0000000c V vtable for FilterWithBuffer<long, (unsigned char)5>
 0000000c r print_switch(unsigned char, unsigned char, bool)::__c
-0000000c r report_frame()::__c
 0000000c r test_optflow(unsigned char, Menu::arg const*)::__c
 0000000c r setup_factory(unsigned char, Menu::arg const*)::__c
 0000000c r report_version()::__c
@@ -641,6 +640,7 @@
 00000064 T perf_info_check_loop_time(unsigned long)
 00000064 t change_command(unsigned char)
 00000064 t update_GPS_light()
+0000006a t report_frame()
 0000006a t read_control_switch()
 0000006b B camera_mount
 0000006e t report_sonar()
@@ -670,7 +670,6 @@
 00000088 t setup_frame(unsigned char, Menu::arg const*)
 0000008a t print_switch(unsigned char, unsigned char, bool)
 0000008a t report_batt_monitor()
-0000008c t report_frame()
 0000008c t Log_Read(int, int)
 00000090 t set_new_altitude(long)
 00000092 t setup_mode(unsigned char, Menu::arg const*)
