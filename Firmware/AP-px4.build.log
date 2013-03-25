@@ -1,0 +1,1968 @@
+make -C /home/ubuntu/apm/PX4Firmware EXTERNAL_APPS=/home/ubuntu/apm/ardupilot-mega/ArduPlane EXTERNAL_SCRIPTS=/home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/scripts/rc.APM~init.d/rc.APM CONFIG_APM=y
+make[1]: Entering directory `/home/ubuntu/apm/PX4Firmware'
+Generating ROMFS
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/ROMFS'
+Rebuilding the ROMFS work area...
+  init.d/rcS
+  init.d/rc.sensors
+  init.d/rc.logging
+  init.d/rc.standalone
+  init.d/rc.PX4IO
+  init.d/rc.PX4IOAR
+  init.d/rc.FMU_quad_x
+  mixers/FMU_pass.mix
+  mixers/FMU_Q.mix
+  mixers/FMU_X5.mix
+  mixers/FMU_AERT.mix
+  mixers/FMU_AET.mix
+  mixers/FMU_ERT.mix
+  mixers/FMU_quad_x.mix
+  mixers/FMU_quad_+.mix
+  mixers/FMU_hex_x.mix
+  mixers/FMU_hex_+.mix
+  mixers/FMU_octo_x.mix
+  mixers/FMU_octo_+.mix
+  logging/logconv.m
+  init.d/rc.APM
+Generating the ROMFS image...
+Generating the ROMFS header...
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/ROMFS'
+Building /home/ubuntu/apm/PX4Firmware/Images/px4fmu.bin for px4fmu
+LN: include/arch to arch/arm/include
+LN: include/arch/board to configs/px4fmu/include
+LN: include/arch/chip to arch/arm/include/stm32
+LN: arch/arm/src/board to configs/px4fmu/src
+LN: arch/arm/src/chip to arch/arm/src/stm32
+LN: include/apps to ../apps/include
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+Register: reboot
+Register: perf
+Register: top
+Register: boardinfo
+Register: mixer
+Register: eeprom
+Register: param
+Register: bl_update
+Register: preflight_check
+Register: delay_test
+Register: uorb
+Register: mavlink
+Register: mavlink_onboard
+Register: commander
+Register: sdlog
+Register: sensors
+Register: i2c
+Register: ms5611
+Register: hmc5883
+Register: mpu6000
+Register: bma180
+Register: l3gd20
+Register: px4io
+Register: blinkm
+Register: tone_alarm
+Register: adc
+Register: fmu
+Register: hil
+Register: gps
+Register: tests
+Register: sercon
+Register: serdis
+Register: ArduPlane
+make[5]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+%% ArduPlane.cpp
+gawk -v mode=header '  BEGIN { scanning = 1; printing = (mode ~ "header") ? 1 : 0; } { toggles = 1 } (FNR == 1) && printing { printf "#line %d \"%s\"\n", FNR, FILENAME; } /^[[:space:]]*\/\*/,/\*\// { toggles = 0; } /^[[:space:]]*$/ || /^[[:space:]]*\/\/.*/ || /^\#.*$/ { toggles = 0; } scanning && toggles { scanning = 0; printing = !printing; if (printing) { printf "#line %d \"%s\"\n", FNR, FILENAME; } } printing'   /home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Parameters.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/climb_rate.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_logic.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_process.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/compat.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/control_modes.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/events.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/failsafe.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/geofence.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/radio.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/system.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde >  /tmp/ArduPlane.build/ArduPlane.cpp
+echo "#line 1 \"autogenerated\""                              >> /tmp/ArduPlane.build/ArduPlane.cpp
+gawk                '  BEGIN { RS="{"; type       = "((\\n)|(^))[[:space:]]*[[:alnum:]_]+[[:space:]]+"; qualifiers = "([[:alnum:]_\\*&]+[[:space:]]*)*"; name       = "[[:alnum:]_]+[[:space:]]*"; args       = "\\([[:space:][:alnum:]_,&\\*\\[\\]]*\\)"; bodycuddle = "[[:space:]]*$"; pattern    = type qualifiers name args bodycuddle; } match($0, pattern) { proto = substr($0, RSTART, RLENGTH); gsub("\n", " ", proto); printf "%s;\n", proto; }' /home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Parameters.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/climb_rate.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_logic.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_process.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/compat.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/control_modes.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/events.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/failsafe.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/geofence.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/radio.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/system.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde >> /tmp/ArduPlane.build/ArduPlane.cpp
+gawk -v mode=body   '  BEGIN { scanning = 1; printing = (mode ~ "header") ? 1 : 0; } { toggles = 1 } (FNR == 1) && printing { printf "#line %d \"%s\"\n", FNR, FILENAME; } /^[[:space:]]*\/\*/,/\*\// { toggles = 0; } /^[[:space:]]*$/ || /^[[:space:]]*\/\/.*/ || /^\#.*$/ { toggles = 0; } scanning && toggles { scanning = 0; printing = !printing; if (printing) { printf "#line %d \"%s\"\n", FNR, FILENAME; } } printing'   /home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/Parameters.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/climb_rate.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_logic.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_process.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/compat.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/control_modes.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/events.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/failsafe.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/geofence.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/radio.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/system.pde /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde >> /tmp/ArduPlane.build/ArduPlane.cpp
+CC:  os_start.c
+CC:  os_bringup.c
+CC:  errno_getptr.c
+CC:  errno_get.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/errno_get.c:79:5: warning: no previous prototype for 'get_errno' [-Wmissing-prototypes]
+CC:  errno_set.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/errno_set.c:78:6: warning: no previous prototype for 'set_errno' [-Wmissing-prototypes]
+CC:  sched_garbage.c
+CC:  sched_getfiles.c
+CC:  sched_getsockets.c
+CC:  sched_getstreams.c
+CC:  prctl.c
+CC:  task_create.c
+CC:  task_init.c
+CC:  task_setup.c
+CC:  task_activate.c
+CC:  task_start.c
+CC:  task_delete.c
+CC:  task_deletecurrent.c
+CC:  task_exithook.c
+CC:  task_restart.c
+CC:  task_vfork.c
+CC:  exit.c
+CC:  getpid.c
+CC:  sched_addreadytorun.c
+CC:  sched_removereadytorun.c
+CC:  sched_addprioritized.c
+CC:  sched_mergepending.c
+CC:  sched_addblocked.c
+CC:  sched_removeblocked.c
+CC:  sched_free.c
+CC:  sched_gettcb.c
+CC:  sched_verifytcb.c
+CC:  sched_releasetcb.c
+CC:  group_create.c
+CC:  group_join.c
+CC:  group_leave.c
+CC:  group_find.c
+CC:  group_setupstreams.c
+CC:  group_setupidlefiles.c
+CC:  group_setuptaskfiles.c
+CC:  group_signal.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/group_signal.c:154:5: warning: no previous prototype for 'group_signalmember' [-Wmissing-prototypes]
+CC:  sched_setparam.c
+CC:  sched_setpriority.c
+CC:  sched_getparam.c
+CC:  sched_setscheduler.c
+CC:  sched_getscheduler.c
+CC:  sched_yield.c
+CC:  sched_rrgetinterval.c
+CC:  sched_foreach.c
+CC:  sched_lock.c
+CC:  sched_unlock.c
+CC:  sched_lockcount.c
+CC:  sched_self.c
+CC:  sched_reprioritize.c
+CC:  sched_waitpid.c
+CC:  wd_initialize.c
+CC:  wd_create.c
+CC:  wd_start.c
+CC:  wd_cancel.c
+CC:  wd_delete.c
+CC:  wd_gettime.c
+CC:  sched_processtimer.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/sched_processtimer.c:163:6: warning: no previous prototype for 'sched_process_timer' [-Wmissing-prototypes]
+CC:  sleep.c
+CC:  usleep.c
+CC:  sem_initialize.c
+CC:  sem_destroy.c
+CC:  sem_open.c
+CC:  sem_close.c
+CC:  sem_unlink.c
+CC:  sem_wait.c
+CC:  sem_trywait.c
+CC:  sem_timedwait.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/sem_timedwait.c: In function 'sem_timedwait':
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/sem_timedwait.c:225:3: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+CC:  sem_post.c
+CC:  sem_findnamed.c
+CC:  sem_waitirq.c
+CC:  sem_holder.c
+CC:  timer_initialize.c
+CC:  timer_create.c
+CC:  timer_delete.c
+CC:  timer_getoverrun.c
+CC:  timer_gettime.c
+CC:  timer_settime.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/timer_settime.c:70:1: warning: 'inline' is not at beginning of declaration [-Wold-style-declaration]
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/timer_settime.c:71:1: warning: 'inline' is not at beginning of declaration [-Wold-style-declaration]
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/timer_settime.c:96:1: warning: 'inline' is not at beginning of declaration [-Wold-style-declaration]
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/timer_settime.c:144:1: warning: 'inline' is not at beginning of declaration [-Wold-style-declaration]
+CC:  timer_release.c
+CC:  work_thread.c
+CC:  work_queue.c
+CC:  work_cancel.c
+CC:  work_signal.c
+CC:  irq_initialize.c
+CC:  irq_attach.c
+CC:  irq_dispatch.c
+CC:  irq_unexpectedisr.c
+CC:  clock_initialize.c
+CC:  clock_settime.c
+CC:  clock_gettime.c
+CC:  clock_getres.c
+CC:  clock_time2ticks.c
+CC:  clock_abstime2ticks.c
+CC:  clock_ticks2time.c
+CC:  clock_gettimeofday.c
+CC:  clock_systimer.c
+CC:  pthread_create.c
+CC:  pthread_exit.c
+CC:  pthread_join.c
+CC:  pthread_detach.c
+CC:  pthread_yield.c
+CC:  pthread_getschedparam.c
+CC:  pthread_setschedparam.c
+CC:  pthread_mutexinit.c
+CC:  pthread_mutexdestroy.c
+CC:  pthread_mutexlock.c
+CC:  pthread_mutextrylock.c
+CC:  pthread_mutexunlock.c
+CC:  pthread_condinit.c
+CC:  pthread_conddestroy.c
+CC:  pthread_condwait.c
+CC:  pthread_condsignal.c
+CC:  pthread_condbroadcast.c
+CC:  pthread_barrierinit.c
+CC:  pthread_barrierdestroy.c
+CC:  pthread_barrierwait.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/pthread_barrierwait.c: In function 'pthread_barrier_wait':
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/pthread_barrierwait.c:139:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  pthread_cancel.c
+CC:  pthread_setcancelstate.c
+CC:  pthread_keycreate.c
+CC:  pthread_setspecific.c
+CC:  pthread_getspecific.c
+CC:  pthread_keydelete.c
+CC:  pthread_initialize.c
+CC:  pthread_completejoin.c
+CC:  pthread_findjoininfo.c
+CC:  pthread_removejoininfo.c
+CC:  pthread_once.c
+CC:  pthread_setschedprio.c
+CC:  pthread_condtimedwait.c
+CC:  pthread_kill.c
+CC:  pthread_sigmask.c
+CC:  sig_initialize.c
+CC:  sig_action.c
+CC:  sig_procmask.c
+CC:  sig_pending.c
+CC:  sig_suspend.c
+CC:  sig_kill.c
+CC:  sig_queue.c
+CC:  sig_waitinfo.c
+CC:  sig_timedwait.c
+CC:  sig_findaction.c
+CC:  sig_allocatependingsigaction.c
+CC:  sig_releasependingsigaction.c
+CC:  sig_unmaskpendingsignal.c
+CC:  sig_removependingsignal.c
+CC:  sig_releasependingsignal.c
+CC:  sig_lowest.c
+CC:  sig_mqnotempty.c
+CC:  sig_cleanup.c
+CC:  sig_received.c
+CC:  sig_deliver.c
+CC:  pause.c
+CC:  mq_open.c
+CC:  mq_close.c
+CC:  mq_unlink.c
+CC:  mq_send.c
+CC:  mq_timedsend.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/mq_timedsend.c: In function 'mq_timedsend':
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/mq_timedsend.c:202:3: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+CC:  mq_sndinternal.c
+CC:  mq_receive.c
+CC:  mq_timedreceive.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/mq_timedreceive.c: In function 'mq_timedreceive':
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/mq_timedreceive.c:201:3: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+CC:  mq_rcvinternal.c
+CC:  mq_initialize.c
+CC:  mq_descreate.c
+CC:  mq_findnamed.c
+CC:  mq_msgfree.c
+CC:  mq_msgqfree.c
+CC:  mq_waitirq.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/mq_waitirq.c:93:6: warning: no previous prototype for 'mq_waitirq' [-Wmissing-prototypes]
+CC:  mq_notify.c
+CC:  env_getenvironptr.c
+CC:  env_dup.c
+CC:  env_release.c
+CC:  env_findvar.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/env_findvar.c:100:11: warning: no previous prototype for 'env_findvar' [-Wmissing-prototypes]
+CC:  env_removevar.c
+/home/ubuntu/apm/PX4Firmware/nuttx/sched/env_removevar.c:75:5: warning: no previous prototype for 'env_removevar' [-Wmissing-prototypes]
+CC:  env_clearenv.c
+CC:  env_getenv.c
+CC:  env_putenv.c
+CC:  env_setenv.c
+CC:  env_unsetenv.c
+AR:   os_start.o os_bringup.o errno_getptr.o errno_get.o errno_set.o sched_garbage.o sched_getfiles.o sched_getsockets.o sched_getstreams.o prctl.o task_create.o task_init.o task_setup.o task_activate.o task_start.o task_delete.o task_deletecurrent.o task_exithook.o task_restart.o task_vfork.o exit.o getpid.o sched_addreadytorun.o sched_removereadytorun.o sched_addprioritized.o sched_mergepending.o sched_addblocked.o sched_removeblocked.o sched_free.o sched_gettcb.o sched_verifytcb.o sched_releasetcb.o group_create.o group_join.o group_leave.o group_find.o group_setupstreams.o group_setupidlefiles.o group_setuptaskfiles.o group_signal.o sched_setparam.o sched_setpriority.o sched_getparam.o sched_setscheduler.o sched_getscheduler.o sched_yield.o sched_rrgetinterval.o sched_foreach.o sched_lock.o sched_unlock.o sched_lockcount.o sched_self.o sched_reprioritize.o sched_waitpid.o wd_initialize.o wd_create.o wd_start.o wd_cancel.o wd_delete.o wd_gettime.o sched_processtimer.o sleep.o usleep.o sem_initialize.o sem_destroy.o sem_open.o sem_close.o sem_unlink.o sem_wait.o sem_trywait.o sem_timedwait.o sem_post.o sem_findnamed.o sem_waitirq.o sem_holder.o timer_initialize.o timer_create.o timer_delete.o timer_getoverrun.o timer_gettime.o timer_settime.o timer_release.o work_thread.o work_queue.o work_cancel.o work_signal.o irq_initialize.o irq_attach.o irq_dispatch.o irq_unexpectedisr.o clock_initialize.o clock_settime.o clock_gettime.o clock_getres.o clock_time2ticks.o clock_abstime2ticks.o clock_ticks2time.o clock_gettimeofday.o clock_systimer.o pthread_create.o pthread_exit.o pthread_join.o pthread_detach.o pthread_yield.o pthread_getschedparam.o pthread_setschedparam.o pthread_mutexinit.o pthread_mutexdestroy.o pthread_mutexlock.o pthread_mutextrylock.o pthread_mutexunlock.o pthread_condinit.o pthread_conddestroy.o pthread_condwait.o pthread_condsignal.o pthread_condbroadcast.o pthread_barrierinit.o pthread_barrierdestroy.o pthread_barrierwait.o pthread_cancel.o pthread_setcancelstate.o pthread_keycreate.o pthread_setspecific.o pthread_getspecific.o pthread_keydelete.o pthread_initialize.o pthread_completejoin.o pthread_findjoininfo.o pthread_removejoininfo.o pthread_once.o pthread_setschedprio.o pthread_condtimedwait.o pthread_kill.o pthread_sigmask.o sig_initialize.o sig_action.o sig_procmask.o sig_pending.o sig_suspend.o sig_kill.o sig_queue.o sig_waitinfo.o sig_timedwait.o sig_findaction.o sig_allocatependingsigaction.o sig_releasependingsigaction.o sig_unmaskpendingsignal.o sig_removependingsignal.o sig_releasependingsignal.o sig_lowest.o sig_mqnotempty.o sig_cleanup.o sig_received.o sig_deliver.o pause.o mq_open.o mq_close.o mq_unlink.o mq_send.o mq_timedsend.o mq_sndinternal.o mq_receive.o mq_timedreceive.o mq_rcvinternal.o mq_initialize.o mq_descreate.o mq_findnamed.o mq_msgfree.o mq_msgqfree.o mq_waitirq.o mq_notify.o env_getenvironptr.o env_dup.o env_release.o env_findvar.o env_removevar.o env_clearenv.o env_getenv.o env_putenv.o env_setenv.o env_unsetenv.o
+AS:  chip/stm32_vectors.S
+AS:  armv7-m/up_saveusercontext.S
+AS:  armv7-m/up_fullcontextrestore.S
+AS:  armv7-m/up_switchcontext.S
+AS:  armv7-m/vfork.S
+AS:  armv7-m/up_exception.S
+AS:  armv7-m/up_memcpy.S
+AS:  armv7-m/up_fpu.S
+CC:  chip/stm32_allocateheap.c
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_allocateheap.c:242:8: warning: #warning "CCM SRAM is included in the heap AND DMA is enabled" [-Wcpp]
+CC:  chip/stm32_start.c
+CC:  chip/stm32_rcc.c
+CC:  chip/stm32_lse.c
+CC:  chip/stm32_lsi.c
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_lsi.c:91:6: warning: no previous prototype for 'stm32_rcc_disablelsi' [-Wmissing-prototypes]
+CC:  chip/stm32_gpio.c
+CC:  chip/stm32_exti_gpio.c
+CC:  chip/stm32_flash.c
+CC:  chip/stm32_irq.c
+CC:  chip/stm32_timerisr.c
+CC:  chip/stm32_dma.c
+CC:  chip/stm32_lowputc.c
+CC:  chip/stm32_serial.c
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_serial.c: In function 'up_dma_receive':
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_serial.c:1699:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_serial.c: In function 'up_dma_rxavailable':
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_serial.c:1756:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  chip/stm32_spi.c
+CC:  chip/stm32_sdio.c
+CC:  chip/stm32_tim.c
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_tim.c:241:13: warning: 'stm32_tim_gpioconfig' defined but not used [-Wunused-function]
+CC:  chip/stm32_i2c.c
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_i2c.c: In function 'stm32_i2c_sem_waitdone':
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_i2c.c:670:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_i2c.c: In function 'stm32_i2c_sem_waitstop':
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_i2c.c:730:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_i2c.c: In function 'up_i2creset':
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_i2c.c:1988:14: warning: unused variable 'state' [-Wunused-variable]
+CC:  chip/stm32_waste.c
+CC:  chip/stm32_idle.c
+CC:  chip/stm32_pmstop.c
+CC:  chip/stm32_pmstandby.c
+CC:  chip/stm32_pmsleep.c
+CC:  chip/stm32_pminitialize.c
+CC:  chip/stm32_pwr.c
+CC:  chip/stm32_wwdg.c
+CC:  chip/stm32_dumpgpio.c
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_dumpgpio.c: In function 'stm32_dumpgpio':
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_dumpgpio.c:112:16: warning: variable 'pin' set but not used [-Wunused-but-set-variable]
+CC:  armv7-m/up_assert.c
+CC:  armv7-m/up_blocktask.c
+CC:  armv7-m/up_copystate.c
+CC:  common/up_createstack.c
+CC:  common/up_mdelay.c
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/common/up_mdelay.c: In function 'up_mdelay':
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/common/up_mdelay.c:84:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  common/up_udelay.c
+CC:  common/up_exit.c
+CC:  common/up_initialize.c
+CC:  armv7-m/up_initialstate.c
+CC:  common/up_interruptcontext.c
+CC:  armv7-m/up_memfault.c
+CC:  common/up_modifyreg8.c
+CC:  common/up_modifyreg16.c
+CC:  common/up_modifyreg32.c
+CC:  armv7-m/up_releasepending.c
+CC:  common/up_releasestack.c
+CC:  armv7-m/up_reprioritizertr.c
+CC:  armv7-m/up_schedulesigaction.c
+CC:  armv7-m/up_sigdeliver.c
+CC:  armv7-m/up_systemreset.c
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/armv7-m/up_systemreset.c:60:6: warning: no previous prototype for 'up_systemreset' [-Wmissing-prototypes]
+CC:  armv7-m/up_unblocktask.c
+CC:  common/up_usestack.c
+CC:  armv7-m/up_doirq.c
+CC:  armv7-m/up_hardfault.c
+CC:  armv7-m/up_svcall.c
+CC:  armv7-m/up_stackcheck.c
+CC:  common/up_vfork.c
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/common/up_vfork.c:127:7: warning: no previous prototype for 'up_vfork' [-Wmissing-prototypes]
+CC:  armv7-m/up_vectors.c
+CC:  chip/stm32_otgfsdev.c
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c: In function 'stm32_epin_request':
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:1223:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c: In function 'stm32_ep0out_testmode':
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:1951:12: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c: In function 'stm32_ep_cancel':
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:4231:30: warning: variable 'priv' set but not used [-Wunused-but-set-variable]
+AR:  stm32_vectors.o up_saveusercontext.o up_fullcontextrestore.o up_switchcontext.o vfork.o up_exception.o up_memcpy.o up_fpu.o stm32_allocateheap.o stm32_start.o stm32_rcc.o stm32_lse.o stm32_lsi.o stm32_gpio.o stm32_exti_gpio.o stm32_flash.o stm32_irq.o stm32_timerisr.o stm32_dma.o stm32_lowputc.o stm32_serial.o stm32_spi.o stm32_sdio.o stm32_tim.o stm32_i2c.o stm32_waste.o stm32_idle.o stm32_pmstop.o stm32_pmstandby.o stm32_pmsleep.o stm32_pminitialize.o stm32_pwr.o stm32_wwdg.o stm32_dumpgpio.o up_assert.o up_blocktask.o up_copystate.o up_createstack.o up_mdelay.o up_udelay.o up_exit.o up_initialize.o up_initialstate.o up_interruptcontext.o up_memfault.o up_modifyreg8.o up_modifyreg16.o up_modifyreg32.o up_releasepending.o up_releasestack.o up_reprioritizertr.o up_schedulesigaction.o up_sigdeliver.o up_systemreset.o up_unblocktask.o up_usestack.o up_doirq.o up_hardfault.o up_svcall.o up_stackcheck.o up_vfork.o up_vectors.o stm32_otgfsdev.o
+CC:  mm_initialize.c
+CC:  mm_sem.c
+CC:  mm_addfreechunk.c
+CC:  mm_size2ndx.c
+CC:  mm_shrinkchunk.c
+CC:  mm_malloc.c
+CC:  mm_zalloc.c
+CC:  mm_calloc.c
+CC:  mm_realloc.c
+CC:  mm_memalign.c
+/home/ubuntu/apm/PX4Firmware/nuttx/mm/mm_memalign.c: In function 'memalign':
+/home/ubuntu/apm/PX4Firmware/nuttx/mm/mm_memalign.c:100:14: warning: cast from function call of type 'void *' to non-matching type 'unsigned int' [-Wbad-function-cast]
+CC:  mm_free.c
+CC:  mm_mallinfo.c
+AR:   mm_initialize.o mm_sem.o mm_addfreechunk.o mm_size2ndx.o mm_shrinkchunk.o mm_malloc.o mm_zalloc.o mm_calloc.o mm_realloc.o mm_memalign.o mm_free.o mm_mallinfo.o
+CC:  stdio/lib_fileno.c
+CC:  stdio/lib_printf.c
+CC:  stdio/lib_syslog.c
+CC:  stdio/lib_lowsyslog.c
+CC:  stdio/lib_sprintf.c
+CC:  stdio/lib_asprintf.c
+CC:  stdio/lib_snprintf.c
+CC:  stdio/lib_libsprintf.c
+CC:  stdio/lib_vsprintf.c
+CC:  stdio/lib_avsprintf.c
+CC:  stdio/lib_vsnprintf.c
+CC:  stdio/lib_libvsprintf.c
+In file included from /home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_libvsprintf.c:230:0:
+./stdio/lib_libdtoa.c: In function 'lib_dtoa':
+./stdio/lib_libdtoa.c:168:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+./stdio/lib_libdtoa.c:133:13: warning: variable 'digalloc' set but not used [-Wunused-but-set-variable]
+CC:  stdio/lib_meminstream.c
+CC:  stdio/lib_memoutstream.c
+CC:  stdio/lib_lowinstream.c
+CC:  stdio/lib_lowoutstream.c
+CC:  stdio/lib_zeroinstream.c
+CC:  stdio/lib_nullinstream.c
+CC:  stdio/lib_nulloutstream.c
+CC:  stdio/lib_sscanf.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_sscanf.c:154:5: warning: no previous prototype for 'sscanf' [-Wmissing-prototypes]
+CC:  stdio/lib_rawinstream.c
+CC:  stdio/lib_rawoutstream.c
+CC:  stdio/lib_fopen.c
+CC:  stdio/lib_fclose.c
+CC:  stdio/lib_fread.c
+CC:  stdio/lib_libfread.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_libfread.c: In function 'lib_fread':
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_libfread.c:207:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  stdio/lib_fseek.c
+CC:  stdio/lib_ftell.c
+CC:  stdio/lib_fsetpos.c
+CC:  stdio/lib_fgetpos.c
+CC:  stdio/lib_fgetc.c
+CC:  stdio/lib_fgets.c
+CC:  stdio/lib_gets.c
+CC:  stdio/lib_fwrite.c
+CC:  stdio/lib_libfwrite.c
+CC:  stdio/lib_fflush.c
+CC:  stdio/lib_libflushall.c
+CC:  stdio/lib_libfflush.c
+CC:  stdio/lib_rdflush.c
+CC:  stdio/lib_wrflush.c
+CC:  stdio/lib_fputc.c
+CC:  stdio/lib_puts.c
+CC:  stdio/lib_fputs.c
+CC:  stdio/lib_ungetc.c
+CC:  stdio/lib_vprintf.c
+CC:  stdio/lib_fprintf.c
+CC:  stdio/lib_vfprintf.c
+CC:  stdio/lib_vdprintf.c
+CC:  stdio/lib_stdinstream.c
+CC:  stdio/lib_stdoutstream.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_stdoutstream.c:86:5: warning: no previous prototype for 'stdoutstream_flush' [-Wmissing-prototypes]
+CC:  stdio/lib_perror.c
+CC:  stdio/lib_feof.c
+CC:  stdio/lib_ferror.c
+CC:  stdio/lib_clearerr.c
+CC:  stdio/lib_dtoa.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:754:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:754:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:754:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:754:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:754:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:754:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:754:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:754:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:754:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:754:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:755:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:755:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:755:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:755:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:755:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:755:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:755:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:755:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:755:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:755:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:756:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:756:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:756:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:760:1: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:760:1: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:760:1: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:760:1: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:760:1: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:761:1: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:761:1: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:761:1: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:761:1: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:761:1: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c: In function '__dtoa':
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1000:7: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1046:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1046:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1046:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1046:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1048:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1048:21: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1191:7: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1200:11: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1204:7: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1209:11: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1222:11: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1230:15: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1234:15: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1235:15: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1244:11: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1251:19: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1253:19: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1303:32: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1317:11: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdio/lib_dtoa.c:1317:15: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+CC:  stdio/lib_libnoflush.c
+CC:  stdlib/lib_abs.c
+CC:  stdlib/lib_abort.c
+CC:  stdlib/lib_imaxabs.c
+CC:  stdlib/lib_labs.c
+CC:  stdlib/lib_llabs.c
+CC:  stdlib/lib_rand.c
+CC:  stdlib/lib_qsort.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdlib/lib_qsort.c: In function 'qsort':
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdlib/lib_qsort.c:222:7: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdlib/lib_qsort.c:222:7: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdlib/lib_qsort.c:225:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/stdlib/lib_qsort.c:230:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  unistd/lib_getopt.c
+CC:  unistd/lib_getoptargp.c
+CC:  unistd/lib_getoptindp.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/unistd/lib_getoptindp.c:69:6: warning: no previous prototype for 'getoptindp' [-Wmissing-prototypes]
+CC:  unistd/lib_getoptoptp.c
+CC:  unistd/lib_chdir.c
+CC:  unistd/lib_getcwd.c
+CC:  sched/sched_getprioritymax.c
+CC:  sched/sched_getprioritymin.c
+CC:  string/lib_checkbase.c
+CC:  string/lib_isbasedigit.c
+CC:  string/lib_memset.c
+CC:  string/lib_memchr.c
+CC:  string/lib_memccpy.c
+CC:  string/lib_memcmp.c
+CC:  string/lib_memmove.c
+CC:  string/lib_skipspace.c
+CC:  string/lib_strcasecmp.c
+CC:  string/lib_strcat.c
+CC:  string/lib_strchr.c
+CC:  string/lib_strcpy.c
+CC:  string/lib_strcmp.c
+CC:  string/lib_strcspn.c
+CC:  string/lib_strdup.c
+CC:  string/lib_strerror.c
+CC:  string/lib_strlen.c
+CC:  string/lib_strnlen.c
+CC:  string/lib_strncasecmp.c
+CC:  string/lib_strncat.c
+CC:  string/lib_strncmp.c
+CC:  string/lib_strncpy.c
+CC:  string/lib_strndup.c
+CC:  string/lib_strcasestr.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strcasestr.c: In function 'strcasestr':
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strcasestr.c:104:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  string/lib_strpbrk.c
+CC:  string/lib_strrchr.c
+CC:  string/lib_strspn.c
+CC:  string/lib_strstr.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strstr.c: In function 'strstr':
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strstr.c:78:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  string/lib_strtok.c
+CC:  string/lib_strtokr.c
+CC:  string/lib_strtol.c
+CC:  string/lib_strtoll.c
+CC:  string/lib_strtoul.c
+CC:  string/lib_strtoull.c
+CC:  string/lib_strtod.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strtod.c: In function 'is_real':
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strtod.c:74:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strtod.c:74:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strtod.c: In function 'strtod':
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strtod.c:100:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strtod.c:100:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strtod.c:120:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strtod.c:129:7: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strtod.c:142:9: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strtod.c:154:7: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/string/lib_strtod.c:207:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+CC:  pthread/pthread_attrinit.c
+CC:  pthread/pthread_attrdestroy.c
+CC:  pthread/pthread_attrsetschedpolicy.c
+CC:  pthread/pthread_attrgetschedpolicy.c
+CC:  pthread/pthread_attrsetinheritsched.c
+CC:  pthread/pthread_attrgetinheritsched.c
+CC:  pthread/pthread_attrsetstacksize.c
+CC:  pthread/pthread_attrgetstacksize.c
+CC:  pthread/pthread_attrsetschedparam.c
+CC:  pthread/pthread_attrgetschedparam.c
+CC:  pthread/pthread_barrierattrinit.c
+CC:  pthread/pthread_barrierattrdestroy.c
+CC:  pthread/pthread_barrierattrgetpshared.c
+CC:  pthread/pthread_barrierattrsetpshared.c
+CC:  pthread/pthread_condattrinit.c
+CC:  pthread/pthread_condattrdestroy.c
+CC:  pthread/pthread_mutexattrinit.c
+CC:  pthread/pthread_mutexattrdestroy.c
+CC:  pthread/pthread_mutexattrgetpshared.c
+CC:  pthread/pthread_mutexattrsetpshared.c
+CC:  semaphore/sem_init.c
+CC:  semaphore/sem_getvalue.c
+CC:  signal/sig_emptyset.c
+CC:  signal/sig_fillset.c
+CC:  signal/sig_addset.c
+CC:  signal/sig_delset.c
+CC:  signal/sig_ismember.c
+CC:  mqueue/mq_setattr.c
+CC:  mqueue/mq_getattr.c
+CC:  fixedmath/lib_rint.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/fixedmath/lib_rint.c:76:10: warning: no previous prototype for 'rint' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/fixedmath/lib_rint.c: In function 'rint':
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/fixedmath/lib_rint.c:104:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/fixedmath/lib_rint.c:108:7: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/fixedmath/lib_rint.c:108:22: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/fixedmath/lib_rint.c:112:7: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/fixedmath/lib_rint.c:121:7: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/fixedmath/lib_rint.c:121:22: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/fixedmath/lib_rint.c:125:7: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+CC:  fixedmath/lib_fixedmath.c
+CC:  fixedmath/lib_b16sin.c
+CC:  fixedmath/lib_b16cos.c
+CC:  fixedmath/lib_b16atan2.c
+CC:  net/lib_etherntoa.c
+CC:  net/lib_htons.c
+CC:  net/lib_htonl.c
+CC:  net/lib_inetaddr.c
+CC:  net/lib_inetntoa.c
+CC:  net/lib_inetntop.c
+CC:  net/lib_inetpton.c
+CC:  time/lib_mktime.c
+CC:  time/lib_gmtime.c
+CC:  time/lib_gmtimer.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/time/lib_gmtimer.c: In function 'clock_utc2calendar':
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/time/lib_gmtimer.c:202:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/time/lib_gmtimer.c:242:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/time/lib_gmtimer.c:249:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  time/lib_strftime.c
+CC:  time/lib_calendar2utc.c
+CC:  time/lib_daysbeforemonth.c
+CC:  time/lib_isleapyear.c
+CC:  time/lib_time.c
+CC:  libgen/lib_basename.c
+CC:  libgen/lib_dirname.c
+CC:  dirent/lib_readdirr.c
+CC:  dirent/lib_telldir.c
+CC:  termios/lib_cfgetspeed.c
+CC:  termios/lib_cfsetspeed.c
+CC:  termios/lib_tcflush.c
+CC:  termios/lib_tcgetattr.c
+CC:  termios/lib_tcsetattr.c
+CC:  queue/sq_addlast.c
+CC:  queue/sq_addfirst.c
+CC:  queue/sq_addafter.c
+CC:  queue/sq_rem.c
+CC:  queue/sq_remlast.c
+CC:  queue/sq_remfirst.c
+CC:  queue/sq_remafter.c
+CC:  queue/dq_addlast.c
+CC:  queue/dq_addfirst.c
+CC:  queue/dq_addafter.c
+CC:  queue/dq_addbefore.c
+CC:  queue/dq_rem.c
+CC:  queue/dq_remlast.c
+CC:  queue/dq_remfirst.c
+CC:  misc/lib_init.c
+CC:  misc/lib_filesem.c
+CC:  misc/lib_sendfile.c
+CC:  misc/lib_streamsem.c
+CC:  misc/lib_match.c
+CC:  misc/lib_crc32.c
+CC:  misc/lib_dbg.c
+CC:  misc/lib_dumpbuffer.c
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/misc/lib_dumpbuffer.c: In function 'lib_dumpbuffer':
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/misc/lib_dumpbuffer.c:83:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/misc/lib_dumpbuffer.c:95:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/libc/misc/lib_dumpbuffer.c:115:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+AR:   lib_fileno.o lib_printf.o lib_syslog.o lib_lowsyslog.o lib_sprintf.o lib_asprintf.o lib_snprintf.o lib_libsprintf.o lib_vsprintf.o lib_avsprintf.o lib_vsnprintf.o lib_libvsprintf.o lib_meminstream.o lib_memoutstream.o lib_lowinstream.o lib_lowoutstream.o lib_zeroinstream.o lib_nullinstream.o lib_nulloutstream.o lib_sscanf.o lib_rawinstream.o lib_rawoutstream.o lib_fopen.o lib_fclose.o lib_fread.o lib_libfread.o lib_fseek.o lib_ftell.o lib_fsetpos.o lib_fgetpos.o lib_fgetc.o lib_fgets.o lib_gets.o lib_fwrite.o lib_libfwrite.o lib_fflush.o lib_libflushall.o lib_libfflush.o lib_rdflush.o lib_wrflush.o lib_fputc.o lib_puts.o lib_fputs.o lib_ungetc.o lib_vprintf.o lib_fprintf.o lib_vfprintf.o lib_vdprintf.o lib_stdinstream.o lib_stdoutstream.o lib_perror.o lib_feof.o lib_ferror.o lib_clearerr.o lib_dtoa.o lib_libnoflush.o lib_abs.o lib_abort.o lib_imaxabs.o lib_labs.o lib_llabs.o lib_rand.o lib_qsort.o lib_getopt.o lib_getoptargp.o lib_getoptindp.o lib_getoptoptp.o lib_chdir.o lib_getcwd.o sched_getprioritymax.o sched_getprioritymin.o lib_checkbase.o lib_isbasedigit.o lib_memset.o lib_memchr.o lib_memccpy.o lib_memcmp.o lib_memmove.o lib_skipspace.o lib_strcasecmp.o lib_strcat.o lib_strchr.o lib_strcpy.o lib_strcmp.o lib_strcspn.o lib_strdup.o lib_strerror.o lib_strlen.o lib_strnlen.o lib_strncasecmp.o lib_strncat.o lib_strncmp.o lib_strncpy.o lib_strndup.o lib_strcasestr.o lib_strpbrk.o lib_strrchr.o lib_strspn.o lib_strstr.o lib_strtok.o lib_strtokr.o lib_strtol.o lib_strtoll.o lib_strtoul.o lib_strtoull.o lib_strtod.o pthread_attrinit.o pthread_attrdestroy.o pthread_attrsetschedpolicy.o pthread_attrgetschedpolicy.o pthread_attrsetinheritsched.o pthread_attrgetinheritsched.o pthread_attrsetstacksize.o pthread_attrgetstacksize.o pthread_attrsetschedparam.o pthread_attrgetschedparam.o pthread_barrierattrinit.o pthread_barrierattrdestroy.o pthread_barrierattrgetpshared.o pthread_barrierattrsetpshared.o pthread_condattrinit.o pthread_condattrdestroy.o pthread_mutexattrinit.o pthread_mutexattrdestroy.o pthread_mutexattrgetpshared.o pthread_mutexattrsetpshared.o sem_init.o sem_getvalue.o sig_emptyset.o sig_fillset.o sig_addset.o sig_delset.o sig_ismember.o mq_setattr.o mq_getattr.o lib_rint.o lib_fixedmath.o lib_b16sin.o lib_b16cos.o lib_b16atan2.o lib_etherntoa.o lib_htons.o lib_htonl.o lib_inetaddr.o lib_inetntoa.o lib_inetntop.o lib_inetpton.o lib_mktime.o lib_gmtime.o lib_gmtimer.o lib_strftime.o lib_calendar2utc.o lib_daysbeforemonth.o lib_isleapyear.o lib_time.o lib_basename.o lib_dirname.o lib_readdirr.o lib_telldir.o lib_cfgetspeed.o lib_cfsetspeed.o lib_tcflush.o lib_tcgetattr.o lib_tcsetattr.o sq_addlast.o sq_addfirst.o sq_addafter.o sq_rem.o sq_remlast.o sq_remfirst.o sq_remafter.o dq_addlast.o dq_addfirst.o dq_addafter.o dq_addbefore.o dq_rem.o dq_remlast.o dq_remfirst.o lib_init.o lib_filesem.o lib_sendfile.o lib_streamsem.o lib_match.o lib_crc32.o lib_dbg.o lib_dumpbuffer.o
+CXX:  libxx_cxapurevirtual.cxx
+/home/ubuntu/apm/PX4Firmware/nuttx/libxx/libxx_cxapurevirtual.cxx: In function 'void __cxa_pure_virtual()':
+/home/ubuntu/apm/PX4Firmware/nuttx/libxx/libxx_cxapurevirtual.cxx:64:8: warning: no previous declaration for 'void __cxa_pure_virtual()' [-Wmissing-declarations]
+CXX:  libxx_eabi_atexit.cxx
+/home/ubuntu/apm/PX4Firmware/nuttx/libxx/libxx_eabi_atexit.cxx: In function 'int __aeabi_atexit(void*, __cxa_exitfunc_t, void*)':
+/home/ubuntu/apm/PX4Firmware/nuttx/libxx/libxx_eabi_atexit.cxx:74:7: warning: no previous declaration for 'int __aeabi_atexit(void*, __cxa_exitfunc_t, void*)' [-Wmissing-declarations]
+CXX:  libxx_cxa_atexit.cxx
+CXX:  libxx_delete.cxx
+CXX:  libxx_deletea.cxx
+CXX:  libxx_new.cxx
+CXX:  libxx_newa.cxx
+CXX:  libxx_stdthrow.cxx
+/home/ubuntu/apm/PX4Firmware/nuttx/libxx/libxx_stdthrow.cxx: In function 'void std::__throw_out_of_range(const char*)':
+/home/ubuntu/apm/PX4Firmware/nuttx/libxx/libxx_stdthrow.cxx:57:8: warning: no previous declaration for 'void std::__throw_out_of_range(const char*)' [-Wmissing-declarations]
+/home/ubuntu/apm/PX4Firmware/nuttx/libxx/libxx_stdthrow.cxx: In function 'void std::__throw_length_error(const char*)':
+/home/ubuntu/apm/PX4Firmware/nuttx/libxx/libxx_stdthrow.cxx:63:8: warning: no previous declaration for 'void std::__throw_length_error(const char*)' [-Wmissing-declarations]
+/home/ubuntu/apm/PX4Firmware/nuttx/libxx/libxx_stdthrow.cxx: In function 'void std::__throw_bad_alloc()':
+/home/ubuntu/apm/PX4Firmware/nuttx/libxx/libxx_stdthrow.cxx:69:8: warning: no previous declaration for 'void std::__throw_bad_alloc()' [-Wmissing-declarations]
+AR:    libxx_cxapurevirtual.o libxx_eabi_atexit.o libxx_cxa_atexit.o libxx_delete.o libxx_deletea.o libxx_new.o libxx_newa.o libxx_stdthrow.o
+CC:  builtin.c
+CC:  builtin_list.c
+CC:  exec_builtin.c
+AR:   builtin.o builtin_list.o exec_builtin.o
+CC:  nsh_main.c
+/home/ubuntu/apm/PX4Firmware/apps/examples/nsh/nsh_main.c:111:5: warning: no previous prototype for 'nsh_main' [-Wmissing-prototypes]
+AR:   nsh_main.o
+CC:  nsh_init.c
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_init.c:88:6: warning: no previous prototype for 'nsh_initialize' [-Wmissing-prototypes]
+CC:  nsh_parse.c
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_parse.c: In function 'help_cmdlist':
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_parse.c:493:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_parse.c:496:49: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_parse.c: At top level:
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_parse.c:884:7: warning: no previous prototype for 'nsh_argument' [-Wmissing-prototypes]
+CC:  nsh_console.c
+CC:  nsh_script.c
+CC:  nsh_session.c
+CC:  nsh_fscmds.c
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_fscmds.c: In function 'cmd_cmp':
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_fscmds.c:1304:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  nsh_ddcmd.c
+CC:  nsh_proccmds.c
+CC:  nsh_mmcmds.c
+CC:  nsh_envcmds.c
+CC:  nsh_dbgcmds.c
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_dbgcmds.c:92:5: warning: no previous prototype for 'mem_parse' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_dbgcmds.c: In function 'cmd_mb':
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_dbgcmds.c:159:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_dbgcmds.c: In function 'cmd_mh':
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_dbgcmds.c:212:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_dbgcmds.c: In function 'cmd_mw':
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_dbgcmds.c:265:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  nsh_builtin.c
+CC:  nsh_romfsetc.c
+CC:  nsh_mntcmds.c
+CC:  nsh_consolemain.c
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_consolemain.c:103:5: warning: no previous prototype for 'nsh_consolemain' [-Wmissing-prototypes]
+CC:  nsh_test.c
+CC:  nsh_usbdev.c
+AR:   nsh_init.o nsh_parse.o nsh_console.o nsh_script.o nsh_session.o nsh_fscmds.o nsh_ddcmd.o nsh_proccmds.o nsh_mmcmds.o nsh_envcmds.o nsh_dbgcmds.o nsh_builtin.o nsh_romfsetc.o nsh_mntcmds.o nsh_consolemain.o nsh_test.o nsh_usbdev.o
+CC:  readline.c
+AR:   readline.o
+CC:  err.c
+CC:  hx_stream.c
+CC:  perf_counter.c
+CC:  param/param.c
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/param/param.c: In function 'param_find_changed':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/param/param.c:171:38: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/param/param.c:171:38: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/param/param.c: In function 'param_reset':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/param/param.c:456:14: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/param/param.c:457:4: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/param/param.c: In function 'param_export':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/param/param.c:576:37: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/param/param.c:576:37: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+CC:  bson/tinybson.c
+CC:  conversions.c
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/conversions.c: In function 'rot2quat':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/conversions.c:92:2: warning: implicit declaration of function 'sqrtf' [-Wimplicit-function-declaration]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/conversions.c:92:9: warning: incompatible implicit declaration of built-in function 'sqrtf' [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/conversions.c: In function 'quat2rot':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/conversions.c:133:2: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/conversions.c:133:2: warning: incompatible implicit declaration of built-in function 'memset' [enabled by default]
+CC:  cpuload.c
+CC:  getopt_long.c
+CC:  up_cxxinitialize.c
+CC:  airspeed.c
+CC:  systemlib.c
+CC:  pid/pid.c
+CC:  geo/geo.c
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c: In function 'map_projection_init':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:66:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:66:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:67:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:67:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:80:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:80:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:81:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:81:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:90:8: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c: In function 'map_projection_project':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:104:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:104:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:105:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:105:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:114:8: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c: In function 'map_projection_reproject':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:128:24: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:129:24: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:137:8: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:146:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:146:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:150:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:150:19: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:171:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:171:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:172:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:172:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c: In function 'get_distance_to_next_waypoint':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:179:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:180:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:181:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:182:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:188:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c: In function 'get_bearing_to_next_waypoint':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:198:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:199:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:200:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:201:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:203:9: warning: unused variable 'd_lat' [-Wunused-variable]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c: In function 'get_distance_to_line':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:233:14: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:233:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:233:54: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:233:75: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:233:94: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:233:113: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:248:45: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c: In function 'get_distance_to_arc':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:284:14: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:284:33: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:284:55: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:284:77: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:284:95: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:284:95: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:332:31: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:333:31: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:334:3: warning: implicit declaration of function '_wrapPI' [-Wimplicit-function-declaration]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:334:3: warning: nested extern declaration of '_wrapPI' [-Wnested-externs]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:334:3: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:334:29: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:335:3: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:335:29: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:336:44: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:337:44: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:338:40: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:339:40: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:356:2: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c: In function '_wrap_pi':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/geo/geo.c:364:36: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+PRELINK:  systemlib.pre.o
+AR:  systemlib.pre.o
+CXX:  mixer.cpp
+CXX:  mixer_group.cpp
+CXX:  mixer_multirotor.cpp
+CXX:  mixer_simple.cpp
+PRELINK:  mixerlib.pre.o
+AR:  mixerlib.pre.o
+CC:  reboot.c
+PRELINK:  reboot.pre.o
+AR:  reboot.pre.o
+CC:  perf.c
+PRELINK:  perf.pre.o
+AR:  perf.pre.o
+CC:  top.c
+PRELINK:  top.pre.o
+AR:  top.pre.o
+CC:  boardinfo.c
+PRELINK:  boardinfo.pre.o
+AR:  boardinfo.pre.o
+CC:  mixer.c
+PRELINK:  mixer.pre.o
+AR:  mixer.pre.o
+CC:  24xxxx_mtd.c
+/home/ubuntu/apm/PX4Firmware/apps/systemcmds/eeprom/24xxxx_mtd.c:568:5: warning: no previous prototype for 'at24c_nuke' [-Wmissing-prototypes]
+CC:  eeprom.c
+PRELINK:  eeprom.pre.o
+AR:  eeprom.pre.o
+CC:  param.c
+/home/ubuntu/apm/PX4Firmware/apps/systemcmds/param/param.c: In function 'do_show':
+/home/ubuntu/apm/PX4Firmware/apps/systemcmds/param/param.c:186:2: warning: passing argument 2 of 'param_foreach' discards 'const' qualifier from pointer target type [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/param/param.h:235:16: note: expected 'void *' but argument is of type 'const char *'
+PRELINK:  param.pre.o
+AR:  param.pre.o
+CC:  bl_update.c
+PRELINK:  bl_update.pre.o
+AR:  bl_update.pre.o
+CC:  preflight_check.c
+/home/ubuntu/apm/PX4Firmware/apps/systemcmds/preflight_check/preflight_check.c: In function 'preflight_check_main':
+/home/ubuntu/apm/PX4Firmware/apps/systemcmds/preflight_check/preflight_check.c:66:2: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+/home/ubuntu/apm/PX4Firmware/apps/systemcmds/preflight_check/preflight_check.c:85:7: warning: 'fd' may be used uninitialized in this function [-Wuninitialized]
+PRELINK:  preflight_check.pre.o
+AR:  preflight_check.pre.o
+CC:  delay_test.c
+PRELINK:  delay_test.pre.o
+AR:  delay_test.pre.o
+CXX:  objects_common.cpp
+CXX:  uORB.cpp
+PRELINK:  uorb.pre.o
+AR:  uorb.pre.o
+CC:  mavlink.c
+In file included from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../protocol.h:41:0,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/common.h:26,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/mavlink.h:25,
+                 from /home/ubuntu/apm/PX4Firmware/apps/mavlink/mavlink.c:52:
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h: In function '_mavlink_send_uart':
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h:553:2: warning: passing argument 2 of 'mavlink_send_uart_bytes' discards 'const' qualifier from pointer target type [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/mavlink_bridge_header.h:76:13: note: expected 'uint8_t *' but argument is of type 'const uint8_t *'
+CC:  mavlink_log.c
+CC:  mavlink_parameters.c
+In file included from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../protocol.h:41:0,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/common.h:26,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/mavlink.h:25,
+                 from /home/ubuntu/apm/PX4Firmware/apps/mavlink/mavlink_parameters.c:43:
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h: In function '_mavlink_send_uart':
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h:553:2: warning: passing argument 2 of 'mavlink_send_uart_bytes' discards 'const' qualifier from pointer target type [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/mavlink_bridge_header.h:76:13: note: expected 'uint8_t *' but argument is of type 'const uint8_t *'
+CC:  mavlink_receiver.c
+In file included from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../protocol.h:41:0,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/common.h:26,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/mavlink.h:25,
+                 from /home/ubuntu/apm/PX4Firmware/apps/mavlink/mavlink_receiver.c:53:
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h: In function '_mavlink_send_uart':
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h:553:2: warning: passing argument 2 of 'mavlink_send_uart_bytes' discards 'const' qualifier from pointer target type [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/mavlink_bridge_header.h:76:13: note: expected 'uint8_t *' but argument is of type 'const uint8_t *'
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/mavlink_receiver.c: In function 'handle_message':
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/mavlink_receiver.c:442:4: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+CC:  missionlib.c
+In file included from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../protocol.h:41:0,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/common.h:26,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/mavlink.h:25,
+                 from /home/ubuntu/apm/PX4Firmware/apps/mavlink/missionlib.c:51:
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h: In function '_mavlink_send_uart':
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h:553:2: warning: passing argument 2 of 'mavlink_send_uart_bytes' discards 'const' qualifier from pointer target type [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/mavlink_bridge_header.h:76:13: note: expected 'uint8_t *' but argument is of type 'const uint8_t *'
+CC:  orb_listener.c
+In file included from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../protocol.h:41:0,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/common.h:26,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/mavlink.h:25,
+                 from /home/ubuntu/apm/PX4Firmware/apps/mavlink/orb_listener.c:50:
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h: In function '_mavlink_send_uart':
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h:553:2: warning: passing argument 2 of 'mavlink_send_uart_bytes' discards 'const' qualifier from pointer target type [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/mavlink_bridge_header.h:76:13: note: expected 'uint8_t *' but argument is of type 'const uint8_t *'
+CC:  waypoints.c
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:90:6: warning: no previous prototype for 'mavlink_wpm_send_waypoint_ack' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:125:6: warning: no previous prototype for 'mavlink_wpm_send_waypoint_current' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:155:6: warning: no previous prototype for 'mavlink_wpm_send_setpoint' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:170:6: warning: no previous prototype for 'mavlink_wpm_send_waypoint_count' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:187:6: warning: no previous prototype for 'mavlink_wpm_send_waypoint' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:206:6: warning: no previous prototype for 'mavlink_wpm_send_waypoint_request' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:233:6: warning: no previous prototype for 'mavlink_wpm_send_waypoint_reached' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:294:7: warning: no previous prototype for 'mavlink_wpm_distance_to_point_global_wgs84' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c: In function 'mavlink_wpm_distance_to_point_global_wgs84':
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:304:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:304:33: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:304:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:305:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:305:33: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:305:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:306:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:306:22: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:306:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:307:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:307:22: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:307:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:312:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:312:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:312:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:312:81: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:315:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c: At top level:
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:330:7: warning: no previous prototype for 'mavlink_wpm_distance_to_point_local' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:346:6: warning: no previous prototype for 'check_waypoints_reached' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c: In function 'check_waypoints_reached':
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:380:5: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:380:5: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c: In function 'mavlink_wpm_message_handler':
+/home/ubuntu/apm/PX4Firmware/apps/mavlink/waypoints.c:638:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+PRELINK:  mavlink.pre.o
+AR:  mavlink.pre.o
+CC:  mavlink.c
+In file included from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../protocol.h:41:0,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/common.h:26,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/mavlink.h:25,
+                 from /home/ubuntu/apm/PX4Firmware/apps/mavlink_onboard/mavlink.c:52:
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h: In function '_mavlink_send_uart':
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h:553:2: warning: passing argument 2 of 'mavlink_send_uart_bytes' discards 'const' qualifier from pointer target type [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink_onboard/mavlink_bridge_header.h:76:13: note: expected 'uint8_t *' but argument is of type 'const uint8_t *'
+CC:  mavlink_receiver.c
+In file included from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../protocol.h:41:0,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/common.h:26,
+                 from /home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/mavlink.h:25,
+                 from /home/ubuntu/apm/PX4Firmware/apps/mavlink_onboard/mavlink_receiver.c:53:
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h: In function '_mavlink_send_uart':
+/home/ubuntu/apm/PX4Firmware/nuttx/../mavlink/include/mavlink/v1.0/common/../mavlink_helpers.h:553:2: warning: passing argument 2 of 'mavlink_send_uart_bytes' discards 'const' qualifier from pointer target type [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/mavlink_onboard/mavlink_bridge_header.h:76:13: note: expected 'uint8_t *' but argument is of type 'const uint8_t *'
+PRELINK:  mavlink_onboard.pre.o
+AR:  mavlink_onboard.pre.o
+CC:  calibration_routines.c
+/home/ubuntu/apm/PX4Firmware/apps/commander/calibration_routines.c: In function 'sphere_fit_least_squares':
+/home/ubuntu/apm/PX4Firmware/apps/commander/calibration_routines.c:175:11: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/commander/calibration_routines.c:182:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/commander/calibration_routines.c:183:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/commander/calibration_routines.c:184:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+CC:  commander.c
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c: In function 'handle_command':
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1008:7: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1013:7: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1019:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1023:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1036:7: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1042:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1046:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c: In function 'commander_thread_main':
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1681:3: warning: passing argument 1 of 'orb_check' makes integer from pointer without a cast [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/uORB/uORB.h:230:12: note: expected 'int' but argument is of type 'const struct orb_metadata *'
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1403:11: warning: unused variable 'failsave_ll_start_time' [-Wunused-variable]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1395:8: warning: variable 'voltage_previous' set but not used [-Wunused-but-set-variable]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1339:10: warning: unused variable 'mode_switch_rc_value' [-Wunused-variable]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1330:10: warning: unused variable 'flight_env' [-Wunused-variable]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c: At top level:
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:234:12: warning: 'led_on' defined but not used [-Wunused-function]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:239:12: warning: 'led_off' defined but not used [-Wunused-function]
+CC:  state_machine_helper.c
+/home/ubuntu/apm/PX4Firmware/apps/commander/state_machine_helper.c: In function 'do_state_update':
+/home/ubuntu/apm/PX4Firmware/apps/commander/state_machine_helper.c:96:3: warning: implicit declaration of function 'warnx' [-Wimplicit-function-declaration]
+/home/ubuntu/apm/PX4Firmware/apps/commander/state_machine_helper.c:96:3: warning: nested extern declaration of 'warnx' [-Wnested-externs]
+/home/ubuntu/apm/PX4Firmware/apps/commander/state_machine_helper.c: In function 'update_state_machine_mode_guided':
+/home/ubuntu/apm/PX4Firmware/apps/commander/state_machine_helper.c:586:3: warning: implicit declaration of function 'tune_error' [-Wimplicit-function-declaration]
+/home/ubuntu/apm/PX4Firmware/apps/commander/state_machine_helper.c:586:3: warning: nested extern declaration of 'tune_error' [-Wnested-externs]
+PRELINK:  commander.pre.o
+AR:  commander.pre.o
+CC:  sdlog.c
+/home/ubuntu/apm/PX4Firmware/apps/sdlog/sdlog.c: In function 'sdlog_thread_main':
+/home/ubuntu/apm/PX4Firmware/apps/sdlog/sdlog.c:421:6: warning: unused variable 'blackbox_file_no' [-Wunused-variable]
+/home/ubuntu/apm/PX4Firmware/apps/sdlog/sdlog.c:411:6: warning: unused variable 'gpsfile_no' [-Wunused-variable]
+/home/ubuntu/apm/PX4Firmware/apps/sdlog/sdlog.c: In function 'file_copy':
+/home/ubuntu/apm/PX4Firmware/apps/sdlog/sdlog.c:782:7: warning: declaration of 'ret' shadows a previous local [-Wshadow]
+/home/ubuntu/apm/PX4Firmware/apps/sdlog/sdlog.c:763:6: warning: shadowed declaration is here [-Wshadow]
+/home/ubuntu/apm/PX4Firmware/apps/sdlog/sdlog.c: In function 'handle_command':
+/home/ubuntu/apm/PX4Firmware/apps/sdlog/sdlog.c:802:10: warning: unused variable 'result' [-Wunused-variable]
+/home/ubuntu/apm/PX4Firmware/apps/sdlog/sdlog.c: In function 'sdlog_thread_main':
+/home/ubuntu/apm/PX4Firmware/apps/sdlog/sdlog.c:739:1: warning: the frame size of 1488 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+CC:  sdlog_ringbuffer.c
+PRELINK:  sdlog.pre.o
+AR:  sdlog.pre.o
+CC:  sensor_params.c
+CXX:  sensors.cpp
+PRELINK:  sensors.pre.o
+AR:  sensors.pre.o
+CC:  i2c.c
+PRELINK:  i2c.pre.o
+AR:  i2c.pre.o
+CC:  px4fmu_can.c
+/home/ubuntu/apm/PX4Firmware/apps/drivers/boards/px4fmu/px4fmu_can.c:108:5: warning: no previous prototype for 'can_devinit' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/boards/px4fmu/px4fmu_can.c: In function 'can_devinit':
+/home/ubuntu/apm/PX4Firmware/apps/drivers/boards/px4fmu/px4fmu_can.c:119:3: warning: implicit declaration of function 'stm32_caninitialize' [-Wimplicit-function-declaration]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/boards/px4fmu/px4fmu_can.c:119:3: warning: nested extern declaration of 'stm32_caninitialize' [-Wnested-externs]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/boards/px4fmu/px4fmu_can.c:119:7: warning: assignment makes pointer from integer without a cast [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/boards/px4fmu/px4fmu_can.c:128:3: warning: implicit declaration of function 'can_register' [-Wimplicit-function-declaration]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/boards/px4fmu/px4fmu_can.c:128:3: warning: nested extern declaration of 'can_register' [-Wnested-externs]
+CC:  px4fmu_init.c
+/home/ubuntu/apm/PX4Firmware/apps/drivers/boards/px4fmu/px4fmu_init.c:146:14: warning: no previous prototype for 'nsh_archinitialize' [-Wmissing-prototypes]
+CC:  px4fmu_led.c
+CC:  px4fmu_pwm_servo.c
+CC:  px4fmu_spi.c
+CC:  px4fmu_usb.c
+/home/ubuntu/apm/PX4Firmware/apps/drivers/boards/px4fmu/px4fmu_usb.c:78:15: warning: no previous prototype for 'stm32_usbinitialize' [-Wmissing-prototypes]
+PRELINK:  brd_px4fmu.pre.o
+AR:  brd_px4fmu.pre.o
+CXX:  cdev.cpp
+CXX:  device.cpp
+CXX:  i2c.cpp
+CXX:  pio.cpp
+CXX:  spi.cpp
+PRELINK:  device.pre.o
+AR:  device.pre.o
+CXX:  ms5611.cpp
+/home/ubuntu/apm/PX4Firmware/apps/drivers/ms5611/ms5611.cpp: In function 'void ms5611::calibrate(unsigned int)':
+/home/ubuntu/apm/PX4Firmware/apps/drivers/ms5611/ms5611.cpp:1157:64: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/ms5611/ms5611.cpp:1161:47: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+PRELINK:  ms5611.pre.o
+AR:  ms5611.pre.o
+CXX:  hmc5883.cpp
+PRELINK:  hmc5883.pre.o
+AR:  hmc5883.pre.o
+CXX:  mpu6000.cpp
+PRELINK:  mpu6000.pre.o
+AR:  mpu6000.pre.o
+CXX:  bma180.cpp
+PRELINK:  bma180.pre.o
+AR:  bma180.pre.o
+CXX:  l3gd20.cpp
+PRELINK:  l3gd20.pre.o
+AR:  l3gd20.pre.o
+CXX:  px4io.cpp
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:1402:2: warning: #warning implement this [-Wcpp]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:1437:2: warning: #warning implement this [-Wcpp]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp: In constructor 'PX4IO::PX4IO()':
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:115:12: warning: 'PX4IO::_alarms' will be initialized after [-Wreorder]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:108:16: warning:   'volatile int PX4IO::_task' [-Wreorder]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:275:1: warning:   when initialized here [-Wreorder]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp: In member function 'int PX4IO::io_handle_alarms(uint16_t)':
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:815:1: warning: no return statement in function returning non-void [-Wreturn-type]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp: In function 'void {anonymous}::test()':
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:1352:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CXX:  uploader.cpp
+PRELINK:  px4io.pre.o
+AR:  px4io.pre.o
+CC:  drv_hrt.c
+CC:  drv_pwm_servo.c
+PRELINK:  stm32.pre.o
+AR:  stm32.pre.o
+CXX:  led.cpp
+PRELINK:  led.pre.o
+AR:  led.pre.o
+CXX:  blinkm.cpp
+/home/ubuntu/apm/PX4Firmware/apps/drivers/blinkm/blinkm.cpp: In member function 'void BlinkM::led()':
+/home/ubuntu/apm/PX4Firmware/apps/drivers/blinkm/blinkm.cpp:489:76: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/blinkm/blinkm.cpp: In function 'void blinkm_usage()':
+/home/ubuntu/apm/PX4Firmware/apps/drivers/blinkm/blinkm.cpp:833:6: warning: no previous declaration for 'void blinkm_usage()' [-Wmissing-declarations]
+PRELINK:  blinkm.pre.o
+AR:  blinkm.pre.o
+CXX:  tone_alarm.cpp
+PRELINK:  tone_alarm.pre.o
+AR:  tone_alarm.pre.o
+CXX:  adc.cpp
+PRELINK:  adc.pre.o
+AR:  adc.pre.o
+CXX:  fmu.cpp
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4fmu/fmu.cpp: In member function 'void PX4FMU::task_main()':
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4fmu/fmu.cpp:409:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+PRELINK:  fmu.pre.o
+AR:  fmu.pre.o
+CXX:  hil.cpp
+PRELINK:  hil.pre.o
+AR:  hil.pre.o
+CXX:  gps.cpp
+/home/ubuntu/apm/PX4Firmware/apps/drivers/gps/gps.cpp: In function 'int gps_main(int, char**)':
+/home/ubuntu/apm/PX4Firmware/apps/drivers/gps/gps.cpp:497:22: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+CXX:  gps_helper.cpp
+CXX:  mtk.cpp
+CXX:  ubx.cpp
+PRELINK:  gps.pre.o
+AR:  gps.pre.o
+CC:  test_adc.c
+CC:  test_bson.c
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_bson.c: In function 'decode_callback':
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_bson.c:126:15: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+CC:  test_float.c
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c: In function 'test_float':
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:71:16: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:97:3: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:131:42: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:139:15: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:158:2: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:169:2: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:186:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:187:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:191:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:191:11: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:204:9: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:208:3: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:215:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:216:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:217:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:217:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:219:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:219:15: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:227:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:227:14: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:235:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:235:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:247:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:247:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:247:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:247:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:250:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:255:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:261:2: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_float.c:266:3: warning: unsuffixed float constant [-Wunsuffixed-float-constants]
+CC:  test_gpio.c
+CC:  test_hott_telemetry.c
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_hott_telemetry.c: In function 'open_uart':
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_hott_telemetry.c:94:3: warning: implicit declaration of function 'errx' [-Wimplicit-function-declaration]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_hott_telemetry.c:94:3: warning: nested extern declaration of 'errx' [-Wnested-externs]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_hott_telemetry.c: In function 'test_hott_telemetry':
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_hott_telemetry.c:131:2: warning: implicit declaration of function 'warnx' [-Wimplicit-function-declaration]
+/home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_hott_telemetry.c:131:2: warning: nested extern declaration of 'warnx' [-Wnested-externs]
+CC:  test_hrt.c
+CC:  test_int.c
+CC:  test_jig_voltages.c
+CC:  test_led.c
+CC:  test_sensors.c
+CC:  test_servo.c
+CC:  test_sleep.c
+CC:  test_time.c
+CC:  test_uart_baudchange.c
+CC:  test_uart_console.c
+CC:  test_uart_loopback.c
+CC:  test_uart_send.c
+CC:  tests_file.c
+CC:  tests_main.c
+CC:  tests_param.c
+PRELINK:  tests.pre.o
+AR:  tests.pre.o
+CC:  cdcacm_main.c
+/home/ubuntu/apm/PX4Firmware/apps/examples/cdcacm/cdcacm_main.c:82:5: warning: no previous prototype for 'sercon_main' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/apps/examples/cdcacm/cdcacm_main.c:125:5: warning: no previous prototype for 'serdis_main' [-Wmissing-prototypes]
+AR:   cdcacm_main.o
+CXX:  /tmp/ArduPlane.build/ArduPlane.cpp
+In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
+                 from /home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde:36:
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'float get_speed_scaler()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:25:91: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void stabilize_stick_mixing()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:127:15: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:127:15: warning: implicit conversion from 'float' to 'double' to match other result of conditional [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:128:25: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:132:15: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:132:15: warning: implicit conversion from 'float' to 'double' to match other result of conditional [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:133:25: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void stabilize_yaw(float)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:160:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:160:19: warning: implicit conversion from 'float' to 'double' to match other result of conditional [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:161:29: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void calc_nav_yaw(float, float)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:287:29: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void calc_nav_roll()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:336:60: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void throttle_slew_limit(int16_t)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:365:51: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:365:123: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void set_servos()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:508:105: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:509:105: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In function 'void send_extended_status1(mavlink_channel_t, uint16_t)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:211:27: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:212:71: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:214:27: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In function 'void send_vfr_hud(mavlink_channel_t)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:393:38: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In function 'void send_raw_imu1(mavlink_channel_t)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:408:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:408:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:409:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:409:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:410:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:410:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:411:18: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:412:18: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:413:18: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In function 'void send_raw_imu2(mavlink_channel_t)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:426:54: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In member function '_Bool8 GCS_MAVLINK::stream_trigger(GCS_MAVLINK::streams)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:868:17: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In member function 'void GCS_MAVLINK::handleMessage(mavlink_message_t*)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::id' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::options' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::p1' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::alt' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::lat' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::lng' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1071:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1072:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1074:41: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1080:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1123:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1673:34: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1674:34: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void print_latlon(AP_HAL::BetterStream*, int32_t)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:194:6: warning: no previous declaration for 'void print_latlon(AP_HAL::BetterStream*, int32_t)' [-Wmissing-declarations]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Read_Control_Tuning()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Read_Nav_Tuning()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:465:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:465:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:465:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:465:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:465:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Read_GPS()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:538:16: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:538:16: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Read_IMU()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Write_Current()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:589:64: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:590:61: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Read_Current()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:601:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:601:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_logic.pde: In function '_Bool8 verify_land()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_logic.pde:335:63: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde: In function 'void navigate()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde:22:23: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde: In function 'void calc_airspeed_errors()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde:96:97: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde: In function 'void update_loiter()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde:154:43: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde: In function 'int32_t read_barometer()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:24:61: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde: In function 'void read_battery()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:50:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:50:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:50:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:55:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:55:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:55:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:55:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:56:75: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:56:75: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'int8_t setup_flightmodes(uint8_t, const Menu::arg*)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:243:28: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'void report_xtrack()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:443:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'void report_compass()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:505:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:511:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:511:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:511:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'void print_PID(PID*)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:537:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:537:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:537:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'void print_accel_offsets_and_scaling()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'void print_gyro_offsets()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:653:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:653:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:653:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde: In function 'int8_t test_battery(uint8_t, const Menu::arg*)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:263:28: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:263:28: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:263:28: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:268:28: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:268:28: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:268:28: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde: In function 'int8_t test_ins(uint8_t, const Menu::arg*)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:521:24: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:521:24: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:521:24: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:521:24: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:521:24: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:521:24: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde: In function 'int8_t test_mag(uint8_t, const Menu::arg*)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:593:32: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:593:32: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:593:32: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde: In function 'int8_t test_airspeed(uint8_t, const Menu::arg*)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:631:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:647:24: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde: In function 'int8_t test_pressure(uint8_t, const Menu::arg*)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:674:24: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:674:24: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+%% libraries/APM_Control/AP_PitchController.o
+CXX:  ../mk/../libraries/APM_Control/AP_PitchController.cpp
+In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_PitchController.h:6,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_PitchController.cpp:13:
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/APM_Control/AP_RollController.o
+CXX:  ../mk/../libraries/APM_Control/AP_RollController.cpp
+In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_RollController.h:6,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_RollController.cpp:13:
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/APM_Control/AP_YawController.o
+CXX:  ../mk/../libraries/APM_Control/AP_YawController.cpp
+In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_YawController.h:6,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_YawController.cpp:12:
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/APM_OBC/APM_OBC.o
+CXX:  ../mk/../libraries/APM_OBC/APM_OBC.cpp
+%% libraries/AP_ADC/AP_ADC.o
+CXX:  ../mk/../libraries/AP_ADC/AP_ADC.cpp
+%% libraries/AP_ADC/AP_ADC_ADS7844.o
+CXX:  ../mk/../libraries/AP_ADC/AP_ADC_ADS7844.cpp
+%% libraries/AP_ADC/AP_ADC_HIL.o
+CXX:  ../mk/../libraries/AP_ADC/AP_ADC_HIL.cpp
+%% libraries/AP_ADC_AnalogSource/AP_ADC_AnalogSource.o
+CXX:  ../mk/../libraries/AP_ADC_AnalogSource/AP_ADC_AnalogSource.cpp
+%% libraries/AP_AHRS/AP_AHRS.o
+CXX:  ../mk/../libraries/AP_AHRS/AP_AHRS.cpp
+In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS.cpp:9:
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/AP_AHRS/AP_AHRS_DCM.o
+CXX:  ../mk/../libraries/AP_AHRS/AP_AHRS_DCM.cpp
+In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_DCM.cpp:16:
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_DCM.cpp: In member function 'void AP_AHRS_DCM::drift_correction(float)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_DCM.cpp:536:39: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/AP_AHRS/AP_AHRS_HIL.o
+CXX:  ../mk/../libraries/AP_AHRS/AP_AHRS_HIL.cpp
+In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_HIL.cpp:13:
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/AP_AHRS/AP_AHRS_MPU6000.o
+CXX:  ../mk/../libraries/AP_AHRS/AP_AHRS_MPU6000.cpp
+In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_MPU6000.cpp:14:
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_MPU6000.cpp: In member function 'void AP_AHRS_MPU6000::drift_correction_yaw()':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_MPU6000.cpp:263:26: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/AP_Airspeed/AP_Airspeed.o
+CXX:  ../mk/../libraries/AP_Airspeed/AP_Airspeed.cpp
+In file included from /home/ubuntu/apm/ardupilot-mega/libraries/AP_Airspeed/AP_Airspeed.cpp:14:0:
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/AP_Baro/AP_Baro.o
+CXX:  ../mk/../libraries/AP_Baro/AP_Baro.cpp
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro.cpp: In member function 'void AP_Baro::calibrate()':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro.cpp:46:35: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/AP_Baro/AP_Baro_BMP085.o
+CXX:  ../mk/../libraries/AP_Baro/AP_Baro_BMP085.cpp
+%% libraries/AP_Baro/AP_Baro_BMP085_hil.o
+CXX:  ../mk/../libraries/AP_Baro/AP_Baro_BMP085_hil.cpp
+%% libraries/AP_Baro/AP_Baro_MS5611.o
+CXX:  ../mk/../libraries/AP_Baro/AP_Baro_MS5611.cpp
+%% libraries/AP_Baro/AP_Baro_PX4.o
+CXX:  ../mk/../libraries/AP_Baro/AP_Baro_PX4.cpp
+%% libraries/AP_Camera/AP_Camera.o
+CXX:  ../mk/../libraries/AP_Camera/AP_Camera.cpp
+%% libraries/AP_Common/c++.o
+CXX:  ../mk/../libraries/AP_Common/c++.cpp
+%% libraries/AP_Compass/AP_Compass_HIL.o
+CXX:  ../mk/../libraries/AP_Compass/AP_Compass_HIL.cpp
+%% libraries/AP_Compass/AP_Compass_HMC5843.o
+CXX:  ../mk/../libraries/AP_Compass/AP_Compass_HMC5843.cpp
+%% libraries/AP_Compass/AP_Compass_PX4.o
+CXX:  ../mk/../libraries/AP_Compass/AP_Compass_PX4.cpp
+%% libraries/AP_Compass/Compass.o
+CXX:  ../mk/../libraries/AP_Compass/Compass.cpp
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.cpp: In member function 'virtual float Compass::calculate_heading(const Matrix3f&)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.cpp:185:22: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/AP_Declination/AP_Declination.o
+CXX:  ../mk/../libraries/AP_Declination/AP_Declination.cpp
+%% libraries/AP_GPS/AP_GPS_406.o
+CXX:  ../mk/../libraries/AP_GPS/AP_GPS_406.cpp
+%% libraries/AP_GPS/AP_GPS_Auto.o
+CXX:  ../mk/../libraries/AP_GPS/AP_GPS_Auto.cpp
+%% libraries/AP_GPS/AP_GPS_HIL.o
+CXX:  ../mk/../libraries/AP_GPS/AP_GPS_HIL.cpp
+%% libraries/AP_GPS/AP_GPS_MTK.o
+CXX:  ../mk/../libraries/AP_GPS/AP_GPS_MTK.cpp
+%% libraries/AP_GPS/AP_GPS_MTK19.o
+CXX:  ../mk/../libraries/AP_GPS/AP_GPS_MTK19.cpp
+%% libraries/AP_GPS/AP_GPS_NMEA.o
+CXX:  ../mk/../libraries/AP_GPS/AP_GPS_NMEA.cpp
+%% libraries/AP_GPS/AP_GPS_SIRF.o
+CXX:  ../mk/../libraries/AP_GPS/AP_GPS_SIRF.cpp
+%% libraries/AP_GPS/AP_GPS_UBLOX.o
+CXX:  ../mk/../libraries/AP_GPS/AP_GPS_UBLOX.cpp
+%% libraries/AP_GPS/GPS.o
+CXX:  ../mk/../libraries/AP_GPS/GPS.cpp
+%% libraries/AP_HAL_AVR/AnalogIn_ADC.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/AnalogIn_ADC.cpp
+%% libraries/AP_HAL_AVR/AnalogIn_Common.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/AnalogIn_Common.cpp
+%% libraries/AP_HAL_AVR/Console.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/Console.cpp
+%% libraries/AP_HAL_AVR/GPIO.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/GPIO.cpp
+%% libraries/AP_HAL_AVR/HAL_AVR_APM1_Class.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/HAL_AVR_APM1_Class.cpp
+%% libraries/AP_HAL_AVR/HAL_AVR_APM2_Class.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/HAL_AVR_APM2_Class.cpp
+%% libraries/AP_HAL_AVR/I2CDriver.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/I2CDriver.cpp
+%% libraries/AP_HAL_AVR/RCInput_APM1.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/RCInput_APM1.cpp
+%% libraries/AP_HAL_AVR/RCInput_APM2.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/RCInput_APM2.cpp
+%% libraries/AP_HAL_AVR/RCOutput_APM1.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/RCOutput_APM1.cpp
+%% libraries/AP_HAL_AVR/RCOutput_APM2.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/RCOutput_APM2.cpp
+%% libraries/AP_HAL_AVR/SPIDeviceManager_APM1.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/SPIDeviceManager_APM1.cpp
+%% libraries/AP_HAL_AVR/SPIDeviceManager_APM2.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/SPIDeviceManager_APM2.cpp
+%% libraries/AP_HAL_AVR/SPIDevice_SPI0.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/SPIDevice_SPI0.cpp
+%% libraries/AP_HAL_AVR/SPIDevice_SPI2.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/SPIDevice_SPI2.cpp
+%% libraries/AP_HAL_AVR/SPIDevice_SPI3.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/SPIDevice_SPI3.cpp
+%% libraries/AP_HAL_AVR/Scheduler.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/Scheduler.cpp
+%% libraries/AP_HAL_AVR/Scheduler_Timer.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/Scheduler_Timer.cpp
+%% libraries/AP_HAL_AVR/Semaphores.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/Semaphores.cpp
+%% libraries/AP_HAL_AVR/Storage.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/Storage.cpp
+%% libraries/AP_HAL_AVR/UARTDriver.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/UARTDriver.cpp
+%% libraries/AP_HAL_AVR/Util.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/Util.cpp
+%% libraries/AP_HAL_AVR_SITL/AnalogIn.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/AnalogIn.cpp
+%% libraries/AP_HAL_AVR_SITL/Console.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/Console.cpp
+%% libraries/AP_HAL_AVR_SITL/HAL_AVR_SITL_Class.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/HAL_AVR_SITL_Class.cpp
+%% libraries/AP_HAL_AVR_SITL/RCInput.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/RCInput.cpp
+%% libraries/AP_HAL_AVR_SITL/RCOutput.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/RCOutput.cpp
+%% libraries/AP_HAL_AVR_SITL/SITL_State.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/SITL_State.cpp
+%% libraries/AP_HAL_AVR_SITL/Scheduler.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/Scheduler.cpp
+%% libraries/AP_HAL_AVR_SITL/Storage.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/Storage.cpp
+%% libraries/AP_HAL_AVR_SITL/UARTDriver.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/UARTDriver.cpp
+%% libraries/AP_HAL_AVR_SITL/Util.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/Util.cpp
+%% libraries/AP_HAL_AVR_SITL/sitl_barometer.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/sitl_barometer.cpp
+%% libraries/AP_HAL_AVR_SITL/sitl_compass.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/sitl_compass.cpp
+%% libraries/AP_HAL_AVR_SITL/sitl_gps.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/sitl_gps.cpp
+%% libraries/AP_HAL_AVR_SITL/sitl_ins.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/sitl_ins.cpp
+%% libraries/AP_HAL_Empty/AnalogIn.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/AnalogIn.cpp
+%% libraries/AP_HAL_Empty/Console.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/Console.cpp
+%% libraries/AP_HAL_Empty/GPIO.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/GPIO.cpp
+%% libraries/AP_HAL_Empty/HAL_Empty_Class.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/HAL_Empty_Class.cpp
+%% libraries/AP_HAL_Empty/I2CDriver.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/I2CDriver.cpp
+%% libraries/AP_HAL_Empty/PrivateMember.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/PrivateMember.cpp
+%% libraries/AP_HAL_Empty/RCInput.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/RCInput.cpp
+%% libraries/AP_HAL_Empty/RCOutput.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/RCOutput.cpp
+%% libraries/AP_HAL_Empty/SPIDriver.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/SPIDriver.cpp
+%% libraries/AP_HAL_Empty/Scheduler.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/Scheduler.cpp
+%% libraries/AP_HAL_Empty/Semaphores.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/Semaphores.cpp
+%% libraries/AP_HAL_Empty/Storage.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/Storage.cpp
+%% libraries/AP_HAL_Empty/UARTDriver.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/UARTDriver.cpp
+%% libraries/AP_HAL_Empty/Util.o
+CXX:  ../mk/../libraries/AP_HAL_Empty/Util.cpp
+%% libraries/AP_HAL_PX4/AnalogIn.o
+CXX:  ../mk/../libraries/AP_HAL_PX4/AnalogIn.cpp
+%% libraries/AP_HAL_PX4/Console.o
+CXX:  ../mk/../libraries/AP_HAL_PX4/Console.cpp
+%% libraries/AP_HAL_PX4/HAL_PX4_Class.o
+CXX:  ../mk/../libraries/AP_HAL_PX4/HAL_PX4_Class.cpp
+%% libraries/AP_HAL_PX4/RCInput.o
+CXX:  ../mk/../libraries/AP_HAL_PX4/RCInput.cpp
+%% libraries/AP_HAL_PX4/RCOutput.o
+CXX:  ../mk/../libraries/AP_HAL_PX4/RCOutput.cpp
+%% libraries/AP_HAL_PX4/Scheduler.o
+CXX:  ../mk/../libraries/AP_HAL_PX4/Scheduler.cpp
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/Scheduler.cpp: In member function 'virtual void PX4::PX4Scheduler::init(void*)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/Scheduler.cpp:50:95: warning: converting from 'void* (PX4::PX4Scheduler::*)()' to 'pthread_startroutine_t {aka void* (*)(void*)}' [-Wpmf-conversions]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/Scheduler.cpp:60:92: warning: converting from 'void* (PX4::PX4Scheduler::*)()' to 'pthread_startroutine_t {aka void* (*)(void*)}' [-Wpmf-conversions]
+%% libraries/AP_HAL_PX4/Storage.o
+CXX:  ../mk/../libraries/AP_HAL_PX4/Storage.cpp
+%% libraries/AP_HAL_PX4/UARTDriver.o
+CXX:  ../mk/../libraries/AP_HAL_PX4/UARTDriver.cpp
+%% libraries/AP_HAL_PX4/Util.o
+CXX:  ../mk/../libraries/AP_HAL_PX4/Util.cpp
+%% libraries/AP_InertialSensor/AP_InertialSensor.o
+CXX:  ../mk/../libraries/AP_InertialSensor/AP_InertialSensor.cpp
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp: In member function 'virtual void AP_InertialSensor::init(AP_InertialSensor::Start_style, AP_InertialSensor::Sample_rate, void (*)(_Bool8))':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:108:26: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:108:48: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:108:70: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp: In member function 'virtual void AP_InertialSensor::_init_gyro(void (*)(_Bool8))':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:215:18: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp: In member function 'virtual _Bool8 AP_InertialSensor::calibrate_accel(void (*)(_Bool8), AP_InertialSensor_UserInteract*, float&, float&)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp: In member function 'virtual void AP_InertialSensor::_calibrate_find_delta(float*, float (*)[6], float*)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:524:23: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/AP_InertialSensor/AP_InertialSensor_MPU6000.o
+CXX:  ../mk/../libraries/AP_InertialSensor/AP_InertialSensor_MPU6000.cpp
+%% libraries/AP_InertialSensor/AP_InertialSensor_Oilpan.o
+CXX:  ../mk/../libraries/AP_InertialSensor/AP_InertialSensor_Oilpan.cpp
+%% libraries/AP_InertialSensor/AP_InertialSensor_PX4.o
+CXX:  ../mk/../libraries/AP_InertialSensor/AP_InertialSensor_PX4.cpp
+%% libraries/AP_InertialSensor/AP_InertialSensor_Stub.o
+CXX:  ../mk/../libraries/AP_InertialSensor/AP_InertialSensor_Stub.cpp
+%% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.o
+CXX:  ../mk/../libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.cpp
+%% libraries/AP_Math/AP_Math.o
+CXX:  ../mk/../libraries/AP_Math/AP_Math.cpp
+%% libraries/AP_Math/location.o
+CXX:  ../mk/../libraries/AP_Math/location.cpp
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/location.cpp: In function '_Bool8 location_passed_point(Location&, Location&, Location&)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/location.cpp:90:49: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/location.cpp:94:25: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/location.cpp: In function 'void location_offset(Location*, float, float)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/location.cpp:136:22: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/location.cpp:136:39: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/AP_Math/matrix3.o
+CXX:  ../mk/../libraries/AP_Math/matrix3.cpp
+%% libraries/AP_Math/polygon.o
+CXX:  ../mk/../libraries/AP_Math/polygon.cpp
+%% libraries/AP_Math/quaternion.o
+CXX:  ../mk/../libraries/AP_Math/quaternion.cpp
+%% libraries/AP_Math/vector2.o
+CXX:  ../mk/../libraries/AP_Math/vector2.cpp
+%% libraries/AP_Math/vector3.o
+CXX:  ../mk/../libraries/AP_Math/vector3.cpp
+%% libraries/AP_Menu/AP_Menu.o
+CXX:  ../mk/../libraries/AP_Menu/AP_Menu.cpp
+%% libraries/AP_Mount/AP_Mount.o
+CXX:  ../mk/../libraries/AP_Mount/AP_Mount.cpp
+In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
+                 from ../mk/../libraries/AP_Mount/AP_Mount.h:27,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_Mount/AP_Mount.cpp:6:
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
+../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+%% libraries/AP_Param/AP_Param.o
+CXX:  ../mk/../libraries/AP_Param/AP_Param.cpp
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Param/AP_Param.cpp: In member function '_Bool8 AP_Param::save()':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Param/AP_Param.cpp:695:19: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Param/AP_Param.cpp: In static member function 'static void AP_Param::show_all()':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Param/AP_Param.cpp:1036:26: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+%% libraries/AP_Progmem/AP_Progmem_AVR.o
+CXX:  ../mk/../libraries/AP_Progmem/AP_Progmem_AVR.cpp
+%% libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.o
+CXX:  ../mk/../libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.cpp
+%% libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarXL.o
+CXX:  ../mk/../libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarXL.cpp
+%% libraries/AP_RangeFinder/AP_RangeFinder_SharpGP2Y.o
+CXX:  ../mk/../libraries/AP_RangeFinder/AP_RangeFinder_SharpGP2Y.cpp
+%% libraries/AP_RangeFinder/RangeFinder.o
+CXX:  ../mk/../libraries/AP_RangeFinder/RangeFinder.cpp
+%% libraries/AP_Relay/AP_Relay.o
+CXX:  ../mk/../libraries/AP_Relay/AP_Relay.cpp
+%% libraries/DataFlash/DataFlash.o
+CXX:  ../mk/../libraries/DataFlash/DataFlash.cpp
+%% libraries/DataFlash/DataFlash_APM1.o
+CXX:  ../mk/../libraries/DataFlash/DataFlash_APM1.cpp
+%% libraries/DataFlash/DataFlash_APM2.o
+CXX:  ../mk/../libraries/DataFlash/DataFlash_APM2.cpp
+%% libraries/DataFlash/DataFlash_Empty.o
+CXX:  ../mk/../libraries/DataFlash/DataFlash_Empty.cpp
+%% libraries/DataFlash/DataFlash_SITL.o
+CXX:  ../mk/../libraries/DataFlash/DataFlash_SITL.cpp
+%% libraries/DataFlash/LogFile.o
+CXX:  ../mk/../libraries/DataFlash/LogFile.cpp
+%% libraries/Filter/DerivativeFilter.o
+CXX:  ../mk/../libraries/Filter/DerivativeFilter.cpp
+%% libraries/GCS_MAVLink/GCS_MAVLink.o
+CXX:  ../mk/../libraries/GCS_MAVLink/GCS_MAVLink.cpp
+In file included from /home/ubuntu/apm/ardupilot-mega/libraries/GCS_MAVLink/GCS_MAVLink.cpp:19:0:
+/home/ubuntu/apm/ardupilot-mega/libraries/GCS_MAVLink/include/mavlink/v1.0/mavlink_helpers.h: In function 'mavlink_message_t* mavlink_get_channel_buffer(uint8_t)':
+/home/ubuntu/apm/ardupilot-mega/libraries/GCS_MAVLink/include/mavlink/v1.0/mavlink_helpers.h:27:35: warning: no previous declaration for 'mavlink_message_t* mavlink_get_channel_buffer(uint8_t)' [-Wmissing-declarations]
+/home/ubuntu/apm/ardupilot-mega/libraries/GCS_MAVLink/GCS_MAVLink.cpp: At global scope:
+/home/ubuntu/apm/ardupilot-mega/libraries/GCS_MAVLink/GCS_MAVLink.cpp:26:43: warning: missing initializer for member '__mavlink_system::mode' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/libraries/GCS_MAVLink/GCS_MAVLink.cpp:26:43: warning: missing initializer for member '__mavlink_system::nav_mode' [-Wmissing-field-initializers]
+%% libraries/PID/PID.o
+CXX:  ../mk/../libraries/PID/PID.cpp
+%% libraries/RC_Channel/RC_Channel.o
+CXX:  ../mk/../libraries/RC_Channel/RC_Channel.cpp
+%% libraries/RC_Channel/RC_Channel_aux.o
+CXX:  ../mk/../libraries/RC_Channel/RC_Channel_aux.cpp
+%% libraries/SITL/SITL.o
+CXX:  ../mk/../libraries/SITL/SITL.cpp
+%% libraries/memcheck/memcheck.o
+CXX:  ../mk/../libraries/memcheck/memcheck.cpp
+/home/ubuntu/apm/ardupilot-mega/libraries/memcheck/memcheck.cpp: In function 'void memcheck_update_stackptr()':
+/home/ubuntu/apm/ardupilot-mega/libraries/memcheck/memcheck.cpp:31:6: warning: no previous declaration for 'void memcheck_update_stackptr()' [-Wmissing-declarations]
+/home/ubuntu/apm/ardupilot-mega/libraries/memcheck/memcheck.cpp: In function 'void memcheck_init()':
+/home/ubuntu/apm/ardupilot-mega/libraries/memcheck/memcheck.cpp:42:6: warning: no previous declaration for 'void memcheck_init()' [-Wmissing-declarations]
+/home/ubuntu/apm/ardupilot-mega/libraries/memcheck/memcheck.cpp: In function 'unsigned int memcheck_available_memory()':
+/home/ubuntu/apm/ardupilot-mega/libraries/memcheck/memcheck.cpp:59:10: warning: no previous declaration for 'unsigned int memcheck_available_memory()' [-Wmissing-declarations]
+%% libraries/AP_HAL/utility/Print.o
+CXX:  ../mk/../libraries/AP_HAL/utility/Print.cpp
+%% libraries/AP_HAL_AVR/utility/ISRRegistry.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/utility/ISRRegistry.cpp
+%% libraries/AP_HAL_AVR/utility/print_vprintf.o
+CXX:  ../mk/../libraries/AP_HAL_AVR/utility/print_vprintf.cpp
+%% libraries/AP_HAL_AVR_SITL/utility/print_vprintf.o
+CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/utility/print_vprintf.cpp
+%% libraries/AP_HAL_AVR/utility/pins_arduino_mega.o
+CC:  ../mk/../libraries/AP_HAL_AVR/utility/pins_arduino_mega.c
+%% libraries/AP_HAL_AVR/utility/ftoa_engine.o
+AS:  ../mk/../libraries/AP_HAL_AVR/utility/ftoa_engine.S
+%% libraries/AP_HAL_AVR/utility/ultoa_invert.o
+AS:  ../mk/../libraries/AP_HAL_AVR/utility/ultoa_invert.S
+PRELINK:  ArduPlane.pre.o
+%% .built
+AR:  ArduPlane.pre.o
+CC:  fs_close.c
+CC:  fs_closedir.c
+CC:  fs_dup.c
+CC:  fs_dup2.c
+CC:  fs_fcntl.c
+CC:  fs_filedup.c
+CC:  fs_filedup2.c
+CC:  fs_ioctl.c
+CC:  fs_lseek.c
+CC:  fs_open.c
+CC:  fs_opendir.c
+CC:  fs_poll.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fs_poll.c: In function 'poll_setup':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fs_poll.c:163:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fs_poll.c: In function 'poll_teardown':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fs_poll.c:202:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  fs_read.c
+CC:  fs_readdir.c
+CC:  fs_rewinddir.c
+CC:  fs_seekdir.c
+CC:  fs_stat.c
+CC:  fs_statfs.c
+CC:  fs_select.c
+CC:  fs_write.c
+CC:  fs_files.c
+CC:  fs_foreachinode.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fs_foreachinode.c:98:5: warning: no previous prototype for 'foreach_inodelevel' [-Wmissing-prototypes]
+CC:  fs_inode.c
+CC:  fs_inodeaddref.c
+CC:  fs_inodefind.c
+CC:  fs_inoderelease.c
+CC:  fs_inoderemove.c
+CC:  fs_inodereserve.c
+CC:  fs_registerdriver.c
+CC:  fs_unregisterdriver.c
+CC:  fs_registerblockdriver.c
+CC:  fs_unregisterblockdriver.c
+CC:  fs_findblockdriver.c
+CC:  fs_openblockdriver.c
+CC:  fs_closeblockdriver.c
+CC:  mmap/fs_mmap.c
+CC:  fs_fdopen.c
+CC:  fs_fsync.c
+CC:  fs_mkdir.c
+CC:  fs_mount.c
+CC:  fs_rename.c
+CC:  fs_rmdir.c
+CC:  fs_umount.c
+CC:  fs_unlink.c
+CC:  fs_foreachmountpoint.c
+CC:  fat/fs_fat32.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c: In function 'fat_read':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c:600:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c: In function 'fat_write':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c:671:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c:849:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c: In function 'fat_seek':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c:999:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c:1052:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c: In function 'fat_unlink':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c:1879:4: warning: #warning "Need to defer deleting cluster chain if the file is open" [-Wcpp]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c: In function 'fat_mkdir':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c:2047:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c: In function 'fat_rmdir':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32.c:2131:4: warning: #warning "Need to defer deleting cluster chain if the directory is open" [-Wcpp]
+CC:  fat/fs_fat32dirent.c
+CC:  fat/fs_fat32attrib.c
+CC:  fat/fs_fat32util.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c: In function 'fat_checkbootrecord':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c:178:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c:198:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c:225:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c: In function 'fat_hwread':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c:739:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c: In function 'fat_hwwrite':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c:771:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c: In function 'fat_getcluster':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c:855:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c: In function 'fat_putcluster':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c:996:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c: In function 'fat_extendchain':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c:1182:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c: In function 'fat_fscacheflush':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c:1474:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c: In function 'fat_nfreeclusters':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c:1728:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_fat32util.c:1755:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  fat/fs_mkfatfs.c
+CC:  fat/fs_configfat.c
+CC:  fat/fs_writefat.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_writefat.c: In function 'mkfatfs_writefat':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/fat/fs_writefat.c:402:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  romfs/fs_romfs.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/romfs/fs_romfs.c: In function 'romfs_seek':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/romfs/fs_romfs.c:537:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  romfs/fs_romfsutil.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/romfs/fs_romfsutil.c: In function 'romfs_checkentry':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/romfs/fs_romfsutil.c:169:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/romfs/fs_romfsutil.c: At top level:
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/romfs/fs_romfsutil.c:203:9: warning: no previous prototype for 'romfs_devcacheread' [-Wmissing-prototypes]
+CC:  nxffs/nxffs_block.c
+CC:  nxffs/nxffs_blockstats.c
+CC:  nxffs/nxffs_cache.c
+CC:  nxffs/nxffs_dirent.c
+CC:  nxffs/nxffs_dump.c
+CC:  nxffs/nxffs_initialize.c
+CC:  nxffs/nxffs_inode.c
+CC:  nxffs/nxffs_ioctl.c
+CC:  nxffs/nxffs_open.c
+CC:  nxffs/nxffs_pack.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_pack.c: In function 'nxffs_startpos':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_pack.c:331:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_pack.c: In function 'nxffs_packblock':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_pack.c:948:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_pack.c: In function 'nxffs_packwriter':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_pack.c:1201:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_pack.c: In function 'nxffs_pack':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_pack.c:1408:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_pack.c:1278:7: warning: 'ret' may be used uninitialized in this function [-Wuninitialized]
+CC:  nxffs/nxffs_read.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_read.c: In function 'nxffs_rdseek':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_read.c:134:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_read.c: In function 'nxffs_read':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_read.c:203:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_read.c:207:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  nxffs/nxffs_reformat.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_reformat.c: In function 'nxffs_format':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_reformat.c:107:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_reformat.c: In function 'nxffs_badblocks':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_reformat.c:160:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_reformat.c:155:8: warning: variable 'modified' set but not used [-Wunused-but-set-variable]
+CC:  nxffs/nxffs_stat.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_stat.c: In function 'nxffs_statfs':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_stat.c:105:2: warning: #warning "Need f_bfree, f_bavail, f_files, f_ffree calculation" [-Wcpp]
+CC:  nxffs/nxffs_unlink.c
+CC:  nxffs/nxffs_util.c
+CC:  nxffs/nxffs_write.c
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_write.c: In function 'nxffs_wrappend':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_write.c:378:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_write.c:378:19: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_write.c: In function 'nxffs_write':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_write.c:492:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_write.c: In function 'nxffs_wrverify':
+/home/ubuntu/apm/PX4Firmware/nuttx/fs/nxffs/nxffs_write.c:726:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  binfs/fs_binfs.c
+AR:   fs_close.o fs_closedir.o fs_dup.o fs_dup2.o fs_fcntl.o fs_filedup.o fs_filedup2.o fs_ioctl.o fs_lseek.o fs_open.o fs_opendir.o fs_poll.o fs_read.o fs_readdir.o fs_rewinddir.o fs_seekdir.o fs_stat.o fs_statfs.o fs_select.o fs_write.o fs_files.o fs_foreachinode.o fs_inode.o fs_inodeaddref.o fs_inodefind.o fs_inoderelease.o fs_inoderemove.o fs_inodereserve.o fs_registerdriver.o fs_unregisterdriver.o fs_registerblockdriver.o fs_unregisterblockdriver.o fs_findblockdriver.o fs_openblockdriver.o fs_closeblockdriver.o fs_mmap.o fs_fdopen.o fs_fsync.o fs_mkdir.o fs_mount.o fs_rename.o fs_rmdir.o fs_umount.o fs_unlink.o fs_foreachmountpoint.o fs_fat32.o fs_fat32dirent.o fs_fat32attrib.o fs_fat32util.o fs_mkfatfs.o fs_configfat.o fs_writefat.o fs_romfs.o fs_romfsutil.o nxffs_block.o nxffs_blockstats.o nxffs_cache.o nxffs_dirent.o nxffs_dump.o nxffs_initialize.o nxffs_inode.o nxffs_ioctl.o nxffs_open.o nxffs_pack.o nxffs_read.o nxffs_reformat.o nxffs_stat.o nxffs_unlink.o nxffs_util.o nxffs_write.o fs_binfs.o
+CC:  bch/bchlib_setup.c
+CC:  bch/bchlib_teardown.c
+CC:  bch/bchlib_read.c
+CC:  bch/bchlib_write.c
+CC:  bch/bchlib_cache.c
+CC:  bch/bchlib_sem.c
+CC:  bch/bchdev_register.c
+CC:  bch/bchdev_unregister.c
+CC:  bch/bchdev_driver.c
+CC:  mmcsd/mmcsd_spi.c
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/mmcsd/mmcsd_spi.c: In function 'mmcsd_read':
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/mmcsd/mmcsd_spi.c:1168:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/mmcsd/mmcsd_spi.c:1062:10: warning: variable 'nbytes' set but not used [-Wunused-but-set-variable]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/mmcsd/mmcsd_spi.c: In function 'mmcsd_write':
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/mmcsd/mmcsd_spi.c:1339:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/mmcsd/mmcsd_spi.c:1216:7: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/mmcsd/mmcsd_spi.c:1213:10: warning: variable 'nbytes' set but not used [-Wunused-but-set-variable]
+CC:  mmcsd/mmcsd_debug.c
+CC:  pipes/pipe.c
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/pipes/pipe.c:91:1: warning: missing initializer [-Wmissing-field-initializers]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/pipes/pipe.c:91:1: warning: (near initialization for 'g_pipesem.holder') [-Wmissing-field-initializers]
+CC:  pipes/fifo.c
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/pipes/fifo.c:117:5: warning: no previous prototype for 'mkfifo' [-Wmissing-prototypes]
+CC:  pipes/pipe_common.c
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/pipes/pipe_common.c: In function 'pipecommon_read':
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/pipes/pipe_common.c:417:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/pipes/pipe_common.c: In function 'pipecommon_write':
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/pipes/pipe_common.c:512:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  sensors/lis331dl.c
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/sensors/lis331dl.c:115:5: warning: no previous prototype for 'lis331dl_access' [-Wmissing-prototypes]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/sensors/lis331dl.c:173:5: warning: no previous prototype for 'lis331dl_readregs' [-Wmissing-prototypes]
+CC:  serial/serial.c
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c: In function 'uart_write':
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:461:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c: In function 'uart_read':
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:514:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+CC:  serial/serialirq.c
+CC:  serial/lowconsole.c
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/lowconsole.c:129:6: warning: no previous prototype for 'lowconsole_init' [-Wmissing-prototypes]
+CC:  usbdev/cdcacm.c
+CC:  usbdev/cdcacm_desc.c
+CC:  usbdev/usbdev_trace.c
+CC:  usbdev/usbdev_trprintf.c
+CC:  usbhost/hid_parser.c
+CC:  dev_null.c
+CC:  dev_zero.c
+CC:  loop.c
+CC:  ramdisk.c
+CC:  rwbuffer.c
+AR:   bchlib_setup.o bchlib_teardown.o bchlib_read.o bchlib_write.o bchlib_cache.o bchlib_sem.o bchdev_register.o bchdev_unregister.o bchdev_driver.o mmcsd_spi.o mmcsd_debug.o pipe.o fifo.o pipe_common.o lis331dl.o serial.o serialirq.o lowconsole.o cdcacm.o cdcacm_desc.o usbdev_trace.o usbdev_trprintf.o hid_parser.o dev_null.o dev_zero.o loop.o ramdisk.o rwbuffer.o
+CC:  binfmt_globals.c
+CC:  binfmt_register.c
+CC:  binfmt_unregister.c
+CC:  binfmt_loadmodule.c
+CC:  binfmt_unloadmodule.c
+CC:  binfmt_execmodule.c
+CC:  binfmt_exec.c
+CC:  binfmt_dumpmodule.c
+CC:  symtab_findbyname.c
+CC:  symtab_findbyvalue.c
+CC:  symtab_findorderedbyname.c
+CC:  symtab_findorderedbyvalue.c
+CC:  builtin.c
+CC:  libbuiltin/libbuiltin_getname.c
+CC:  libbuiltin/libbuiltin_isavail.c
+AR:   binfmt_globals.o binfmt_register.o binfmt_unregister.o binfmt_loadmodule.o binfmt_unloadmodule.o binfmt_execmodule.o binfmt_exec.o binfmt_dumpmodule.o symtab_findbyname.o symtab_findbyvalue.o symtab_findorderedbyname.o symtab_findorderedbyvalue.o builtin.o libbuiltin_getname.o libbuiltin_isavail.o
+CC:  empty.c
+AR:   empty.o
+LD: nuttx
+CP: nuttx.bin
+Generating /home/ubuntu/apm/PX4Firmware/Images/px4fmu.px4
+make[1]: Leaving directory `/home/ubuntu/apm/PX4Firmware'
