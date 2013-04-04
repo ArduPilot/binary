@@ -339,7 +339,7 @@
 0000000a r test_wp(unsigned char, Menu::arg const*)::__c
 0000000a r test_mag(unsigned char, Menu::arg const*)::__c
 0000000a B camera
-0000000b r CSWTCH.1688
+0000000b r CSWTCH.1686
 0000000b r reboot_apm()::__c
 0000000b r test_relay(unsigned char, Menu::arg const*)::__c
 0000000b r test_wp_nav(unsigned char, Menu::arg const*)::__c
@@ -429,11 +429,11 @@
 00000012 t erase_logs(unsigned char, Menu::arg const*)
 00000012 t copter_leds_GPS_on()
 00000012 t copter_leds_GPS_off()
-00000012 r __menu_name__main_menu
 00000012 W AverageFilter<long, float, (unsigned char)4>::reset()
 00000012 W AverageFilter<long, float, (unsigned char)5>::reset()
 00000012 W FilterWithBuffer<int, (unsigned char)3>::reset()
 00000012 r select_logs(unsigned char, Menu::arg const*)::__c
+00000013 r __menu_name__main_menu
 00000013 r limits_loop()::__c
 00000013 r init_compass()::__c
 00000013 r setup_accel_scale(unsigned char, Menu::arg const*)::__c
@@ -511,12 +511,12 @@
 00000021 r limits_loop()::__c
 00000021 r Log_Read_Current()::__c
 00000021 r Log_Read_Attitude()::__c
-00000021 r Log_Read(int, int)::__c
 00000022 T perf_info_reset()
 00000022 t init_barometer()
 00000022 t print_hit_enter()
 00000022 r arm_motors()::__c
 00000022 r limits_loop()::__c
+00000022 r Log_Read(int, int)::__c
 00000023 r test_optflow(unsigned char, Menu::arg const*)::__c
 00000024 t main_menu_help(unsigned char, Menu::arg const*)
 00000024 W FilterWithBuffer<float, (unsigned char)7>::get_sample(unsigned char)
@@ -535,7 +535,7 @@
 00000028 W FilterWithBuffer<int, (unsigned char)3>::apply(int)
 00000028 r Log_Read_Cmd()::__c
 00000028 r Log_Read_PID()::__c
-00000028 r init_ardupilot()::__c
+00000029 r init_ardupilot()::__c
 0000002a T set_compass_healthy(bool)
 0000002a T set_throttle_accel_target(int)
 0000002a t setup_declination(unsigned char, Menu::arg const*)
@@ -747,12 +747,12 @@
 0000016c t dump_log(unsigned char, Menu::arg const*)
 0000016e t test_mag(unsigned char, Menu::arg const*)
 00000170 T roll_pitch_toy()
+00000178 t get_throttle_althold_with_slew(long, int, int)
 0000017a T GCS_MAVLINK::data_stream_send()
 0000017e t get_rate_roll(long)
 00000182 t setup_accel_scale(unsigned char, Menu::arg const*)
 0000018c t init_home()
 0000018e T set_throttle_mode(unsigned char)
-00000192 t get_throttle_althold_with_slew(int, int, int)
 00000196 t report_radio()
 0000019c t select_logs(unsigned char, Menu::arg const*)
 000001a8 t send_raw_imu1(mavlink_channel_t)
@@ -784,10 +784,10 @@
 00000470 t calc_loiter(int, int)
 00000512 t _GLOBAL__sub_I_Serial
 000005b2 t tuning()
-000005d4 T update_throttle_mode()
+000005dc T update_throttle_mode()
 0000067c T run_rate_controllers()
-00000728 W Parameters::Parameters()
-00000728 W Parameters::Parameters()
+0000074a W Parameters::Parameters()
+0000074a W Parameters::Parameters()
 000007f6 T setup
 00000a52 t update_navigation()
 00000a8c R var_info
