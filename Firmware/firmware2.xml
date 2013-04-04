@@ -70,7 +70,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Quad-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Quad-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Quad-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1 Quad</name>
+    <name>ArduCopter V2.9.1b Quad</name>
     <desc>
 #define FRAME_CONFIG QUAD_FRAME
 
@@ -82,7 +82,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Tri-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Tri-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Tri-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1 Tri</name>
+    <name>ArduCopter V2.9.1b Tri</name>
     <desc>
 #define FRAME_CONFIG TRI_FRAME
 
@@ -94,7 +94,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Hexa-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Hexa-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Hexa-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1 Hexa</name>
+    <name>ArduCopter V2.9.1b Hexa</name>
     <desc>
 #define FRAME_CONFIG HEXA_FRAME
 
@@ -106,7 +106,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Y6-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Y6-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Y6-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1 Y6</name>
+    <name>ArduCopter V2.9.1b Y6</name>
     <desc>
 #define FRAME_CONFIG Y6_FRAME
 
@@ -118,19 +118,19 @@
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octaquad-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octaquad-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octaquad-px4.px4</urlpx4>
-    <name>Please Update</name>
+    <name>ArduCopter V2.9.1b Octa Quad</name>
     <desc>
 #define FRAME_CONFIG OCTA_QUAD_FRAME
 
 </desc>
-    <format_version>0</format_version>
+    <format_version>120</format_version>
   </Firmware>
   <Firmware>
     <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-1280.hex</url>
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1 Octa</name>
+    <name>ArduCopter V2.9.1b Octa</name>
     <desc>
 #define FRAME_CONFIG OCTA_FRAME
 
@@ -154,7 +154,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-QUADHIL-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-QUADHIL-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-QUADHIL-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1 Quad Hil</name>
+    <name>ArduCopter V2.9.1b Quad Hil</name>
     <desc>
 #define FRAME_CONFIG QUAD_FRAME
 #define FRAME_ORIENTATION PLUS_FRAME
