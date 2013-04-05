@@ -429,11 +429,11 @@
 00000012 T output_min()
 00000012 T perf_info_get_max_time()
 00000012 t erase_logs(unsigned char, Menu::arg const*)
-00000012 r __menu_name__main_menu
 00000012 W AverageFilter<long, float, (unsigned char)5>::reset()
 00000012 W FilterWithBuffer<int, (unsigned char)3>::reset()
 00000012 r setup_heli(unsigned char, Menu::arg const*)::__c
 00000012 r select_logs(unsigned char, Menu::arg const*)::__c
+00000013 r __menu_name__main_menu
 00000013 r setup_heli(unsigned char, Menu::arg const*)::__c
 00000013 r setup_heli(unsigned char, Menu::arg const*)::__c
 00000013 r setup_heli(unsigned char, Menu::arg const*)::__c
@@ -530,11 +530,11 @@
 00000021 r limits_loop()::__c
 00000021 r Log_Read_Current()::__c
 00000021 r Log_Read_Attitude()::__c
-00000021 r Log_Read(int, int)::__c
 00000022 T perf_info_reset()
 00000022 t print_hit_enter()
 00000022 r arm_motors()::__c
 00000022 r limits_loop()::__c
+00000022 r Log_Read(int, int)::__c
 00000023 r setup_heli(unsigned char, Menu::arg const*)::__c
 00000023 r test_optflow(unsigned char, Menu::arg const*)::__c
 00000024 t main_menu_help(unsigned char, Menu::arg const*)
@@ -554,8 +554,8 @@
 00000028 W FilterWithBuffer<int, (unsigned char)3>::apply(int)
 00000028 r Log_Read_Cmd()::__c
 00000028 r Log_Read_PID()::__c
-00000028 r init_ardupilot()::__c
 00000029 r setup_heli(unsigned char, Menu::arg const*)::__c
+00000029 r init_ardupilot()::__c
 0000002a T set_compass_healthy(bool)
 0000002a T init_rate_controllers()
 0000002a T set_throttle_accel_target(int)
@@ -773,12 +773,12 @@
 00000168 t send_gps_raw(mavlink_channel_t)
 0000016c t dump_log(unsigned char, Menu::arg const*)
 00000170 T roll_pitch_toy()
+00000178 t get_throttle_althold_with_slew(long, int, int)
 0000017a T GCS_MAVLINK::data_stream_send()
 0000017c t get_stabilize_yaw(long)
 00000182 t setup_accel_scale(unsigned char, Menu::arg const*)
 0000018c t init_home()
 0000018e T set_throttle_mode(unsigned char)
-00000192 t get_throttle_althold_with_slew(int, int, int)
 00000196 t select_logs(unsigned char, Menu::arg const*)
 00000196 t report_radio()
 000001a8 t send_raw_imu1(mavlink_channel_t)
@@ -802,7 +802,7 @@
 000002ce t update_nav_wp()
 000002ce t execute_nav_command()
 0000030c t read_battery()
-00000320 T update_throttle_mode()
+0000032c T update_throttle_mode()
 0000033c t set_mode(unsigned char)
 0000038c b g
 00000394 t calc_nav_rate(int)
@@ -811,8 +811,8 @@
 0000058c t tuning()
 0000059c t _GLOBAL__sub_I_Serial
 000006d4 T run_rate_controllers()
-000006f6 W Parameters::Parameters()
-000006f6 W Parameters::Parameters()
+00000718 W Parameters::Parameters()
+00000718 W Parameters::Parameters()
 00000748 T setup
 0000076a t setup_heli(unsigned char, Menu::arg const*)
 00000a52 t update_navigation()
