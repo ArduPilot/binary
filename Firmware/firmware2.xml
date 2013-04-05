@@ -142,7 +142,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Heli-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Heli-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Heli-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1 Heli (2560 only)</name>
+    <name>ArduCopter V2.9.1b Heli (2560 only)</name>
     <desc>
 #define FRAME_CONFIG HELI_FRAME
 
@@ -171,7 +171,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-HELHIL-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-HELHIL-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-HELHIL-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1 Heli Hil</name>
+    <name>ArduCopter V2.9.1b Heli Hil</name>
     <desc>
 
 #define HIL_MODE            HIL_MODE_ATTITUDE
