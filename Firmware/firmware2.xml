@@ -50,7 +50,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AR2-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AR2-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AR2-px4.px4</urlpx4>
-    <name>ArduRover v2.20b</name>
+    <name>ArduRover v2.40 AR2</name>
     <desc>
 #define LITE  DISABLED
 
@@ -63,7 +63,7 @@
 
 
 </desc>
-    <format_version>13</format_version>
+    <format_version>16</format_version>
   </Firmware>
   <Firmware>
     <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Quad-1280.hex</url>
