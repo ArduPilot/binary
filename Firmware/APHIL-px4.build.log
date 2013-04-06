@@ -1225,109 +1225,120 @@ CC:  cdcacm_main.c
 /home/ubuntu/apm/PX4Firmware/apps/examples/cdcacm/cdcacm_main.c:125:5: warning: no previous prototype for 'serdis_main' [-Wmissing-prototypes]
 AR:   cdcacm_main.o
 CXX:  /tmp/ArduPlane.build/ArduPlane.cpp
+In file included from ../mk/../libraries/AP_Compass/AP_Compass_HMC5843.h:9:0,
+                 from ../mk/../libraries/AP_Compass/AP_Compass.h:6,
+                 from /home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde:31:
+../mk/../libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+../mk/../libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
 In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
                  from /home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde:36:
 ../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
 ../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde: In function 'void update_current_flight_mode()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde:1182:35: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde:1182:66: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'float get_speed_scaler()':
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:25:91: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void stabilize_stick_mixing()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:127:15: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:127:15: warning: implicit conversion from 'float' to 'double' to match other result of conditional [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:128:25: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:132:15: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:132:15: warning: implicit conversion from 'float' to 'double' to match other result of conditional [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:133:25: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void stabilize_stick_mixing_direct()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:129:15: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:129:15: warning: implicit conversion from 'float' to 'double' to match other result of conditional [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:130:25: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:134:15: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:134:15: warning: implicit conversion from 'float' to 'double' to match other result of conditional [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:135:25: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void stabilize_yaw(float)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:160:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:160:19: warning: implicit conversion from 'float' to 'double' to match other result of conditional [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:161:29: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:202:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:202:19: warning: implicit conversion from 'float' to 'double' to match other result of conditional [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:203:29: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void calc_nav_yaw(float, float)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:287:29: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:342:29: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void calc_nav_roll()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:336:60: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:391:60: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void throttle_slew_limit(int16_t)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:365:51: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:365:123: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:420:51: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:420:123: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function '_Bool8 auto_takeoff_check()':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:451:73: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde: In function 'void set_servos()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:508:105: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:509:105: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:640:105: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Attitude.pde:641:105: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In function 'void send_extended_status1(mavlink_channel_t, uint16_t)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:211:27: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:212:71: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:214:27: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:137:50: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:209:27: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:210:71: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:212:27: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In function 'void send_vfr_hud(mavlink_channel_t)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:393:38: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:388:38: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In function 'void send_raw_imu1(mavlink_channel_t)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:408:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:408:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:409:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:409:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:410:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:410:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:411:18: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:412:18: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:413:18: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:403:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:403:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:404:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:404:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:405:19: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:405:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:406:18: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:407:18: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:408:18: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In function 'void send_raw_imu2(mavlink_channel_t)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:426:54: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:421:54: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In member function '_Bool8 GCS_MAVLINK::stream_trigger(GCS_MAVLINK::streams)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:868:17: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:935:17: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde: In member function 'void GCS_MAVLINK::handleMessage(mavlink_message_t*)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::id' [-Wmissing-field-initializers]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::options' [-Wmissing-field-initializers]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::p1' [-Wmissing-field-initializers]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::alt' [-Wmissing-field-initializers]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::lat' [-Wmissing-field-initializers]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:984:37: warning: missing initializer for member 'Location::lng' [-Wmissing-field-initializers]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1071:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1072:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1074:41: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1080:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1123:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1673:34: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1674:34: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1818:31: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1818:43: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1829:47: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1830:47: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1831:47: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1841:22: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1841:30: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1843:14: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1051:37: warning: missing initializer for member 'Location::id' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1051:37: warning: missing initializer for member 'Location::options' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1051:37: warning: missing initializer for member 'Location::p1' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1051:37: warning: missing initializer for member 'Location::alt' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1051:37: warning: missing initializer for member 'Location::lat' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1051:37: warning: missing initializer for member 'Location::lng' [-Wmissing-field-initializers]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1138:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1139:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1141:41: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1147:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1189:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1742:34: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1743:34: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1887:31: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1887:43: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1898:47: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1899:47: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1900:47: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1910:22: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1910:30: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/GCS_Mavlink.pde:1912:14: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void print_latlon(AP_HAL::BetterStream*, int32_t)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:194:6: warning: no previous declaration for 'void print_latlon(AP_HAL::BetterStream*, int32_t)' [-Wmissing-declarations]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:188:6: warning: no previous declaration for 'void print_latlon(AP_HAL::BetterStream*, int32_t)' [-Wmissing-declarations]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Read_Control_Tuning()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:421:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:462:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:462:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:462:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:462:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:462:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:462:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:462:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:462:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:462:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Read_Nav_Tuning()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:465:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:465:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:465:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:465:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:465:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:506:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:506:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:506:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:506:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:506:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Read_GPS()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:538:16: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:538:16: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:579:16: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:579:16: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Read_IMU()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:567:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:608:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:608:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:608:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:608:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:608:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:608:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Write_Current()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:589:64: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:590:61: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:630:64: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:631:61: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde: In function 'void Log_Read_Current()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:601:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:601:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:642:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/Log.pde:642:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_logic.pde: In function '_Bool8 verify_land()':
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/commands_logic.pde:335:63: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde: In function 'void navigate()':
@@ -1335,43 +1346,38 @@ In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde: In function 'void calc_airspeed_errors()':
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde:96:97: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde: In function 'void update_loiter()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde:154:43: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/navigation.pde:140:43: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde: In function 'int32_t read_barometer()':
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:24:61: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde: In function 'void read_battery()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:50:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:50:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:50:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:55:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:55:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:55:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:55:28: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:56:75: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:56:75: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'int8_t setup_show(uint8_t, const Menu::arg*)':
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:96:28: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'int8_t setup_flightmodes(uint8_t, const Menu::arg*)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:243:28: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:353:28: warning: comparison is always false due to limited range of data type [-Wtype-limits]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'void report_xtrack()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:443:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:553:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'void report_compass()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:505:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:511:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:511:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:511:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:615:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:621:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:621:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:621:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'void print_PID(PID*)':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:537:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:537:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:537:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:647:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:647:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:647:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'void print_accel_offsets_and_scaling()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:640:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:750:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:750:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:750:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:750:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:750:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:750:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde: In function 'void print_gyro_offsets()':
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:653:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:653:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:653:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:763:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:763:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/setup.pde:763:16: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde: In function 'int8_t test_battery(uint8_t, const Menu::arg*)':
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:263:28: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:263:28: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
@@ -1390,6 +1396,13 @@ In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:24:17: warning: 'int8_t test_rawgps(uint8_t, const Menu::arg*)' declared 'static' but never defined [-Wunused-function]
 %% libraries/APM_Control/AP_PitchController.o
 CXX:  ../mk/../libraries/APM_Control/AP_PitchController.cpp
+In file included from ../mk/../libraries/AP_Compass/AP_Compass_HMC5843.h:9:0,
+                 from ../mk/../libraries/AP_Compass/AP_Compass.h:6,
+                 from ../mk/../libraries/AP_AHRS/AP_AHRS.h:16,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_PitchController.h:6,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_PitchController.cpp:13:
+../mk/../libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+../mk/../libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
 In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
                  from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_PitchController.h:6,
                  from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_PitchController.cpp:13:
@@ -1397,6 +1410,13 @@ In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
 ../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 %% libraries/APM_Control/AP_RollController.o
 CXX:  ../mk/../libraries/APM_Control/AP_RollController.cpp
+In file included from ../mk/../libraries/AP_Compass/AP_Compass_HMC5843.h:9:0,
+                 from ../mk/../libraries/AP_Compass/AP_Compass.h:6,
+                 from ../mk/../libraries/AP_AHRS/AP_AHRS.h:16,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_RollController.h:6,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_RollController.cpp:13:
+../mk/../libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+../mk/../libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
 In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
                  from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_RollController.h:6,
                  from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_RollController.cpp:13:
@@ -1404,6 +1424,13 @@ In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
 ../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 %% libraries/APM_Control/AP_YawController.o
 CXX:  ../mk/../libraries/APM_Control/AP_YawController.cpp
+In file included from ../mk/../libraries/AP_Compass/AP_Compass_HMC5843.h:9:0,
+                 from ../mk/../libraries/AP_Compass/AP_Compass.h:6,
+                 from ../mk/../libraries/AP_AHRS/AP_AHRS.h:16,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_YawController.h:6,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_YawController.cpp:12:
+../mk/../libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+../mk/../libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
 In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
                  from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_YawController.h:6,
                  from /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_YawController.cpp:12:
@@ -1419,28 +1446,55 @@ CXX:  ../mk/../libraries/AP_ADC/AP_ADC_ADS7844.cpp
 CXX:  ../mk/../libraries/AP_ADC/AP_ADC_HIL.cpp
 %% libraries/AP_ADC_AnalogSource/AP_ADC_AnalogSource.o
 CXX:  ../mk/../libraries/AP_ADC_AnalogSource/AP_ADC_AnalogSource.cpp
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_ADC_AnalogSource/AP_ADC_AnalogSource.cpp: In member function 'virtual float AP_ADC_AnalogSource::voltage_average()':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_ADC_AnalogSource/AP_ADC_AnalogSource.cpp:28:24: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_ADC_AnalogSource/AP_ADC_AnalogSource.cpp:28:30: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 %% libraries/AP_AHRS/AP_AHRS.o
 CXX:  ../mk/../libraries/AP_AHRS/AP_AHRS.cpp
+In file included from ../mk/../libraries/AP_Compass/AP_Compass_HMC5843.h:9:0,
+                 from ../mk/../libraries/AP_Compass/AP_Compass.h:6,
+                 from ../mk/../libraries/AP_AHRS/AP_AHRS.h:16,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS.cpp:9:
+../mk/../libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+../mk/../libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
 In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
                  from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS.cpp:9:
 ../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
 ../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 %% libraries/AP_AHRS/AP_AHRS_DCM.o
 CXX:  ../mk/../libraries/AP_AHRS/AP_AHRS_DCM.cpp
+In file included from ../mk/../libraries/AP_Compass/AP_Compass_HMC5843.h:9:0,
+                 from ../mk/../libraries/AP_Compass/AP_Compass.h:6,
+                 from ../mk/../libraries/AP_AHRS/AP_AHRS.h:16,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_DCM.cpp:16:
+../mk/../libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+../mk/../libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
 In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
                  from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_DCM.cpp:16:
 ../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
 ../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_DCM.cpp: In member function 'void AP_AHRS_DCM::drift_correction(float)':
-/home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_DCM.cpp:536:39: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_DCM.cpp:566:39: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 %% libraries/AP_AHRS/AP_AHRS_HIL.o
 CXX:  ../mk/../libraries/AP_AHRS/AP_AHRS_HIL.cpp
+In file included from ../mk/../libraries/AP_Compass/AP_Compass_HMC5843.h:9:0,
+                 from ../mk/../libraries/AP_Compass/AP_Compass.h:6,
+                 from ../mk/../libraries/AP_AHRS/AP_AHRS.h:16,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_HIL.cpp:13:
+../mk/../libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+../mk/../libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
 In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
                  from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_HIL.cpp:13:
 ../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
 ../mk/../libraries/AP_Airspeed/AP_Airspeed.h:40:46: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 %% libraries/AP_AHRS/AP_AHRS_MPU6000.o
 CXX:  ../mk/../libraries/AP_AHRS/AP_AHRS_MPU6000.cpp
+In file included from ../mk/../libraries/AP_Compass/AP_Compass_HMC5843.h:9:0,
+                 from ../mk/../libraries/AP_Compass/AP_Compass.h:6,
+                 from ../mk/../libraries/AP_AHRS/AP_AHRS.h:16,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_MPU6000.cpp:14:
+../mk/../libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+../mk/../libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
 In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
                  from /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_MPU6000.cpp:14:
 ../mk/../libraries/AP_Airspeed/AP_Airspeed.h: In member function '_Bool8 AP_Airspeed::use()':
@@ -1470,14 +1524,35 @@ CXX:  ../mk/../libraries/AP_Camera/AP_Camera.cpp
 CXX:  ../mk/../libraries/AP_Common/c++.cpp
 %% libraries/AP_Compass/AP_Compass_HIL.o
 CXX:  ../mk/../libraries/AP_Compass/AP_Compass_HIL.cpp
+In file included from /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HIL.h:5:0,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HIL.cpp:13:
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HIL.cpp: In member function 'virtual _Bool8 AP_Compass_HIL::read()':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HIL.cpp:25:76: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 %% libraries/AP_Compass/AP_Compass_HMC5843.o
 CXX:  ../mk/../libraries/AP_Compass/AP_Compass_HMC5843.cpp
+In file included from /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HMC5843.h:9:0,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HMC5843.cpp:20:
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HMC5843.cpp: In member function 'virtual _Bool8 AP_Compass_HMC5843::read()':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HMC5843.cpp:335:76: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 %% libraries/AP_Compass/AP_Compass_PX4.o
 CXX:  ../mk/../libraries/AP_Compass/AP_Compass_PX4.cpp
+In file included from /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_PX4.h:6:0,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_PX4.cpp:15:
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_PX4.cpp: In member function 'virtual _Bool8 AP_Compass_PX4::read()':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_PX4.cpp:71:76: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 %% libraries/AP_Compass/Compass.o
 CXX:  ../mk/../libraries/AP_Compass/Compass.cpp
-/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.cpp: In member function 'virtual float Compass::calculate_heading(const Matrix3f&)':
-/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.cpp:185:22: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+In file included from /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.cpp:3:0:
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.cpp: In member function 'float Compass::calculate_heading(const Matrix3f&)':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.cpp:225:22: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 %% libraries/AP_Declination/AP_Declination.o
 CXX:  ../mk/../libraries/AP_Declination/AP_Declination.cpp
 %% libraries/AP_GPS/AP_GPS_406.o
@@ -1572,6 +1647,8 @@ CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/sitl_gps.cpp
 CXX:  ../mk/../libraries/AP_HAL_AVR_SITL/sitl_ins.cpp
 %% libraries/AP_HAL_Empty/AnalogIn.o
 CXX:  ../mk/../libraries/AP_HAL_Empty/AnalogIn.cpp
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/AnalogIn.cpp: In member function 'virtual float Empty::EmptyAnalogSource::voltage_average()':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/AnalogIn.cpp:15:18: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 %% libraries/AP_HAL_Empty/Console.o
 CXX:  ../mk/../libraries/AP_HAL_Empty/Console.cpp
 %% libraries/AP_HAL_Empty/GPIO.o
@@ -1628,14 +1705,14 @@ CXX:  ../mk/../libraries/AP_InertialSensor/AP_InertialSensor.cpp
 /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp: In member function 'virtual void AP_InertialSensor::_init_gyro(void (*)(_Bool8))':
 /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:215:18: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp: In member function 'virtual _Bool8 AP_InertialSensor::calibrate_accel(void (*)(_Bool8), AP_InertialSensor_UserInteract*, float&, float&)':
-/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:394:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:393:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:393:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:393:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:393:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:393:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:393:15: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp: In member function 'virtual void AP_InertialSensor::_calibrate_find_delta(float*, float (*)[6], float*)':
-/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:524:23: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp:523:23: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 %% libraries/AP_InertialSensor/AP_InertialSensor_MPU6000.o
 CXX:  ../mk/../libraries/AP_InertialSensor/AP_InertialSensor_MPU6000.cpp
 %% libraries/AP_InertialSensor/AP_InertialSensor_Oilpan.o
@@ -1670,6 +1747,13 @@ CXX:  ../mk/../libraries/AP_Math/vector3.cpp
 CXX:  ../mk/../libraries/AP_Menu/AP_Menu.cpp
 %% libraries/AP_Mount/AP_Mount.o
 CXX:  ../mk/../libraries/AP_Mount/AP_Mount.cpp
+In file included from ../mk/../libraries/AP_Compass/AP_Compass_HMC5843.h:9:0,
+                 from ../mk/../libraries/AP_Compass/AP_Compass.h:6,
+                 from ../mk/../libraries/AP_AHRS/AP_AHRS.h:16,
+                 from ../mk/../libraries/AP_Mount/AP_Mount.h:27,
+                 from /home/ubuntu/apm/ardupilot-mega/libraries/AP_Mount/AP_Mount.cpp:6:
+../mk/../libraries/AP_Compass/Compass.h: In member function 'void Compass::motor_compensation_type(uint8_t)':
+../mk/../libraries/AP_Compass/Compass.h:139:26: warning: comparison is always true due to limited range of data type [-Wtype-limits]
 In file included from ../mk/../libraries/AP_AHRS/AP_AHRS.h:17:0,
                  from ../mk/../libraries/AP_Mount/AP_Mount.h:27,
                  from /home/ubuntu/apm/ardupilot-mega/libraries/AP_Mount/AP_Mount.cpp:6:
@@ -1689,16 +1773,20 @@ CXX:  ../mk/../libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.cpp
 CXX:  ../mk/../libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarXL.cpp
 %% libraries/AP_RangeFinder/AP_RangeFinder_SharpGP2Y.o
 CXX:  ../mk/../libraries/AP_RangeFinder/AP_RangeFinder_SharpGP2Y.cpp
+%% libraries/AP_RangeFinder/AP_RangeFinder_analog.o
+CXX:  ../mk/../libraries/AP_RangeFinder/AP_RangeFinder_analog.cpp
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/AP_RangeFinder_analog.cpp: In member function 'float AP_RangeFinder_analog::distance_cm()':
+/home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/AP_RangeFinder_analog.cpp:161:20: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 %% libraries/AP_RangeFinder/RangeFinder.o
 CXX:  ../mk/../libraries/AP_RangeFinder/RangeFinder.cpp
 %% libraries/AP_Relay/AP_Relay.o
 CXX:  ../mk/../libraries/AP_Relay/AP_Relay.cpp
-%% libraries/DataFlash/DataFlash.o
-CXX:  ../mk/../libraries/DataFlash/DataFlash.cpp
 %% libraries/DataFlash/DataFlash_APM1.o
 CXX:  ../mk/../libraries/DataFlash/DataFlash_APM1.cpp
 %% libraries/DataFlash/DataFlash_APM2.o
 CXX:  ../mk/../libraries/DataFlash/DataFlash_APM2.cpp
+%% libraries/DataFlash/DataFlash_Block.o
+CXX:  ../mk/../libraries/DataFlash/DataFlash_Block.cpp
 %% libraries/DataFlash/DataFlash_Empty.o
 CXX:  ../mk/../libraries/DataFlash/DataFlash_Empty.cpp
 %% libraries/DataFlash/DataFlash_SITL.o
