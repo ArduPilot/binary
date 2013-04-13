@@ -5,7 +5,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAP-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAP-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/dev/DEVAP-px4.px4</urlpx4>
-    <name>ArduPlane V2.71-beta  </name>
+    <name>ArduPlane V2.71  </name>
     <desc></desc>
     <format_version>13</format_version>
   </Firmware>
@@ -14,7 +14,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAPHIL-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAPHIL-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/dev/DEVAPHIL-px4.px4</urlpx4>
-    <name>ArduPlane V2.71-beta HIL</name>
+    <name>ArduPlane V2.71 HIL</name>
     <desc>
 #define FLIGHT_MODE_CHANNEL	8
 #define FLIGHT_MODE_1		AUTO
@@ -50,7 +50,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAR2-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAR2-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/dev/DEVAR2-px4.px4</urlpx4>
-    <name>ArduRover v2.30 AR2</name>
+    <name>ArduRover v2.40 AR2</name>
     <desc>
 #define LITE  DISABLED
 
@@ -69,7 +69,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Quad-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Quad-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Quad-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1b Quad</name>
+    <name>ArduCopter V2.9.1b-dev Quad</name>
     <desc>
 #define FRAME_CONFIG QUAD_FRAME
 
@@ -81,7 +81,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Tri-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Tri-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Tri-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1b Tri</name>
+    <name>ArduCopter V2.9.1b-dev Tri</name>
     <desc>
 #define FRAME_CONFIG TRI_FRAME
 
@@ -93,7 +93,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Hexa-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Hexa-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Hexa-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1b Hexa</name>
+    <name>ArduCopter V2.9.1b-dev Hexa</name>
     <desc>
 #define FRAME_CONFIG HEXA_FRAME
 
@@ -105,7 +105,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Y6-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Y6-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Y6-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1b Y6</name>
+    <name>ArduCopter V2.9.1b-dev Y6</name>
     <desc>
 #define FRAME_CONFIG Y6_FRAME
 
@@ -117,7 +117,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octaquad-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octaquad-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octaquad-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1b Octa Quad</name>
+    <name>ArduCopter V2.9.1b-dev Octa Quad</name>
     <desc>
 #define FRAME_CONFIG OCTA_QUAD_FRAME
 
@@ -129,7 +129,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octa-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octa-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-Octa-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1b Octa</name>
+    <name>ArduCopter V2.9.1b-dev Octa</name>
     <desc>
 #define FRAME_CONFIG OCTA_FRAME
 
@@ -153,7 +153,7 @@
     <url2560>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-QUADHIL-2560.hex</url2560>
     <url2560-2>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-QUADHIL-2560-2.hex</url2560-2>
     <urlpx4>https://raw.github.com/diydrones/binary/master/dev/DEVAC2-QUADHIL-px4.px4</urlpx4>
-    <name>ArduCopter V2.9.1b Quad Hil</name>
+    <name>ArduCopter V2.9.1b-dev Quad Hil</name>
     <desc>
 #define FRAME_CONFIG QUAD_FRAME
 #define FRAME_ORIENTATION PLUS_FRAME
