@@ -1,12 +1,7 @@
 %% ArduPlane.cpp
 %% ArduPlane.o
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:21:16: warning: 'int32_t read_barometer()' defined but not used [-Wunused-function]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/sensors.pde:28:13: warning: 'void read_airspeed()' defined but not used [-Wunused-function]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:11:17: warning: 'int8_t test_gps(uint8_t, const Menu::arg*)' declared 'static' but never defined [-Wunused-function]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:15:17: warning: 'int8_t test_ins(uint8_t, const Menu::arg*)' declared 'static' but never defined [-Wunused-function]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:19:17: warning: 'int8_t test_airspeed(uint8_t, const Menu::arg*)' declared 'static' but never defined [-Wunused-function]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:20:17: warning: 'int8_t test_pressure(uint8_t, const Menu::arg*)' declared 'static' but never defined [-Wunused-function]
-/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:21:17: warning: 'int8_t test_mag(uint8_t, const Menu::arg*)' declared 'static' but never defined [-Wunused-function]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:24:17: warning: 'int8_t test_rawgps(uint8_t, const Menu::arg*)' declared 'static' but never defined [-Wunused-function]
 %% libraries/APM_Control/AP_PitchController.o
 %% libraries/APM_Control/AP_RollController.o
@@ -107,6 +102,7 @@
 %% libraries/AP_InertialSensor/AP_InertialSensor_PX4.o
 %% libraries/AP_InertialSensor/AP_InertialSensor_Stub.o
 %% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.o
+%% libraries/AP_L1_Control/AP_L1_Control.o
 %% libraries/AP_Math/AP_Math.o
 %% libraries/AP_Math/location.o
 %% libraries/AP_Math/matrix3.o
