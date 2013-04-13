@@ -44,6 +44,7 @@ Register: boardinfo
 Register: mixer
 Register: eeprom
 Register: param
+Register: pwm
 Register: bl_update
 Register: preflight_check
 Register: delay_test
@@ -66,11 +67,14 @@ Register: adc
 Register: fmu
 Register: hil
 Register: gps
+Register: mb12xx
 Register: tests
 Register: sercon
 Register: serdis
 Register: APMrover2
 make[5]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
+make[4]: Nothing to be done for `context'.
 make[4]: Nothing to be done for `context'.
 make[4]: Nothing to be done for `context'.
 make[4]: Nothing to be done for `context'.
@@ -344,8 +348,6 @@ CC:  chip/stm32_sdio.c
 CC:  chip/stm32_tim.c
 /home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_tim.c:241:13: warning: 'stm32_tim_gpioconfig' defined but not used [-Wunused-function]
 CC:  chip/stm32_i2c.c
-/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_i2c.c: In function 'stm32_i2c_sem_waitdone':
-/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_i2c.c:670:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 /home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_i2c.c: In function 'stm32_i2c_sem_waitstop':
 /home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_i2c.c:730:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 /home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_i2c.c: In function 'up_i2creset':
@@ -395,11 +397,11 @@ CC:  common/up_vfork.c
 CC:  armv7-m/up_vectors.c
 CC:  chip/stm32_otgfsdev.c
 /home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c: In function 'stm32_epin_request':
-/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:1223:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:1319:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 /home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c: In function 'stm32_ep0out_testmode':
-/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:1951:12: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:2039:12: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
 /home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c: In function 'stm32_ep_cancel':
-/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:4231:30: warning: variable 'priv' set but not used [-Wunused-but-set-variable]
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:4411:30: warning: variable 'priv' set but not used [-Wunused-but-set-variable]
 AR:  stm32_vectors.o up_saveusercontext.o up_fullcontextrestore.o up_switchcontext.o vfork.o up_exception.o up_memcpy.o up_fpu.o stm32_allocateheap.o stm32_start.o stm32_rcc.o stm32_lse.o stm32_lsi.o stm32_gpio.o stm32_exti_gpio.o stm32_flash.o stm32_irq.o stm32_timerisr.o stm32_dma.o stm32_lowputc.o stm32_serial.o stm32_spi.o stm32_sdio.o stm32_tim.o stm32_i2c.o stm32_waste.o stm32_idle.o stm32_pmstop.o stm32_pmstandby.o stm32_pmsleep.o stm32_pminitialize.o stm32_pwr.o stm32_wwdg.o stm32_dumpgpio.o up_assert.o up_blocktask.o up_copystate.o up_createstack.o up_mdelay.o up_udelay.o up_exit.o up_initialize.o up_initialstate.o up_interruptcontext.o up_memfault.o up_modifyreg8.o up_modifyreg16.o up_modifyreg32.o up_releasepending.o up_releasestack.o up_reprioritizertr.o up_schedulesigaction.o up_sigdeliver.o up_systemreset.o up_unblocktask.o up_usestack.o up_doirq.o up_hardfault.o up_svcall.o up_stackcheck.o up_vfork.o up_vectors.o stm32_otgfsdev.o
 CC:  mm_initialize.c
 CC:  mm_sem.c
@@ -758,6 +760,9 @@ CC:  nsh_dbgcmds.c
 /home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_dbgcmds.c:265:60: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 CC:  nsh_builtin.c
 CC:  nsh_romfsetc.c
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_romfsetc.c: In function 'nsh_romfsetc':
+/home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_romfsetc.c:100:3: warning: passing argument 2 of 'ramdisk_register' discards 'const' qualifier from pointer target type [enabled by default]
+/home/ubuntu/apm/PX4Firmware/nuttx/include/nuttx/ramdisk.h:86:12: note: expected 'uint8_t *' but argument is of type 'const unsigned char *'
 CC:  nsh_mntcmds.c
 CC:  nsh_consolemain.c
 /home/ubuntu/apm/PX4Firmware/apps/nshlib/nsh_consolemain.c:103:5: warning: no previous prototype for 'nsh_consolemain' [-Wmissing-prototypes]
@@ -791,6 +796,12 @@ CC:  cpuload.c
 CC:  getopt_long.c
 CC:  up_cxxinitialize.c
 CC:  airspeed.c
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/airspeed.c: In function 'calc_indicated_airspeed':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/airspeed.c:65:22: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/airspeed.c:65:52: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/airspeed.c: In function 'calc_true_airspeed':
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/airspeed.c:109:22: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
+/home/ubuntu/apm/PX4Firmware/apps/systemlib/airspeed.c:109:50: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 CC:  systemlib.c
 CC:  pid/pid.c
 CC:  geo/geo.c
@@ -898,13 +909,19 @@ CC:  param.c
 /home/ubuntu/apm/PX4Firmware/apps/systemlib/param/param.h:235:16: note: expected 'void *' but argument is of type 'const char *'
 PRELINK:  param.pre.o
 AR:  param.pre.o
+CC:  pwm.c
+/home/ubuntu/apm/PX4Firmware/apps/systemcmds/pwm/pwm.c: In function 'pwm_main':
+/home/ubuntu/apm/PX4Firmware/apps/systemcmds/pwm/pwm.c:150:17: warning: declaration of 'group' shadows a previous local [-Wshadow]
+/home/ubuntu/apm/PX4Firmware/apps/systemcmds/pwm/pwm.c:98:11: warning: shadowed declaration is here [-Wshadow]
+PRELINK:  pwm.pre.o
+AR:  pwm.pre.o
 CC:  bl_update.c
 PRELINK:  bl_update.pre.o
 AR:  bl_update.pre.o
 CC:  preflight_check.c
 /home/ubuntu/apm/PX4Firmware/apps/systemcmds/preflight_check/preflight_check.c: In function 'preflight_check_main':
-/home/ubuntu/apm/PX4Firmware/apps/systemcmds/preflight_check/preflight_check.c:66:2: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
-/home/ubuntu/apm/PX4Firmware/apps/systemcmds/preflight_check/preflight_check.c:85:7: warning: 'fd' may be used uninitialized in this function [-Wuninitialized]
+/home/ubuntu/apm/PX4Firmware/apps/systemcmds/preflight_check/preflight_check.c:68:2: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+/home/ubuntu/apm/PX4Firmware/apps/systemcmds/preflight_check/preflight_check.c:89:7: warning: 'fd' may be used uninitialized in this function [-Wuninitialized]
 PRELINK:  preflight_check.pre.o
 AR:  preflight_check.pre.o
 CC:  delay_test.c
@@ -1019,24 +1036,25 @@ CC:  calibration_routines.c
 /home/ubuntu/apm/PX4Firmware/apps/commander/calibration_routines.c:183:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 /home/ubuntu/apm/PX4Firmware/apps/commander/calibration_routines.c:184:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
 CC:  commander.c
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:789:6: warning: no previous prototype for 'do_airspeed_calibration' [-Wmissing-prototypes]
 /home/ubuntu/apm/PX4Firmware/apps/commander/commander.c: In function 'handle_command':
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1008:7: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1013:7: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1019:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1023:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1036:7: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1042:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1046:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1110:7: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1115:7: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1121:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1125:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1138:7: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1144:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1148:8: warning: cast from function call of type 'const char *' to non-matching type 'long unsigned int' [-Wbad-function-cast]
 /home/ubuntu/apm/PX4Firmware/apps/commander/commander.c: In function 'commander_thread_main':
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1681:3: warning: passing argument 1 of 'orb_check' makes integer from pointer without a cast [enabled by default]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1805:3: warning: passing argument 1 of 'orb_check' makes integer from pointer without a cast [enabled by default]
 /home/ubuntu/apm/PX4Firmware/apps/uORB/uORB.h:230:12: note: expected 'int' but argument is of type 'const struct orb_metadata *'
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1403:11: warning: unused variable 'failsave_ll_start_time' [-Wunused-variable]
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1395:8: warning: variable 'voltage_previous' set but not used [-Wunused-but-set-variable]
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1339:10: warning: unused variable 'mode_switch_rc_value' [-Wunused-variable]
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1330:10: warning: unused variable 'flight_env' [-Wunused-variable]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1511:11: warning: unused variable 'failsave_ll_start_time' [-Wunused-variable]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1502:8: warning: variable 'voltage_previous' set but not used [-Wunused-but-set-variable]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1441:10: warning: unused variable 'mode_switch_rc_value' [-Wunused-variable]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:1432:10: warning: unused variable 'flight_env' [-Wunused-variable]
 /home/ubuntu/apm/PX4Firmware/apps/commander/commander.c: At top level:
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:234:12: warning: 'led_on' defined but not used [-Wunused-function]
-/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:239:12: warning: 'led_off' defined but not used [-Wunused-function]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:235:12: warning: 'led_on' defined but not used [-Wunused-function]
+/home/ubuntu/apm/PX4Firmware/apps/commander/commander.c:240:12: warning: 'led_off' defined but not used [-Wunused-function]
 CC:  state_machine_helper.c
 /home/ubuntu/apm/PX4Firmware/apps/commander/state_machine_helper.c: In function 'do_state_update':
 /home/ubuntu/apm/PX4Firmware/apps/commander/state_machine_helper.c:96:3: warning: implicit declaration of function 'warnx' [-Wimplicit-function-declaration]
@@ -1110,21 +1128,14 @@ CXX:  l3gd20.cpp
 PRELINK:  l3gd20.pre.o
 AR:  l3gd20.pre.o
 CXX:  px4io.cpp
-/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:1402:2: warning: #warning implement this [-Wcpp]
-/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:1437:2: warning: #warning implement this [-Wcpp]
-/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp: In constructor 'PX4IO::PX4IO()':
-/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:115:12: warning: 'PX4IO::_alarms' will be initialized after [-Wreorder]
-/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:108:16: warning:   'volatile int PX4IO::_task' [-Wreorder]
-/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:275:1: warning:   when initialized here [-Wreorder]
-/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp: In member function 'int PX4IO::io_handle_alarms(uint16_t)':
-/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:815:1: warning: no return statement in function returning non-void [-Wreturn-type]
-/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp: In function 'void {anonymous}::test()':
-/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:1352:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4io/px4io.cpp:1632:2: warning: #warning implement this [-Wcpp]
 CXX:  uploader.cpp
 PRELINK:  px4io.pre.o
 AR:  px4io.pre.o
 CC:  drv_hrt.c
 CC:  drv_pwm_servo.c
+/home/ubuntu/apm/PX4Firmware/apps/drivers/stm32/drv_pwm_servo.c: In function 'up_pwm_servo_set_rate':
+/home/ubuntu/apm/PX4Firmware/apps/drivers/stm32/drv_pwm_servo.c:293:1: warning: control reaches end of non-void function [-Wreturn-type]
 PRELINK:  stm32.pre.o
 AR:  stm32.pre.o
 CXX:  led.cpp
@@ -1145,7 +1156,7 @@ PRELINK:  adc.pre.o
 AR:  adc.pre.o
 CXX:  fmu.cpp
 /home/ubuntu/apm/PX4Firmware/apps/drivers/px4fmu/fmu.cpp: In member function 'void PX4FMU::task_main()':
-/home/ubuntu/apm/PX4Firmware/apps/drivers/px4fmu/fmu.cpp:409:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/apps/drivers/px4fmu/fmu.cpp:478:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 PRELINK:  fmu.pre.o
 AR:  fmu.pre.o
 CXX:  hil.cpp
@@ -1159,6 +1170,11 @@ CXX:  mtk.cpp
 CXX:  ubx.cpp
 PRELINK:  gps.pre.o
 AR:  gps.pre.o
+CXX:  mb12xx.cpp
+/home/ubuntu/apm/PX4Firmware/apps/drivers/mb12xx/mb12xx.cpp: In member function 'int MB12XX::collect()':
+/home/ubuntu/apm/PX4Firmware/apps/drivers/mb12xx/mb12xx.cpp:528:1: warning: label 'out' defined but not used [-Wunused-label]
+PRELINK:  mb12xx.pre.o
+AR:  mb12xx.pre.o
 CC:  test_adc.c
 CC:  test_bson.c
 /home/ubuntu/apm/PX4Firmware/apps/px4/tests/test_bson.c: In function 'decode_callback':
@@ -1946,9 +1962,9 @@ CC:  sensors/lis331dl.c
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/sensors/lis331dl.c:173:5: warning: no previous prototype for 'lis331dl_readregs' [-Wmissing-prototypes]
 CC:  serial/serial.c
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c: In function 'uart_write':
-/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:461:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:485:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c: In function 'uart_read':
-/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:514:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:538:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 CC:  serial/serialirq.c
 CC:  serial/lowconsole.c
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/lowconsole.c:129:6: warning: no previous prototype for 'lowconsole_init' [-Wmissing-prototypes]
