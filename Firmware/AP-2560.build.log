@@ -18,6 +18,7 @@
 %% libraries/AP_Baro/AP_Baro.o
 %% libraries/AP_Baro/AP_Baro_MS5611.o
 %% libraries/AP_Baro/AP_Baro_PX4.o
+%% libraries/AP_Buffer/AP_Buffer.o
 %% libraries/AP_Camera/AP_Camera.o
 %% libraries/AP_Common/c++.o
 %% libraries/AP_Compass/AP_Compass_HIL.o
@@ -99,6 +100,7 @@
 %% libraries/AP_InertialSensor/AP_InertialSensor_PX4.o
 %% libraries/AP_InertialSensor/AP_InertialSensor_Stub.o
 %% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.o
+%% libraries/AP_L1_Control/AP_L1_Control.o
 %% libraries/AP_Math/AP_Math.o
 %% libraries/AP_Math/location.o
 %% libraries/AP_Math/matrix3.o
@@ -120,6 +122,7 @@
 %% libraries/DataFlash/DataFlash_APM2.o
 %% libraries/DataFlash/DataFlash_Block.o
 %% libraries/DataFlash/DataFlash_Empty.o
+%% libraries/DataFlash/DataFlash_File.o
 %% libraries/DataFlash/DataFlash_SITL.o
 %% libraries/DataFlash/LogFile.o
 %% libraries/Filter/DerivativeFilter.o
