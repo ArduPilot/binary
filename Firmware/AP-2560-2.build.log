@@ -1,3 +1,4 @@
+building /tmp/ArduPlane.build/ArduPlane.cpp
 %% ArduPlane.cpp
 %% ArduPlane.o
 %% libraries/APM_Control/AP_PitchController.o
@@ -14,8 +15,8 @@
 %% libraries/AP_AHRS/AP_AHRS_MPU6000.o
 %% libraries/AP_Airspeed/AP_Airspeed.o
 %% libraries/AP_Baro/AP_Baro_BMP085.o
-%% libraries/AP_Baro/AP_Baro_BMP085_hil.o
 %% libraries/AP_Baro/AP_Baro.o
+%% libraries/AP_Baro/AP_Baro_HIL.o
 %% libraries/AP_Baro/AP_Baro_MS5611.o
 %% libraries/AP_Baro/AP_Baro_PX4.o
 %% libraries/AP_Buffer/AP_Buffer.o
@@ -99,6 +100,7 @@
 %% libraries/AP_InertialSensor/AP_InertialSensor_Oilpan.o
 %% libraries/AP_InertialSensor/AP_InertialSensor_PX4.o
 %% libraries/AP_InertialSensor/AP_InertialSensor_Stub.o
+%% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_MAVLink.o
 %% libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.o
 %% libraries/AP_L1_Control/AP_L1_Control.o
 %% libraries/AP_Math/AP_Math.o
