@@ -300,11 +300,11 @@ CC:  common/up_vfork.c
 CC:  armv7-m/up_vectors.c
 CC:  chip/stm32_otgfsdev.c
 /home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c: In function 'stm32_epin_request':
-/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:1319:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:1315:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 /home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c: In function 'stm32_ep0out_testmode':
-/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:2039:12: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:2035:12: warning: variable 'regval' set but not used [-Wunused-but-set-variable]
 /home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c: In function 'stm32_ep_cancel':
-/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:4411:30: warning: variable 'priv' set but not used [-Wunused-but-set-variable]
+/home/ubuntu/apm/PX4Firmware/nuttx/arch/arm/src/chip/stm32_otgfsdev.c:4321:30: warning: variable 'priv' set but not used [-Wunused-but-set-variable]
 AR:  stm32_vectors.o up_saveusercontext.o up_fullcontextrestore.o up_switchcontext.o vfork.o up_exception.o up_memcpy.o up_fpu.o stm32_allocateheap.o stm32_start.o stm32_rcc.o stm32_lse.o stm32_lsi.o stm32_gpio.o stm32_exti_gpio.o stm32_flash.o stm32_irq.o stm32_timerisr.o stm32_dma.o stm32_lowputc.o stm32_serial.o stm32_spi.o stm32_sdio.o stm32_tim.o stm32_i2c.o stm32_waste.o stm32_idle.o stm32_pmstop.o stm32_pmstandby.o stm32_pmsleep.o stm32_pminitialize.o stm32_pwr.o stm32_wwdg.o stm32_dumpgpio.o up_assert.o up_blocktask.o up_copystate.o up_createstack.o up_mdelay.o up_udelay.o up_exit.o up_initialize.o up_initialstate.o up_interruptcontext.o up_memfault.o up_modifyreg8.o up_modifyreg16.o up_modifyreg32.o up_releasepending.o up_releasestack.o up_reprioritizertr.o up_schedulesigaction.o up_sigdeliver.o up_systemreset.o up_unblocktask.o up_usestack.o up_doirq.o up_hardfault.o up_svcall.o up_stackcheck.o up_vfork.o up_vectors.o stm32_otgfsdev.o
 CC:  mm_initialize.c
 CC:  mm_sem.c
@@ -870,9 +870,9 @@ CC:  sensors/lis331dl.c
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/sensors/lis331dl.c:173:5: warning: no previous prototype for 'lis331dl_readregs' [-Wmissing-prototypes]
 CC:  serial/serial.c
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c: In function 'uart_write':
-/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:485:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:461:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c: In function 'uart_read':
-/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:538:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:514:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 CC:  serial/serialirq.c
 CC:  serial/lowconsole.c
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/lowconsole.c:129:6: warning: no previous prototype for 'lowconsole_init' [-Wmissing-prototypes]
@@ -1352,9 +1352,9 @@ CC:  pipes/pipe_common.c
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/pipes/pipe_common.c:512:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 CC:  serial/serial.c
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c: In function 'uart_write':
-/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:485:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:461:18: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c: In function 'uart_read':
-/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:538:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/serial.c:514:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 CC:  serial/serialirq.c
 CC:  serial/lowconsole.c
 /home/ubuntu/apm/PX4Firmware/nuttx/drivers/serial/lowconsole.c:129:6: warning: no previous prototype for 'lowconsole_init' [-Wmissing-prototypes]
@@ -1395,8 +1395,10 @@ make[1]: Entering directory `/tmp/ArduPlane.build'
 %  MODULE_NAME         = ArduPlane.build
 %  MODULE_SRC          = /tmp/ArduPlane.build/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//tmp/ArduPlane.build/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//tmp/ArduPlane.build/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//tmp/ArduPlane.build
+SRCS ArduPlane.cpp /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_PitchController.cpp /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_RollController.cpp /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_YawController.cpp /home/ubuntu/apm/ardupilot-mega/libraries/APM_OBC/APM_OBC.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_ADC/AP_ADC_ADS7844.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_ADC/AP_ADC.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_ADC/AP_ADC_HIL.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_ADC_AnalogSource/AP_ADC_AnalogSource.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_DCM.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_HIL.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_MPU6000.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Airspeed/AP_Airspeed.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro_BMP085.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro_HIL.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro_MS5611.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro_PX4.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Buffer/AP_Buffer.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Camera/AP_Camera.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Common/c++.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HIL.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HMC5843.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_PX4.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Declination/AP_Declination.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_406.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_Auto.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_HIL.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_MTK19.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_MTK.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_NMEA.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_SIRF.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_UBLOX.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/GPS.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/AnalogIn_ADC.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/AnalogIn_Common.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Console.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/GPIO.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/HAL_AVR_APM1_Class.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/HAL_AVR_APM2_Class.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/I2CDriver.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/RCInput_APM1.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/RCInput_APM2.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/RCOutput_APM1.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/RCOutput_APM2.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Scheduler.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Scheduler_Timer.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Semaphores.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/SPIDeviceManager_APM1.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/SPIDeviceManager_APM2.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/SPIDevice_SPI0.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/SPIDevice_SPI2.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/SPIDevice_SPI3.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Storage.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/UARTDriver.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Util.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/AnalogIn.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/Console.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/HAL_AVR_SITL_Class.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/RCInput.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/RCOutput.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/Scheduler.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/sitl_barometer.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/sitl_compass.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/sitl_gps.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/sitl_ins.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/SITL_State.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/Storage.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/UARTDriver.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/Util.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/AnalogIn.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/Console.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/GPIO.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/HAL_Empty_Class.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/I2CDriver.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/PrivateMember.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/RCInput.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/RCOutput.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/Scheduler.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/Semaphores.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/SPIDriver.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/Storage.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/UARTDriver.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/Util.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/AnalogIn.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/Console.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/HAL_PX4_Class.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/RCInput.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/RCOutput.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/Scheduler.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/Storage.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/UARTDriver.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/Util.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_MPU6000.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_Oilpan.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_PX4.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_Stub.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_MAVLink.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_L1_Control/AP_L1_Control.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/AP_Math.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/location.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/matrix3.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/polygon.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/quaternion.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/vector2.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/vector3.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Menu/AP_Menu.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Mount/AP_Mount.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Param/AP_Param.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Progmem/AP_Progmem_AVR.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/AP_RangeFinder_analog.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarXL.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/AP_RangeFinder_SharpGP2Y.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/RangeFinder.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_Relay/AP_Relay.cpp /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_APM1.cpp /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_APM2.cpp /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_Block.cpp /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_Empty.cpp /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_File.cpp /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_SITL.cpp /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/LogFile.cpp /home/ubuntu/apm/ardupilot-mega/libraries/Filter/DerivativeFilter.cpp /home/ubuntu/apm/ardupilot-mega/libraries/GCS_MAVLink/GCS_MAVLink.cpp /home/ubuntu/apm/ardupilot-mega/libraries/PID/PID.cpp /home/ubuntu/apm/ardupilot-mega/libraries/RC_Channel/RC_Channel_aux.cpp /home/ubuntu/apm/ardupilot-mega/libraries/RC_Channel/RC_Channel.cpp /home/ubuntu/apm/ardupilot-mega/libraries/SITL/SITL.cpp /home/ubuntu/apm/ardupilot-mega/libraries/memcheck/memcheck.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL/utility/Print.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/ISRRegistry.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/print_vprintf.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/utility/print_vprintf.cpp /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/pins_arduino_mega.c /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/ftoa_engine.S /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/ultoa_invert.S
+OBJS ArduPlane.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_PitchController.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_RollController.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/APM_Control/AP_YawController.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/APM_OBC/APM_OBC.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_ADC/AP_ADC_ADS7844.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_ADC/AP_ADC.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_ADC/AP_ADC_HIL.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_ADC_AnalogSource/AP_ADC_AnalogSource.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_DCM.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_HIL.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_AHRS/AP_AHRS_MPU6000.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Airspeed/AP_Airspeed.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro_BMP085.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro_HIL.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro_MS5611.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Baro/AP_Baro_PX4.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Buffer/AP_Buffer.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Camera/AP_Camera.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Common/c++.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HIL.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_HMC5843.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/AP_Compass_PX4.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Compass/Compass.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Declination/AP_Declination.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_406.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_Auto.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_HIL.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_MTK19.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_MTK.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_NMEA.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_SIRF.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/AP_GPS_UBLOX.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_GPS/GPS.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/AnalogIn_ADC.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/AnalogIn_Common.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Console.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/GPIO.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/HAL_AVR_APM1_Class.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/HAL_AVR_APM2_Class.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/I2CDriver.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/RCInput_APM1.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/RCInput_APM2.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/RCOutput_APM1.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/RCOutput_APM2.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Scheduler.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Scheduler_Timer.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Semaphores.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/SPIDeviceManager_APM1.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/SPIDeviceManager_APM2.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/SPIDevice_SPI0.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/SPIDevice_SPI2.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/SPIDevice_SPI3.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Storage.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/UARTDriver.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/Util.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/AnalogIn.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/Console.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/HAL_AVR_SITL_Class.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/RCInput.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/RCOutput.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/Scheduler.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/sitl_barometer.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/sitl_compass.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/sitl_gps.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/sitl_ins.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/SITL_State.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/Storage.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/UARTDriver.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/Util.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/AnalogIn.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/Console.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/GPIO.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/HAL_Empty_Class.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/I2CDriver.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/PrivateMember.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/RCInput.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/RCOutput.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/Scheduler.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/Semaphores.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/SPIDriver.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/Storage.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/UARTDriver.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_Empty/Util.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/AnalogIn.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/Console.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/HAL_PX4_Class.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/RCInput.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/RCOutput.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/Scheduler.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/Storage.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/UARTDriver.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_PX4/Util.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_MPU6000.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_Oilpan.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_PX4.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_Stub.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_MAVLink.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_InertialSensor/AP_InertialSensor_UserInteract_Stream.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_L1_Control/AP_L1_Control.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/AP_Math.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/location.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/matrix3.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/polygon.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/quaternion.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/vector2.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Math/vector3.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Menu/AP_Menu.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Mount/AP_Mount.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Param/AP_Param.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Progmem/AP_Progmem_AVR.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/AP_RangeFinder_analog.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarXL.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/AP_RangeFinder_SharpGP2Y.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_RangeFinder/RangeFinder.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_Relay/AP_Relay.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_APM1.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_APM2.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_Block.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_Empty.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_File.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/DataFlash_SITL.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/DataFlash/LogFile.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/Filter/DerivativeFilter.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/GCS_MAVLink/GCS_MAVLink.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/PID/PID.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/RC_Channel/RC_Channel_aux.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/RC_Channel/RC_Channel.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/SITL/SITL.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/memcheck/memcheck.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL/utility/Print.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/ISRRegistry.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/print_vprintf.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR_SITL/utility/print_vprintf.cpp.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/pins_arduino_mega.c.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/ftoa_engine.S.o /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/ultoa_invert.S.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/tmp/ArduPlane.build'
 CXX:     /tmp/ArduPlane.build/ArduPlane.cpp
 In file included from /home/ubuntu/apm/ardupilot-mega/ArduPlane/ArduPlane.pde:22:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -4800,13 +4802,15 @@ AS:      /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/ftoa_engin
 AS:      /home/ubuntu/apm/ardupilot-mega/libraries/AP_HAL_AVR/utility/ultoa_invert.S
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//tmp/ArduPlane.build/module.pre.o
 CMD:     ArduPilot
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/tmp/ArduPlane.build'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/blinkm/module.mk
 %  MODULE_NAME         = blinkm
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/blinkm/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/blinkm/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/blinkm/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/blinkm
+SRCS blinkm.cpp
+OBJS blinkm.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/blinkm'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/blinkm/blinkm.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/blinkm/blinkm.cpp:101:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdlib.h:182:37: warning: 'mallinfo mallinfo()' hides constructor for 'struct mallinfo' [-Wshadow]
@@ -4823,13 +4827,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/blinkm/blinkm.cpp
 /home/ubuntu/apm/PX4Firmware/src/drivers/blinkm/blinkm.cpp:834:6: warning: no previous declaration for 'void blinkm_usage()' [-Wmissing-declarations]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/blinkm/module.pre.o
 CMD:     blinkm
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/blinkm'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/bma180/module.mk
 %  MODULE_NAME         = bma180
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/bma180/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/bma180/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/bma180/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/bma180
+SRCS bma180.cpp
+OBJS bma180.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/bma180'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/bma180/bma180.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/bma180/bma180.cpp:52:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -4844,13 +4850,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/bma180/bma180.cpp
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdio.h:150:66: warning: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/bma180/module.pre.o
 CMD:     bma180
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/bma180'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu/module.mk
 %  MODULE_NAME         = px4fmu
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu
+SRCS px4fmu_can.c px4fmu_init.c px4fmu_pwm_servo.c px4fmu_spi.c px4fmu_usb.c px4fmu_led.c
+OBJS px4fmu_can.c.o px4fmu_init.c.o px4fmu_pwm_servo.c.o px4fmu_spi.c.o px4fmu_usb.c.o px4fmu_led.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu'
 CC:      /home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu/px4fmu_can.c
 CC:      /home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu/px4fmu_init.c
 /home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu/px4fmu_init.c:102:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
@@ -4868,13 +4876,15 @@ CC:      /home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu/px4fmu_led.c
 /home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu/px4fmu_led.c:57:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
 /home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu/px4fmu_led.c:62:15: warning: function declaration isn't a prototype [-Wstrict-prototypes]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu/module.pre.o
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/boards/px4fmu'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/device/module.mk
 %  MODULE_NAME         = device
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/device/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/device/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/device/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/device
+SRCS cdev.cpp device.cpp i2c.cpp pio.cpp spi.cpp
+OBJS cdev.cpp.o device.cpp.o i2c.cpp.o pio.cpp.o spi.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/device'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/device/cdev.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/device/cdev.cpp:45:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdlib.h:182:37: warning: 'mallinfo mallinfo()' hides constructor for 'struct mallinfo' [-Wshadow]
@@ -4902,13 +4912,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export
                  from /home/ubuntu/apm/PX4Firmware/src/drivers/device/spi.cpp:48:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/signal.h:246:90: warning: 'int sigaction(int, const sigaction*, sigaction*)' hides constructor for 'struct sigaction' [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/device/module.pre.o
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/device'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/gps/module.mk
 %  MODULE_NAME         = gps
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/gps/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/gps/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/gps/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/gps
+SRCS gps.cpp gps_helper.cpp mtk.cpp ubx.cpp
+OBJS gps.cpp.o gps_helper.cpp.o mtk.cpp.o ubx.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/gps'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/gps/gps.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/gps/gps.cpp:51:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -4950,13 +4962,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/gps/ubx.cpp:46:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdio.h:150:66: warning: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/gps/module.pre.o
 CMD:     gps
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/gps'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/hil/module.mk
 %  MODULE_NAME         = hil
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/hil/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hil/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hil/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hil
+SRCS hil.cpp
+OBJS hil.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/hil'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/hil/hil.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/hil/hil.cpp:63:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -4971,13 +4985,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/hil/hil.cpp:62:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdio.h:150:66: warning: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hil/module.pre.o
 CMD:     hil
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/hil'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/hmc5883/module.mk
 %  MODULE_NAME         = hmc5883
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/hmc5883/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hmc5883/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hmc5883/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hmc5883
+SRCS hmc5883.cpp
+OBJS hmc5883.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/hmc5883'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/hmc5883/hmc5883.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/hmc5883/hmc5883.cpp:54:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -4992,13 +5008,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/hmc5883/hmc5883.c
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdio.h:150:66: warning: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hmc5883/module.pre.o
 CMD:     hmc5883
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/hmc5883'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry/module.mk
 %  MODULE_NAME         = hott_telemetry
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry
+SRCS hott_telemetry_main.c messages.c
+OBJS hott_telemetry_main.c.o messages.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry'
 CC:      /home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry/hott_telemetry_main.c
 CC:      /home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry/messages.c
 /home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry/messages.c: In function 'build_eam_response':
@@ -5006,13 +5024,15 @@ CC:      /home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry/messages.c
 /home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry/messages.c:92:62: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry/module.pre.o
 CMD:     hott_telemetry
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/hott_telemetry'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/l3gd20/module.mk
 %  MODULE_NAME         = l3gd20
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/l3gd20/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/l3gd20/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/l3gd20/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/l3gd20
+SRCS l3gd20.cpp
+OBJS l3gd20.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/l3gd20'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/l3gd20/l3gd20.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/l3gd20/l3gd20.cpp:52:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -5027,22 +5047,26 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/l3gd20/l3gd20.cpp
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdio.h:150:66: warning: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/l3gd20/module.pre.o
 CMD:     l3gd20
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/l3gd20'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/led/module.mk
 %  MODULE_NAME         = led
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/led/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/led/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/led/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/led
+SRCS led.cpp
+OBJS led.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/led'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/led/led.cpp
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/led/module.pre.o
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/led'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx/module.mk
 %  MODULE_NAME         = mb12xx
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx
+SRCS mb12xx.cpp
+OBJS mb12xx.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx/mb12xx.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx/mb12xx.cpp:55:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -5059,13 +5083,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx/mb12xx.cpp
 /home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx/mb12xx.cpp:528:1: warning: label 'out' defined but not used [-Wunused-label]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx/module.pre.o
 CMD:     mb12xx
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/mb12xx'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/mpu6000/module.mk
 %  MODULE_NAME         = mpu6000
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/mpu6000/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/mpu6000/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/mpu6000/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/mpu6000
+SRCS mpu6000.cpp
+OBJS mpu6000.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/mpu6000'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/mpu6000/mpu6000.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/mpu6000/mpu6000.cpp:53:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -5080,13 +5106,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/mpu6000/mpu6000.c
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdio.h:150:66: warning: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/mpu6000/module.pre.o
 CMD:     mpu6000
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/mpu6000'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/ms5611/module.mk
 %  MODULE_NAME         = ms5611
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/ms5611/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/ms5611/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/ms5611/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/ms5611
+SRCS ms5611.cpp
+OBJS ms5611.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/ms5611'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/ms5611/ms5611.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/ms5611/ms5611.cpp:53:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -5104,13 +5132,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/ms5611/ms5611.cpp
 /home/ubuntu/apm/PX4Firmware/src/drivers/ms5611/ms5611.cpp:1161:47: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/ms5611/module.pre.o
 CMD:     ms5611
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/ms5611'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu/module.mk
 %  MODULE_NAME         = px4fmu
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu
+SRCS fmu.cpp
+OBJS fmu.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu/fmu.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu/fmu.cpp:52:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -5124,20 +5154,22 @@ In file included from /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu/fmu.cpp:51:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdio.h:150:66: warning: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Wshadow]
 /home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu/fmu.cpp: In member function 'void PX4FMU::task_main()':
-/home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu/fmu.cpp:478:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu/fmu.cpp:476:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu/module.pre.o
 CMD:     fmu
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/px4fmu'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/px4io/module.mk
 %  MODULE_NAME         = px4io
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/px4io/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/px4io/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/px4io/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/px4io
+SRCS px4io.cpp uploader.cpp
+OBJS px4io.cpp.o uploader.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/px4io'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp:56:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
-/home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp:1662:2: warning: #warning implement this [-Wcpp]
+/home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp:1673:2: warning: #warning implement this [-Wcpp]
 In file included from /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/nuttx/sched.h:48:0,
                  from /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/sched.h:47,
                  from /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdio.h:47,
@@ -5151,10 +5183,6 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp:5
 /home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp:165:12: warning: 'PX4IO::_battery_last_timestamp' will be initialized after [-Wreorder]
 /home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp:160:9: warning:   '_Bool8 PX4IO::_primary_pwm_device' [-Wreorder]
 /home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp:307:1: warning:   when initialized here [-Wreorder]
-/home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp: In member function 'void PX4IO::print_status()':
-/home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp:1282:32: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp:1282:32: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
-/home/ubuntu/apm/PX4Firmware/src/drivers/px4io/px4io.cpp:1282:32: warning: implicit conversion from 'float' to 'double' when passing argument to function [-Wdouble-promotion]
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/px4io/uploader.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/nuttx/sched.h:48:0,
                  from /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/sched.h:47,
@@ -5167,23 +5195,27 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/px4io/uploader.cp
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/sys/stat.h:126:55: warning: 'int stat(const char*, stat*)' hides constructor for 'struct stat' [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/px4io/module.pre.o
 CMD:     px4io
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/px4io'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/module.mk
 %  MODULE_NAME         = stm32
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32
+SRCS drv_hrt.c drv_pwm_servo.c
+OBJS drv_hrt.c.o drv_pwm_servo.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/stm32'
 CC:      /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/drv_hrt.c
 CC:      /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/drv_pwm_servo.c
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32/module.pre.o
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/stm32'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/adc/module.mk
 %  MODULE_NAME         = adc
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/adc/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32/adc/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32/adc/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32/adc
+SRCS adc.cpp
+OBJS adc.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/stm32/adc'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/adc/adc.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/adc/adc.cpp:49:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdlib.h:182:37: warning: 'mallinfo mallinfo()' hides constructor for 'struct mallinfo' [-Wshadow]
@@ -5196,13 +5228,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/adc/adc.cpp
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdio.h:150:66: warning: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32/adc/module.pre.o
 CMD:     adc
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/stm32/adc'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/tone_alarm/module.mk
 %  MODULE_NAME         = tone_alarm
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/tone_alarm/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32/tone_alarm/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32/tone_alarm/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32/tone_alarm
+SRCS tone_alarm.cpp
+OBJS tone_alarm.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/stm32/tone_alarm'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/tone_alarm/tone_alarm.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/tone_alarm/tone_alarm.cpp:104:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -5217,13 +5251,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/drivers/stm32/tone_alarm/
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdio.h:150:66: warning: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/drivers/stm32/tone_alarm/module.pre.o
 CMD:     tone_alarm
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/drivers/stm32/tone_alarm'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/modules/sensors/module.mk
 %  MODULE_NAME         = sensors
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/modules/sensors/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/sensors/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/sensors/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/sensors
+SRCS sensors.cpp sensor_params.c
+OBJS sensors.cpp.o sensor_params.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/modules/sensors'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/modules/sensors/sensors.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/modules/sensors/sensors.cpp:52:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -5239,13 +5275,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/modules/sensors/sensors.c
 CC:      /home/ubuntu/apm/PX4Firmware/src/modules/sensors/sensor_params.c
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/sensors/module.pre.o
 CMD:     sensors
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/modules/sensors'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/module.mk
 %  MODULE_NAME         = systemlib
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/systemlib/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/systemlib/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/systemlib
+SRCS err.c hx_stream.c perf_counter.c param/param.c bson/tinybson.c conversions.c cpuload.c getopt_long.c up_cxxinitialize.c pid/pid.c geo/geo.c systemlib.c airspeed.c
+OBJS err.c.o hx_stream.c.o perf_counter.c.o param/param.c.o bson/tinybson.c.o conversions.c.o cpuload.c.o getopt_long.c.o up_cxxinitialize.c.o pid/pid.c.o geo/geo.c.o systemlib.c.o airspeed.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/modules/systemlib'
 CC:      /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/err.c
 CC:      /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/hx_stream.c
 CC:      /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/perf_counter.c
@@ -5357,13 +5395,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/airspee
 /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/airspeed.c:109:22: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/airspeed.c:109:50: warning: implicit conversion from 'float' to 'double' to match other operand of binary expression [-Wdouble-promotion]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/systemlib/module.pre.o
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/modules/systemlib'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/mixer/module.mk
 %  MODULE_NAME         = mixer
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/mixer/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/systemlib/mixer/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/systemlib/mixer/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/systemlib/mixer
+SRCS mixer.cpp mixer_group.cpp mixer_multirotor.cpp mixer_simple.cpp
+OBJS mixer.cpp.o mixer_group.cpp.o mixer_multirotor.cpp.o mixer_simple.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/modules/systemlib/mixer'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/mixer/mixer.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/mixer/mixer.cpp:51:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -5413,13 +5453,15 @@ In file included from /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export
 In file included from /home/ubuntu/apm/PX4Firmware/src/modules/systemlib/mixer/mixer_simple.cpp:50:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/stdio.h:150:66: warning: 'int statfs(const char*, statfs*)' hides constructor for 'struct statfs' [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/systemlib/mixer/module.pre.o
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/modules/systemlib/mixer'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/modules/uORB/module.mk
 %  MODULE_NAME         = uORB
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/modules/uORB/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/uORB/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/uORB/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/uORB
+SRCS uORB.cpp objects_common.cpp
+OBJS uORB.cpp.o objects_common.cpp.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/modules/uORB'
 CXX:     /home/ubuntu/apm/PX4Firmware/src/modules/uORB/uORB.cpp
 In file included from /home/ubuntu/apm/PX4Firmware/src/modules/uORB/uORB.cpp:52:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/math.h:60:7: warning: extra tokens at end of #else directive [enabled by default]
@@ -5435,33 +5477,39 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/modules/uORB/uORB.cpp:51:
 CXX:     /home/ubuntu/apm/PX4Firmware/src/modules/uORB/objects_common.cpp
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/modules/uORB/module.pre.o
 CMD:     uorb
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/modules/uORB'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/systemcmds/bl_update/module.mk
 %  MODULE_NAME         = bl_update
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/systemcmds/bl_update/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/bl_update/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/bl_update/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/bl_update
+SRCS bl_update.c
+OBJS bl_update.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/bl_update'
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/bl_update/bl_update.c
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/bl_update/module.pre.o
 CMD:     bl_update
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/bl_update'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/systemcmds/boardinfo/module.mk
 %  MODULE_NAME         = boardinfo
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/systemcmds/boardinfo/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/boardinfo/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/boardinfo/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/boardinfo
+SRCS boardinfo.c
+OBJS boardinfo.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/boardinfo'
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/boardinfo/boardinfo.c
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/boardinfo/module.pre.o
 CMD:     boardinfo
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/boardinfo'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/systemcmds/eeprom/module.mk
 %  MODULE_NAME         = eeprom
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/systemcmds/eeprom/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/eeprom/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/eeprom/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/eeprom
+SRCS 24xxxx_mtd.c eeprom.c
+OBJS 24xxxx_mtd.c.o eeprom.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/eeprom'
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/eeprom/24xxxx_mtd.c
 In file included from /home/ubuntu/apm/PX4Firmware/src/systemcmds/eeprom/24xxxx_mtd.c:67:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/nuttx/mtd.h:185:57: warning: 'struct spi_dev_s' declared inside parameter list [enabled by default]
@@ -5481,43 +5529,51 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/systemcmds/eeprom/eeprom.
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/nuttx/mtd.h:235:57: warning: 'struct spi_dev_s' declared inside parameter list [enabled by default]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/eeprom/module.pre.o
 CMD:     eeprom
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/eeprom'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/systemcmds/i2c/module.mk
 %  MODULE_NAME         = i2c
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/systemcmds/i2c/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/i2c/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/i2c/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/i2c
+SRCS i2c.c
+OBJS i2c.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/i2c'
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/i2c/i2c.c
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/i2c/module.pre.o
 CMD:     i2c
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/i2c'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/systemcmds/mixer/module.mk
 %  MODULE_NAME         = mixer
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/systemcmds/mixer/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/mixer/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/mixer/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/mixer
+SRCS mixer.c
+OBJS mixer.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/mixer'
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/mixer/mixer.c
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/mixer/module.pre.o
 CMD:     mixer
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/mixer'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/systemcmds/perf/module.mk
 %  MODULE_NAME         = perf
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/systemcmds/perf/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/perf/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/perf/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/perf
+SRCS perf.c
+OBJS perf.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/perf'
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/perf/perf.c
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/perf/module.pre.o
 CMD:     perf
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/perf'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm/module.mk
 %  MODULE_NAME         = pwm
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm
+SRCS pwm.c
+OBJS pwm.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm'
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm/pwm.c
 In file included from /home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm/pwm.c:53:0:
 /home/ubuntu/apm/PX4Firmware/makefiles//build/nuttx-export/include/nuttx/mtd.h:185:57: warning: 'struct spi_dev_s' declared inside parameter list [enabled by default]
@@ -5531,23 +5587,27 @@ In file included from /home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm/pwm.c:53:0
 /home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm/pwm.c:99:11: warning: shadowed declaration is here [-Wshadow]
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm/module.pre.o
 CMD:     pwm
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/pwm'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/systemcmds/reboot/module.mk
 %  MODULE_NAME         = reboot
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/systemcmds/reboot/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/reboot/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/reboot/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/reboot
+SRCS reboot.c
+OBJS reboot.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/reboot'
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/reboot/reboot.c
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/reboot/module.pre.o
 CMD:     reboot
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/reboot'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/systemcmds/tests/module.mk
 %  MODULE_NAME         = tests
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/systemcmds/tests/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/tests/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/tests/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/tests
+SRCS test_adc.c test_bson.c test_float.c test_gpio.c test_hott_telemetry.c test_hrt.c test_int.c test_jig_voltages.c test_led.c test_sensors.c test_servo.c test_sleep.c test_time.c test_uart_baudchange.c test_uart_console.c test_uart_loopback.c test_uart_send.c tests_file.c tests_main.c tests_param.c
+OBJS test_adc.c.o test_bson.c.o test_float.c.o test_gpio.c.o test_hott_telemetry.c.o test_hrt.c.o test_int.c.o test_jig_voltages.c.o test_led.c.o test_sensors.c.o test_servo.c.o test_sleep.c.o test_time.c.o test_uart_baudchange.c.o test_uart_console.c.o test_uart_loopback.c.o test_uart_send.c.o tests_file.c.o tests_main.c.o tests_param.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/tests'
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/tests/test_adc.c
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/tests/test_bson.c
 /home/ubuntu/apm/PX4Firmware/src/systemcmds/tests/test_bson.c: In function 'decode_callback':
@@ -5617,22 +5677,24 @@ CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/tests/tests_main.c
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/tests/tests_param.c
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/tests/module.pre.o
 CMD:     tests
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/tests'
 %% MODULE_MK           = /home/ubuntu/apm/PX4Firmware/src/systemcmds/top/module.mk
 %  MODULE_NAME         = top
 %  MODULE_SRC          = /home/ubuntu/apm/PX4Firmware/src/systemcmds/top/
 %  MODULE_OBJ          = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/top/module.pre.o
-%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/top/
-make[2]: Entering directory `/tmp/ArduPlane.build'
+%  MODULE_WORK_DIR     = /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/top
+SRCS top.c
+OBJS top.c.o
+make[2]: Entering directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/top'
 CC:      /home/ubuntu/apm/PX4Firmware/src/systemcmds/top/top.c
 PRELINK: /home/ubuntu/apm/PX4Firmware/makefiles//build//home/ubuntu/apm/PX4Firmware/src/systemcmds/top/module.pre.o
 CMD:     top
-make[2]: Leaving directory `/tmp/ArduPlane.build'
+make[2]: Leaving directory `/home/ubuntu/apm/PX4Firmware/makefiles/build/home/ubuntu/apm/PX4Firmware/src/systemcmds/top'
 CMDS:    /home/ubuntu/apm/PX4Firmware/makefiles//build/builtin_commands.c
 CC:      /home/ubuntu/apm/PX4Firmware/makefiles//build/builtin_commands.c
-ROMFS:   /home/ubuntu/apm/PX4Firmware/makefiles//build/romfs.img
-OBJ:     /home/ubuntu/apm/PX4Firmware/makefiles//build/romfs.o
-CC:      /home/ubuntu/apm/PX4Firmware/makefiles//build/romfs.o.c
+ROMFS:   romfs.img
+OBJ:     romfs.o
+CC:      romfs.o.c
 LINK:    /home/ubuntu/apm/PX4Firmware/makefiles//build/firmware.elf
 BIN:     /home/ubuntu/apm/PX4Firmware/makefiles//build/firmware.bin
 %% Generating /home/ubuntu/apm/PX4Firmware/makefiles//build/firmware.px4
