@@ -26,7 +26,7 @@
 
 #define HIL_PROTOCOL        HIL_PROTOCOL_MAVLINK
 
-#define HIL_MODE            HIL_MODE_ATTITUDE
+#define HIL_MODE            HIL_MODE_SENSORS
 
 #define HIL_PORT            0
 
@@ -159,7 +159,7 @@
 #define FRAME_CONFIG QUAD_FRAME
 #define FRAME_ORIENTATION PLUS_FRAME
 
-#define HIL_MODE            HIL_MODE_ATTITUDE
+#define HIL_MODE            HIL_MODE_SENSORS
 #define ALLOW_RC_OVERRIDE ENABLED
 
 
@@ -174,7 +174,7 @@
     <name>ArduCopter V2.9.1b Heli Hil</name>
     <desc>
 
-#define HIL_MODE            HIL_MODE_ATTITUDE
+#define HIL_MODE            HIL_MODE_SENSORS
 #define ALLOW_RC_OVERRIDE ENABLED
 
 #define FRAME_CONFIG HELI_FRAME
