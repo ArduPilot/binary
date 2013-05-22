@@ -4,7 +4,7 @@
     <url>http://firmware.diydrones.com/Plane/beta/apm1-1280/ArduPlane.hex</url>
     <url2560>http://firmware.diydrones.com/Plane/beta/apm1/ArduPlane.hex</url2560>
     <url2560-2>http://firmware.diydrones.com/Plane/beta/apm2/ArduPlane.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Plane/beta/PX4/px4fmu.px4</urlpx4>
+    <urlpx4>http://firmware.diydrones.com/Plane/beta/PX4/ArduPlane.px4</urlpx4>
     <name>ArduPlane Beta</name>
     <desc></desc>
     <format_version>13</format_version>
@@ -24,7 +24,7 @@
     <url>http://firmware.diydrones.com/Rover/beta/apm1-1280/ArduRover.hex</url>
     <url2560>http://firmware.diydrones.com/Rover/beta/apm1/ArduRover.hex</url2560>
     <url2560-2>http://firmware.diydrones.com/Rover/beta/apm2/ArduRover.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Rover/beta/PX4/px4fmu.px4</urlpx4>
+    <urlpx4>http://firmware.diydrones.com/Rover/beta/PX4/ArduRover.px4</urlpx4>
     <name>ArduRover Beta</name>
     <desc>
 </desc>
@@ -34,7 +34,7 @@
     <url></url>
     <url2560>http://firmware.diydrones.com/Copter/beta/apm1-quad/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.diydrones.com/Copter/beta/apm2-quad/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-quad/px4fmu.px4</urlpx4>
+    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-quad/ArduCopter.px4</urlpx4>
     <name>ArduCopter Quad Beta</name>
     <desc>
 </desc>
@@ -44,7 +44,7 @@
     <url></url>
     <url2560>http://firmware.diydrones.com/Copter/beta/apm1-tri/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.diydrones.com/Copter/beta/apm2-tri/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-tri/px4fmu.px4</urlpx4>
+    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-tri/ArduCopter.px4</urlpx4>
     <name>ArduCopter Tri Beta</name>
     <desc>
 </desc>
@@ -54,7 +54,7 @@
     <url></url>
     <url2560>http://firmware.diydrones.com/Copter/beta/apm1-hexa/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.diydrones.com/Copter/beta/apm2-hexa/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-hexa/px4fmu.px4</urlpx4>
+    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-hexa/ArduCopter.px4</urlpx4>
     <name>ArduCopter Hexa Beta</name>
     <desc>
 </desc>
@@ -64,7 +64,7 @@
     <url></url>
     <url2560>http://firmware.diydrones.com/Copter/beta/apm1-y6/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.diydrones.com/Copter/beta/apm2-y6/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-y6/px4fmu.px4</urlpx4>
+    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-y6/ArduCopter.px4</urlpx4>
     <name>ArduCopter Y6 Beta</name>
     <desc>
 </desc>
@@ -74,7 +74,7 @@
     <url></url>
     <url2560>http://firmware.diydrones.com/Copter/beta/apm1-octa-quad/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.diydrones.com/Copter/beta/apm2-octa-quad/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-octa-quad/px4fmu.px4</urlpx4>
+    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-octa-quad/ArduCopter.px4</urlpx4>
     <name>ArduCopter Octa Quad Beta</name>
     <desc>
 </desc>
@@ -84,7 +84,7 @@
     <url></url>
     <url2560>http://firmware.diydrones.com/Copter/beta/apm1-octa/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.diydrones.com/Copter/beta/apm2-octa/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-octa/px4fmu.px4</urlpx4>
+    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-octa/ArduCopter.px4</urlpx4>
     <name>ArduCopter Octa Beta</name>
     <desc>
 </desc>
@@ -94,7 +94,7 @@
     <url></url>
     <url2560>http://firmware.diydrones.com/Copter/beta/apm1-heli/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.diydrones.com/Copter/beta/apm2-heli/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-heli/px4fmu.px4</urlpx4>
+    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-heli/ArduCopter.px4</urlpx4>
     <name>ArduCopter Heli Beta</name>
     <desc>
 </desc>
@@ -104,7 +104,7 @@
     <url></url>
     <url2560>http://firmware.diydrones.com/Copter/beta/apm1-quad-hil/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.diydrones.com/Copter/beta/apm2-quad-hil/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-quad-hil/px4fmu.px4</urlpx4>
+    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-quad-hil/ArduCopter.px4</urlpx4>
     <name>ArduCopter Quad Hil</name>
     <desc>
 </desc>
@@ -114,7 +114,7 @@
     <url></url>
     <url2560>http://firmware.diydrones.com/Copter/beta/apm1-heli-hil/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.diydrones.com/Copter/beta/apm2-heli-hil/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-heli-hil/px4fmu.px4</urlpx4>
+    <urlpx4>http://firmware.diydrones.com/Copter/beta/PX4-heli-hil/ArduCopter.px4</urlpx4>
     <name>ArduCopter Heli Hil</name>
     <desc>
 </desc>
