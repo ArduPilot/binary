@@ -21,10 +21,10 @@
     <format_version>13</format_version>
   </Firmware>
   <Firmware>
-    <url>http://firmware.diydrones.com/Rover/beta/apm1-1280/ArduRover.hex</url>
-    <url2560>http://firmware.diydrones.com/Rover/beta/apm1/ArduRover.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Rover/beta/apm2/ArduRover.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Rover/beta/PX4/ArduRover.px4</urlpx4>
+    <url>http://firmware.diydrones.com/Rover/beta/apm1-1280/APMrover2.hex</url>
+    <url2560>http://firmware.diydrones.com/Rover/beta/apm1/APMrover2.hex</url2560>
+    <url2560-2>http://firmware.diydrones.com/Rover/beta/apm2/APMrover2.hex</url2560-2>
+    <urlpx4>http://firmware.diydrones.com/Rover/beta/PX4/APMrover2.px4</urlpx4>
     <name>ArduRover Beta</name>
     <desc>
 </desc>
