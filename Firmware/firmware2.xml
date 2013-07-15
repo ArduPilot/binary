@@ -1,122 +1,184 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <options>
   <Firmware>
-    <url>http://firmware.diydrones.com/Plane/stable/apm1-1280/ArduPlane.hex</url>
-    <url2560>http://firmware.diydrones.com/Plane/stable/apm1/ArduPlane.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Plane/stable/apm2/ArduPlane.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Plane/stable/PX4/ArduPlane.px4</urlpx4>
-    <name>ArduPlane Stable</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AP-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AP-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AP-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AP-px4.px4</urlpx4>
+    <name>ArduPlane V2.74  </name>
     <desc></desc>
     <format_version>13</format_version>
   </Firmware>
   <Firmware>
-    <url></url>
-    <url2560>http://firmware.diydrones.com/Plane/stable/apm1-hilsensors/ArduPlane.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Plane/stable/apm2-hilsensors/ArduPlane.hex</url2560-2>
-    <urlpx4></urlpx4>
-    <name>ArduPlane HIL Stable</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/APHIL-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/APHIL-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/APHIL-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/APHIL-px4.px4</urlpx4>
+    <name>ArduPlane V2.74 HIL</name>
     <desc>
+#define FLIGHT_MODE_CHANNEL	8
+#define FLIGHT_MODE_1		AUTO
+#define FLIGHT_MODE_2		RTL
+#define FLIGHT_MODE_3		FLY_BY_WIRE_A
+#define FLIGHT_MODE_4       FLY_BY_WIRE_B
+#define FLIGHT_MODE_5       STABILIZE
+#define FLIGHT_MODE_6       MANUAL
 
+#define HIL_PROTOCOL        HIL_PROTOCOL_MAVLINK
+
+#define HIL_MODE            HIL_MODE_SENSORS
+
+#define HIL_PORT            0
+
+//define LOGGING_ENABLED DISABLED
+//define CLI_ENABLED DISABLED
+
+#define GPS_PROTOCOL 		GPS_PROTOCOL_MTK
+
+# define GCS_PROTOCOL        GCS_PROTOCOL_MAVLINK
+# define GCS_PORT            3
+
+#define AIRSPEED_SENSOR     ENABLED
+#define MAGNETOMETER        ENABLED
+#define AIRSPEED_CRUISE     25
+#define THROTTLE_FAILSAFE   ENABLED
 </desc>
     <format_version>13</format_version>
   </Firmware>
   <Firmware>
-    <url>http://firmware.diydrones.com/Rover/stable/apm1-1280/APMrover2.hex</url>
-    <url2560>http://firmware.diydrones.com/Rover/stable/apm1/APMrover2.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Rover/stable/apm2/APMrover2.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Rover/stable/PX4/APMrover2.px4</urlpx4>
-    <name>ArduRover Stable</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AR2-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AR2-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AR2-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AR2-px4.px4</urlpx4>
+    <name>ArduRover v2.42 AR2</name>
     <desc>
+#define LITE  DISABLED
+
+#define CLI_ENABLED         ENABLED
+#define CLI_SLIDER_ENABLED  DISABLED
+#define CLOSED_LOOP_NAV     ENABLED
+#define AUTO_WP_RADIUS      DISABLED
+
+#define TRACE               ENABLED
+
+
 </desc>
     <format_version>16</format_version>
   </Firmware>
   <Firmware>
-    <url></url>
-    <url2560>http://firmware.diydrones.com/Copter/stable/apm1-quad/ArduCopter.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-quad/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-quad/ArduCopter.px4</urlpx4>
-    <name>ArduCopter Quad Stable</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Quad-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Quad-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Quad-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Quad-px4.px4</urlpx4>
+    <name>ArduCopter V2.9.1b Quad</name>
     <desc>
+#define FRAME_CONFIG QUAD_FRAME
+
 </desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url></url>
-    <url2560>http://firmware.diydrones.com/Copter/stable/apm1-tri/ArduCopter.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-tri/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-tri/ArduCopter.px4</urlpx4>
-    <name>ArduCopter Tri Stable</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Tri-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Tri-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Tri-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Tri-px4.px4</urlpx4>
+    <name>ArduCopter V2.9.1b Tri</name>
     <desc>
+#define FRAME_CONFIG TRI_FRAME
+
 </desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url></url>
-    <url2560>http://firmware.diydrones.com/Copter/stable/apm1-hexa/ArduCopter.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-hexa/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-hexa/ArduCopter.px4</urlpx4>
-    <name>ArduCopter Hexa Stable</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Hexa-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Hexa-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Hexa-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Hexa-px4.px4</urlpx4>
+    <name>ArduCopter V2.9.1b Hexa</name>
     <desc>
+#define FRAME_CONFIG HEXA_FRAME
+
 </desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url></url>
-    <url2560>http://firmware.diydrones.com/Copter/stable/apm1-y6/ArduCopter.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-y6/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-y6/ArduCopter.px4</urlpx4>
-    <name>ArduCopter Y6 Stable</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Y6-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Y6-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Y6-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Y6-px4.px4</urlpx4>
+    <name>ArduCopter V2.9.1b Y6</name>
     <desc>
+#define FRAME_CONFIG Y6_FRAME
+
 </desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url></url>
-    <url2560>http://firmware.diydrones.com/Copter/stable/apm1-octa-quad/ArduCopter.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-octa-quad/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-octa-quad/ArduCopter.px4</urlpx4>
-    <name>ArduCopter Octa Quad Stable</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octaquad-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octaquad-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octaquad-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octaquad-px4.px4</urlpx4>
+    <name>ArduCopter V2.9.1b Octa Quad</name>
     <desc>
+#define FRAME_CONFIG OCTA_QUAD_FRAME
+
 </desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url></url>
-    <url2560>http://firmware.diydrones.com/Copter/stable/apm1-octa/ArduCopter.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-octa/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-octa/ArduCopter.px4</urlpx4>
-    <name>ArduCopter Octa Stable</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Octa-px4.px4</urlpx4>
+    <name>ArduCopter V2.9.1b Octa</name>
     <desc>
+#define FRAME_CONFIG OCTA_FRAME
+
 </desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url></url>
-    <url2560>http://firmware.diydrones.com/Copter/stable/apm1-heli/ArduCopter.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-heli/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-heli/ArduCopter.px4</urlpx4>
-    <name>ArduCopter Heli Stable</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Heli-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Heli-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Heli-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-Heli-px4.px4</urlpx4>
+    <name>ArduCopter V2.9.1b Heli (2560 only)</name>
     <desc>
+#define FRAME_CONFIG HELI_FRAME
+
 </desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url></url>
-    <url2560>http://firmware.diydrones.com/Copter/stable/apm1-quad-hil/ArduCopter.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-quad-hil/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-quad-hil/ArduCopter.px4</urlpx4>
-    <name>ArduCopter Quad Hil</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-QUADHIL-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-QUADHIL-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-QUADHIL-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-QUADHIL-px4.px4</urlpx4>
+    <name>ArduCopter V2.9.1b Quad Hil</name>
     <desc>
+#define FRAME_CONFIG QUAD_FRAME
+#define FRAME_ORIENTATION PLUS_FRAME
+
+#define HIL_MODE            HIL_MODE_SENSORS
+#define ALLOW_RC_OVERRIDE ENABLED
+
+
 </desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url></url>
-    <url2560>http://firmware.diydrones.com/Copter/stable/apm1-heli-hil/ArduCopter.hex</url2560>
-    <url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-heli-hil/ArduCopter.hex</url2560-2>
-    <urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-heli-hil/ArduCopter.px4</urlpx4>
-    <name>ArduCopter Heli Hil</name>
+    <url>https://raw.github.com/diydrones/binary/master/Firmware/AC2-HELHIL-1280.hex</url>
+    <url2560>https://raw.github.com/diydrones/binary/master/Firmware/AC2-HELHIL-2560.hex</url2560>
+    <url2560-2>https://raw.github.com/diydrones/binary/master/Firmware/AC2-HELHIL-2560-2.hex</url2560-2>
+    <urlpx4>https://raw.github.com/diydrones/binary/master/Firmware/AC2-HELHIL-px4.px4</urlpx4>
+    <name>ArduCopter V2.9.1b Heli Hil</name>
     <desc>
+
+#define HIL_MODE            HIL_MODE_SENSORS
+#define ALLOW_RC_OVERRIDE ENABLED
+
+#define FRAME_CONFIG HELI_FRAME
+
 </desc>
     <format_version>120</format_version>
   </Firmware>

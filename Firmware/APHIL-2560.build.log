@@ -1,6 +1,7 @@
 building /tmp/ArduPlane.build/ArduPlane.cpp
 %% ArduPlane.cpp
 %% ArduPlane.o
+/home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:418:1: warning: 'int8_t test_adc(uint8_t, const Menu::arg*)' defined but not used [-Wunused-function]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:19:17: warning: 'int8_t test_airspeed(uint8_t, const Menu::arg*)' declared 'static' but never defined [-Wunused-function]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:20:17: warning: 'int8_t test_pressure(uint8_t, const Menu::arg*)' declared 'static' but never defined [-Wunused-function]
 /home/ubuntu/apm/ardupilot-mega/ArduPlane/test.pde:24:17: warning: 'int8_t test_rawgps(uint8_t, const Menu::arg*)' declared 'static' but never defined [-Wunused-function]
@@ -91,6 +92,7 @@ building /tmp/ArduPlane.build/ArduPlane.cpp
 %% libraries/AP_HAL_Empty/Util.o
 %% libraries/AP_HAL_PX4/AnalogIn.o
 %% libraries/AP_HAL_PX4/Console.o
+%% libraries/AP_HAL_PX4/GPIO.o
 %% libraries/AP_HAL_PX4/HAL_PX4_Class.o
 %% libraries/AP_HAL_PX4/RCInput.o
 %% libraries/AP_HAL_PX4/RCOutput.o
@@ -117,12 +119,15 @@ building /tmp/ArduPlane.build/ArduPlane.cpp
 %% libraries/AP_Mount/AP_Mount.o
 %% libraries/AP_Param/AP_Param.o
 %% libraries/AP_Progmem/AP_Progmem_AVR.o
+%% libraries/AP_RCMapper/AP_RCMapper.o
 %% libraries/AP_RangeFinder/AP_RangeFinder_analog.o
 %% libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarI2CXL.o
 %% libraries/AP_RangeFinder/AP_RangeFinder_MaxsonarXL.o
 %% libraries/AP_RangeFinder/AP_RangeFinder_SharpGP2Y.o
 %% libraries/AP_RangeFinder/RangeFinder.o
 %% libraries/AP_Relay/AP_Relay.o
+%% libraries/AP_Scheduler/AP_Scheduler.o
+%% libraries/AP_TECS/AP_TECS.o
 %% libraries/DataFlash/DataFlash_APM1.o
 %% libraries/DataFlash/DataFlash_APM2.o
 %% libraries/DataFlash/DataFlash_Block.o
