@@ -1,0 +1,7 @@
+commit 71f6287388a8d1f20858190ea1995e5b8d173450
+Author: Andrew Tridgell <tridge@samba.org>
+Date:   Sat Apr 6 17:42:20 2013 +1100
+
+    Plane: fixed spelling
+
+APMVERSION: ArduRover v2.40
