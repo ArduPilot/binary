@@ -1,7 +1,7 @@
-commit 1ebaa14a996c889979932657e483cd24d5861f07
+commit a4f49a28fb9f89b238b46c2fad96f157bf58ba22
 Author: Andrew Tridgell <tridge@samba.org>
-Date:   Thu Feb 21 09:49:15 2013 +1100
+Date:   Tue Jul 16 09:45:32 2013 +1000
 
-    Plane: prepare for 2.70 release
+    Plane: prepare for 2.74b release
 
-APMVERSION: ArduPlane V2.70
+APMVERSION: ArduPlane V2.74b
