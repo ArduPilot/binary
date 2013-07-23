@@ -1,0 +1,7 @@
+commit 3b982bc90874cf172fe6261ec6e818266fa805c5
+Author: Randy Mackay <rmackay9@yahoo.com>
+Date:   Thu Jul 11 13:41:51 2013 +0900
+
+    Copter: firmware version to 3.0.1
+
+APMVERSION: ArduCopter V3.0.1
