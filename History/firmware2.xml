@@ -32,7 +32,7 @@
     <url2560-2>Copter/stable/apm2-quad/ArduCopter.hex</url2560-2>
     <urlpx4>Copter/stable/PX4-quad/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4-quad/ArduCopter-v2.px4</urlpx4v2>
-    <name>ArduCopter V3.1.1</name>
+    <name>ArduCopter V3.1.2</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -41,7 +41,7 @@
     <url2560-2>Copter/stable/apm2-tri/ArduCopter.hex</url2560-2>
     <urlpx4>Copter/stable/PX4-tri/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4-tri/ArduCopter-v2.px4</urlpx4v2>
-    <name>ArduCopter V3.1.1</name>
+    <name>ArduCopter V3.1.2</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -50,7 +50,7 @@
     <url2560-2>Copter/stable/apm2-hexa/ArduCopter.hex</url2560-2>
     <urlpx4>Copter/stable/PX4-hexa/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4-hexa/ArduCopter-v2.px4</urlpx4v2>
-    <name>ArduCopter V3.1.1</name>
+    <name>ArduCopter V3.1.2</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -59,7 +59,7 @@
     <url2560-2>Copter/stable/apm2-y6/ArduCopter.hex</url2560-2>
     <urlpx4>Copter/stable/PX4-y6/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4-y6/ArduCopter-v2.px4</urlpx4v2>
-    <name>ArduCopter V3.1.1</name>
+    <name>ArduCopter V3.1.2</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -68,7 +68,7 @@
     <url2560-2>Copter/stable/apm2-octa-quad/ArduCopter.hex</url2560-2>
     <urlpx4>Copter/stable/PX4-octa-quad/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4-octa-quad/ArduCopter-v2.px4</urlpx4v2>
-    <name>ArduCopter V3.1.1</name>
+    <name>ArduCopter V3.1.2</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -77,7 +77,7 @@
     <url2560-2>Copter/stable/apm2-octa/ArduCopter.hex</url2560-2>
     <urlpx4>Copter/stable/PX4-octa/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4-octa/ArduCopter-v2.px4</urlpx4v2>
-    <name>ArduCopter V3.1.1</name>
+    <name>ArduCopter V3.1.2</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -86,7 +86,7 @@
     <url2560-2>Copter/stable/apm2-heli/ArduCopter.hex</url2560-2>
     <urlpx4>Copter/stable/PX4-heli/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4-heli/ArduCopter-v2.px4</urlpx4v2>
-    <name>ArduCopter V3.1.1</name>
+    <name>ArduCopter V3.1.2</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -95,7 +95,7 @@
     <url2560-2>Copter/stable/apm2-quad-hil/ArduCopter.hex</url2560-2>
     <urlpx4>Copter/stable/PX4-quad-hil/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4-quad-hil/ArduCopter-v2.px4</urlpx4v2>
-    <name>ArduCopter V3.1.1</name>
+    <name>ArduCopter V3.1.2</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -104,7 +104,7 @@
     <url2560-2>Copter/stable/apm2-heli-hil/ArduCopter.hex</url2560-2>
     <urlpx4>Copter/stable/PX4-heli-hil/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4-heli-hil/ArduCopter-v2.px4</urlpx4v2>
-    <name>ArduCopter V3.1.1</name>
+    <name>ArduCopter V3.1.2</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
