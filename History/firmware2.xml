@@ -6,14 +6,14 @@
     <url2560-2>Plane/stable/apm2/ArduPlane.hex</url2560-2>
     <urlpx4>Plane/stable/PX4/ArduPlane-v1.px4</urlpx4>
     <urlpx4v2>Plane/stable/PX4/ArduPlane-v2.px4</urlpx4v2>
-    <name>ArduPlane V2.78b</name>
+    <name>ArduPlane V3.0.1</name>
     <desc />
     <format_version>13</format_version>
   </Firmware>
   <Firmware>
     <url2560>Plane/stable/apm1-hilsensors/ArduPlane.hex</url2560>
     <url2560-2>Plane/stable/apm2-hilsensors/ArduPlane.hex</url2560-2>
-    <name>ArduPlane V2.78b</name>
+    <name>ArduPlane V3.0.1</name>
     <desc />
     <format_version>13</format_version>
   </Firmware>
