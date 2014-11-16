@@ -6,7 +6,7 @@
 		<url2560-2>http://firmware.diydrones.com/Plane/stable/apm2/ArduPlane.hex</url2560-2>
 		<urlpx4>http://firmware.diydrones.com/Plane/stable/PX4/ArduPlane-v1.px4</urlpx4>
 		<urlpx4v2>http://firmware.diydrones.com/Plane/stable/PX4/ArduPlane-v2.px4</urlpx4v2>
-		<urlvrbrainv40>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v40.vrx</urlvrbrainv40>
+		<urlvrbrainv40>http://www.nonplace.tv/VRBRAIN/firmware/Plane/stable/ArduPlane-vrbrain-v40.vrx</urlvrbrainv40>
 		<urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v45.vrx</urlvrbrainv45>
 		<urlvrbrainv50>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v50.vrx</urlvrbrainv50>
 		<urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v51.vrx</urlvrbrainv51>
@@ -50,7 +50,7 @@
 		<url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-quad/ArduCopter.hex</url2560-2>
 		<urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-quad/ArduCopter-v1.px4</urlpx4>
 		<urlpx4v2>http://firmware.diydrones.com/Copter/stable/PX4-quad/ArduCopter-v2.px4</urlpx4v2>
-		<urlvrbrainv40>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v40.vrx</urlvrbrainv40>
+		<urlvrbrainv40>http://www.nonplace.tv/VRBRAIN/firmware/Copter/stable/ArduCopter-vrbrain-v40-quad.vrx</urlvrbrainv40>
 		<urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
 		<urlvrbrainv50>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
 		<urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -67,7 +67,7 @@
 		<url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-tri/ArduCopter.hex</url2560-2>
 		<urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-tri/ArduCopter-v1.px4</urlpx4>
 		<urlpx4v2>http://firmware.diydrones.com/Copter/stable/PX4-tri/ArduCopter-v2.px4</urlpx4v2>
-		<urlvrbrainv40>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v40.vrx</urlvrbrainv40>
+		<urlvrbrainv40>http://www.nonplace.tv/VRBRAIN/firmware/Copter/stable/ArduCopter-vrbrain-v40-tri.vrx</urlvrbrainv40>
 		<urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
 		<urlvrbrainv50>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
 		<urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -84,7 +84,7 @@
 		<url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-hexa/ArduCopter.hex</url2560-2>
 		<urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-hexa/ArduCopter-v1.px4</urlpx4>
 		<urlpx4v2>http://firmware.diydrones.com/Copter/stable/PX4-hexa/ArduCopter-v2.px4</urlpx4v2>
-		<urlvrbrainv40>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v40.vrx</urlvrbrainv40>
+		<urlvrbrainv40>http://www.nonplace.tv/VRBRAIN/firmware/Copter/stable/ArduCopter-vrbrain-v40-hexa.vrx</urlvrbrainv40>
 		<urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
 		<urlvrbrainv50>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
 		<urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -101,7 +101,7 @@
 		<url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-y6/ArduCopter.hex</url2560-2>
 		<urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-y6/ArduCopter-v1.px4</urlpx4>
 		<urlpx4v2>http://firmware.diydrones.com/Copter/stable/PX4-y6/ArduCopter-v2.px4</urlpx4v2>
-		<urlvrbrainv40>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v40.vrx</urlvrbrainv40>
+		<urlvrbrainv40>http://www.nonplace.tv/VRBRAIN/firmware/Copter/stable/ArduCopter-vrbrain-v40-y6.vrx</urlvrbrainv40>
 		<urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
 		<urlvrbrainv50>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
 		<urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -118,7 +118,7 @@
 		<url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-octa-quad/ArduCopter.hex</url2560-2>
 		<urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-octa-quad/ArduCopter-v1.px4</urlpx4>
 		<urlpx4v2>http://firmware.diydrones.com/Copter/stable/PX4-octa-quad/ArduCopter-v2.px4</urlpx4v2>
-		<urlvrbrainv40>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v40.vrx</urlvrbrainv40>
+		<urlvrbrainv40>http://www.nonplace.tv/VRBRAIN/firmware/Copter/stable/ArduCopter-vrbrain-v40-octa-quad.vrx</urlvrbrainv40>
 		<urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
 		<urlvrbrainv50>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
 		<urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -135,7 +135,7 @@
 		<url2560-2>http://firmware.diydrones.com/Copter/stable/apm2-octa/ArduCopter.hex</url2560-2>
 		<urlpx4>http://firmware.diydrones.com/Copter/stable/PX4-octa/ArduCopter-v1.px4</urlpx4>
 		<urlpx4v2>http://firmware.diydrones.com/Copter/stable/PX4-octa/ArduCopter-v2.px4</urlpx4v2>
-		<urlvrbrainv40>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v40.vrx</urlvrbrainv40>
+		<urlvrbrainv40>http://www.nonplace.tv/VRBRAIN/firmware/Copter/stable/ArduCopter-vrbrain-v40-octa.vrx</urlvrbrainv40>
 		<urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
 		<urlvrbrainv50>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
 		<urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
