@@ -41,8 +41,8 @@
 		<urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrbrain-v51.vrx</urlvrbrainv51>
 		<urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrbrain-v52.vrx</urlvrbrainv52>
 		<urlvrherov10>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrhero-v10.vrx</urlvrherov10>
-		<urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrburain-v51.vrx</urlvrubrainv51>
-		<urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrburain-v52.vrx</urlvrubrainv52>
+		<urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v51.vrx</urlvrubrainv51>
+		<urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v52.vrx</urlvrubrainv52>
 		<name>ArduRover Stable</name>
 		<desc>
 		</desc>
