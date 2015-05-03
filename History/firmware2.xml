@@ -21,7 +21,7 @@
   <Firmware>
     <url2560>Plane/stable/apm1-hilsensors/ArduPlane.hex</url2560>
     <url2560-2>Plane/stable/apm2-hilsensors/ArduPlane.hex</url2560-2>
-    <name>ArduPlane V3.2.3</name>
+    <name>ArduPlane HIL Stable</name>
     <desc />
     <format_version>13</format_version>
   </Firmware>
@@ -200,7 +200,7 @@
     <url2560-2>AntennaTracker/latest/apm2/AntennaTracker.hex</url2560-2>
     <urlpx4>AntennaTracker/latest/PX4/AntennaTracker-v1.px4</urlpx4>
     <urlpx4v2>AntennaTracker/latest/PX4/AntennaTracker-v2.px4</urlpx4v2>
-    <name>AntennaTracker V0.4</name>
+    <name>AntennaTracker V0.5</name>
     <desc />
     <format_version>0</format_version>
   </Firmware>
