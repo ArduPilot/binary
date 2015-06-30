@@ -39,7 +39,7 @@
     <urlvrherov10>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>ArduRover v2.49</name>
+    <name>ArduRover v2.50</name>
     <desc />
     <format_version>16</format_version>
   </Firmware>
@@ -200,7 +200,7 @@
     <url2560-2>AntennaTracker/latest/apm2/AntennaTracker.hex</url2560-2>
     <urlpx4>AntennaTracker/latest/PX4/AntennaTracker-v1.px4</urlpx4>
     <urlpx4v2>AntennaTracker/latest/PX4/AntennaTracker-v2.px4</urlpx4v2>
-    <name>AntennaTracker V0.7</name>
+    <name>AntennaTracker V0.7.1</name>
     <desc />
     <format_version>0</format_version>
   </Firmware>
