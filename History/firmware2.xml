@@ -200,7 +200,7 @@
     <url2560-2>AntennaTracker/latest/apm2/AntennaTracker.hex</url2560-2>
     <urlpx4>AntennaTracker/latest/PX4/AntennaTracker-v1.px4</urlpx4>
     <urlpx4v2>AntennaTracker/latest/PX4/AntennaTracker-v2.px4</urlpx4v2>
-    <name>AntennaTracker V0.7.2</name>
+    <name>AntennaTracker V0.7.3</name>
     <desc />
     <format_version>0</format_version>
   </Firmware>
