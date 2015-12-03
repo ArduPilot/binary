@@ -1,0 +1,7 @@
+commit 36b405fb0b2b3ef77952e8c9f170dbcf1976cb30
+Author: Randy Mackay <rmackay9@yahoo.com>
+Date:   Wed Feb 11 12:11:01 2015 +0900
+
+    Copter: version to AC3.2.1
+
+APMVERSION: ArduCopter V3.2.1
