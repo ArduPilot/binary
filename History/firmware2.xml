@@ -11,7 +11,6 @@
     <urlvrbrainv50>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v50.vrx</urlvrbrainv50>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrherov10>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v52.vrx</urlvrubrainv52>
     <name>ArduPlane V3.4.0</name>
@@ -36,7 +35,6 @@
     <urlvrbrainv50>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrbrain-v50.vrx</urlvrbrainv50>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrherov10>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v52.vrx</urlvrubrainv52>
     <name>ArduRover v2.50</name>
@@ -53,7 +51,6 @@
     <urlvrbrainv50>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrherov10>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.3.2</name>
@@ -70,7 +67,6 @@
     <urlvrbrainv50>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrherov10>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.3.2</name>
@@ -87,7 +83,6 @@
     <urlvrbrainv50>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrherov10>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.3.2</name>
@@ -104,7 +99,6 @@
     <urlvrbrainv50>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrherov10>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.3.2</name>
@@ -121,7 +115,6 @@
     <urlvrbrainv50>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrherov10>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.3.2</name>
@@ -138,7 +131,6 @@
     <urlvrbrainv50>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrherov10>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.3.2</name>
@@ -155,7 +147,6 @@
     <urlvrbrainv50>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrherov10>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>ArduCopter V3.2.1</name>
@@ -172,7 +163,6 @@
     <urlvrbrainv50>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrherov10>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrbrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrbrain-v52.vrx</urlvrubrainv52>
     <name>ArduCopter V3.2.1</name>
@@ -189,7 +179,6 @@
     <urlvrbrainv50>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrbrain-v50.vrx</urlvrbrainv50>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrherov10>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrhero-v10.vrx</urlvrherov10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>ArduCopter V3.2.1</name>
@@ -200,7 +189,7 @@
     <url2560-2>AntennaTracker/latest/apm2/AntennaTracker.hex</url2560-2>
     <urlpx4>AntennaTracker/latest/PX4/AntennaTracker-v1.px4</urlpx4>
     <urlpx4v2>AntennaTracker/latest/PX4/AntennaTracker-v2.px4</urlpx4v2>
-    <name>AntennaTracker V0.7.3</name>
+    <name>AntennaTracker V0.7.5</name>
     <desc />
     <format_version>0</format_version>
   </Firmware>
