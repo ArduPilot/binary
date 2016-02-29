@@ -56,7 +56,7 @@
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.3.2</name>
+    <name>APM:Copter V3.3.3</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -73,7 +73,7 @@
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.3.2</name>
+    <name>APM:Copter V3.3.3</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -90,7 +90,7 @@
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.3.2</name>
+    <name>APM:Copter V3.3.3</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -107,7 +107,7 @@
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.3.2</name>
+    <name>APM:Copter V3.3.3</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -124,7 +124,7 @@
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.3.2</name>
+    <name>APM:Copter V3.3.3</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -141,7 +141,7 @@
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.3.2</name>
+    <name>APM:Copter V3.3.3</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -158,7 +158,7 @@
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>ArduCopter V3.2.1</name>
+    <name>APM:Copter V3.3.3</name>
     <desc />
     <format_version>120</format_version>
   </Firmware>
@@ -197,10 +197,10 @@
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
-    <url2560-2>AntennaTracker/latest/apm2/AntennaTracker.hex</url2560-2>
-    <urlpx4>AntennaTracker/latest/PX4/AntennaTracker-v1.px4</urlpx4>
-    <urlpx4v2>AntennaTracker/latest/PX4/AntennaTracker-v2.px4</urlpx4v2>
-    <urlpx4v4>AntennaTracker/latest/PX4/AntennaTracker-v4.px4</urlpx4v4>
+    <url2560-2>AntennaTracker/stable/apm2/AntennaTracker.hex</url2560-2>
+    <urlpx4>AntennaTracker/stable/PX4/AntennaTracker-v1.px4</urlpx4>
+    <urlpx4v2>AntennaTracker/stable/PX4/AntennaTracker-v2.px4</urlpx4v2>
+    <urlpx4v4>AntennaTracker/stable/PX4/AntennaTracker-v4.px4</urlpx4v4>
     <name>AntennaTracker V0.7.5</name>
     <desc />
     <format_version>0</format_version>
