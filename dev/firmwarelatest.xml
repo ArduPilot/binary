@@ -250,4 +250,11 @@
 		</desc>
 		<format_version>0</format_version>
 	</Firmware>
+	<Firmware>
+        <urlpx4>http://px4-travis.s3.amazonaws.com/Firmware/stable/px4fmu-v1_default.px4</urlpx4>
+        <urlpx4v2>http://px4-travis.s3.amazonaws.com/Firmware/stable/px4fmu-v2_default.px4</urlpx4v2>
+		<urlpx4v4>http://px4-travis.s3.amazonaws.com/Firmware/stable/px4fmu-v4_default.px4</urlpx4v4>
+		<name>PX4 master</name>
+		<desc></desc>
+	</Firmware>
 </options>
