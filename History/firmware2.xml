@@ -13,7 +13,7 @@
     <urlvrcorev10>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrcore-v10.vrx</urlvrcorev10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>ArduPlane V3.5.3</name>
+    <name>ArduPlane V3.6.0</name>
     <desc />
     <format_version>13</format_version>
   </Firmware>
@@ -37,7 +37,7 @@
     <urlvrcorev10>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrcore-v10.vrx</urlvrcorev10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>ArduRover v3.0.0</name>
+    <name>ArduRover v3.0.1</name>
     <desc />
     <format_version>16</format_version>
   </Firmware>
@@ -190,7 +190,7 @@
     <urlpx4>AntennaTracker/stable/PX4/AntennaTracker-v1.px4</urlpx4>
     <urlpx4v2>AntennaTracker/stable/PX4/AntennaTracker-v2.px4</urlpx4v2>
     <urlpx4v4>AntennaTracker/stable/PX4/AntennaTracker-v4.px4</urlpx4v4>
-    <name>AntennaTracker V0.7.6</name>
+    <name>AntennaTracker V0.8.0</name>
     <desc />
     <format_version>0</format_version>
   </Firmware>
