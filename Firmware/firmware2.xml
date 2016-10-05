@@ -59,6 +59,7 @@
 		<urlvrcorev10>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
 		<urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
 		<urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
+        <urlbebop2>http://firmware.ardupilot.org/Copter/stable/bebop-quad/arducopter-quad</urlbebop2>
 		<name>ArduCopter Quad Stable</name>
 		<desc>
 		</desc>
