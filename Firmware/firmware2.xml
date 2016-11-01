@@ -13,6 +13,7 @@
 		<urlvrcorev10>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrcore-v10.vrx</urlvrcorev10>
 		<urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v51.vrx</urlvrubrainv51>
 		<urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v52.vrx</urlvrubrainv52>
+        <urldisco>http://firmware.ardupilot.org/Plane/stable/disco/arduplane</urldisco>
 		<name>ArduPlane Stable</name>
 		<desc/>
 		<format_version>13</format_version>
