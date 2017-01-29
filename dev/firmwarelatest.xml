@@ -19,17 +19,6 @@
 		<format_version>13</format_version>
 	</Firmware>
 	<Firmware>
-		<url/>
-		<url2560>http://firmware.ardupilot.org/Plane/latest/apm1-hilsensors/ArduPlane.hex</url2560>
-		<url2560-2>http://firmware.ardupilot.org/Plane/latest/apm2-hilsensors/ArduPlane.hex</url2560-2>
-		<urlpx4/>
-		<name>ArduPlane HIL Latest</name>
-		<desc>
-
-		</desc>
-		<format_version>13</format_version>
-	</Firmware>
-	<Firmware>
 		<url>http://firmware.ardupilot.org/Rover/latest/apm1-1280/APMrover2.hex</url>
 		<url2560>http://firmware.ardupilot.org/Rover/latest/apm1/APMrover2.hex</url2560>
 		<url2560-2>http://firmware.ardupilot.org/Rover/latest/apm2/APMrover2.hex</url2560-2>

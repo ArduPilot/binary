@@ -19,17 +19,6 @@
 		<format_version>13</format_version>
 	</Firmware>
 	<Firmware>
-		<url/>
-		<url2560>http://firmware.ardupilot.org/Plane/beta/apm1-hilsensors/ArduPlane.hex</url2560>
-		<url2560-2>http://firmware.ardupilot.org/Plane/beta/apm2-hilsensors/ArduPlane.hex</url2560-2>
-		<urlpx4/>
-		<name>ArduPlane HIL Beta</name>
-		<desc>
-
-		</desc>
-		<format_version>13</format_version>
-	</Firmware>
-	<Firmware>
 		<url>http://firmware.ardupilot.org/Rover/beta/apm1-1280/APMrover2.hex</url>
 		<url2560>http://firmware.ardupilot.org/Rover/beta/apm1/APMrover2.hex</url2560>
 		<url2560-2>http://firmware.ardupilot.org/Rover/beta/apm2/APMrover2.hex</url2560-2>
@@ -170,42 +159,6 @@
 		<urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-heli/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
 		<urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-heli/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
 		<name>ArduCopter Heli Beta</name>
-		<desc>
-		</desc>
-		<format_version>120</format_version>
-	</Firmware>
-	<Firmware>
-		<url/>
-		<url2560>http://firmware.ardupilot.org/Copter/beta/apm1-quad-hil/ArduCopter.hex</url2560>
-		<url2560-2>http://firmware.ardupilot.org/Copter/beta/apm2-quad-hil/ArduCopter.hex</url2560-2>
-		<urlpx4>http://firmware.ardupilot.org/Copter/beta/PX4-quad-hil/ArduCopter-v1.px4</urlpx4>
-		<urlpx4v2>http://firmware.ardupilot.org/Copter/beta/PX4-quad-hil/ArduCopter-v2.px4</urlpx4v2>
-        <urlpx4v4>http://firmware.ardupilot.org/Copter/beta/PX4-quad-hil/ArduCopter-v4.px4</urlpx4v4>
-		<urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-quad-hil/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
-		<urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-quad-hil/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
-		<urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-quad-hil/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-		<urlvrcorev10>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-quad-hil/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
-		<urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-quad-hil/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
-		<urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-quad-hil/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-		<name>ArduCopter Quad Hil</name>
-		<desc>
-		</desc>
-		<format_version>120</format_version>
-	</Firmware>
-	<Firmware>
-		<url/>
-		<url2560>http://firmware.ardupilot.org/Copter/beta/apm1-heli-hil/ArduCopter.hex</url2560>
-		<url2560-2>http://firmware.ardupilot.org/Copter/beta/apm2-heli-hil/ArduCopter.hex</url2560-2>
-		<urlpx4>http://firmware.ardupilot.org/Copter/beta/PX4-heli-hil/ArduCopter-v1.px4</urlpx4>
-		<urlpx4v2>http://firmware.ardupilot.org/Copter/beta/PX4-heli-hil/ArduCopter-v2.px4</urlpx4v2>
-        <urlpx4v4>http://firmware.ardupilot.org/Copter/beta/PX4-heli-hil/ArduCopter-v4.px4</urlpx4v4>
-		<urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-heli-hil/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
-		<urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-heli-hil/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
-		<urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-heli-hil/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-		<urlvrcorev10>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-heli-hil/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
-		<urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-heli-hil/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
-		<urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/beta/VRX-heli-hil/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-		<name>ArduCopter Heli Hil</name>
 		<desc>
 		</desc>
 		<format_version>120</format_version>
