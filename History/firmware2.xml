@@ -15,14 +15,7 @@
     <urlvrubrainv52>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v52.vrx</urlvrubrainv52>
     <urldisco>Plane/stable/disco/arduplane</urldisco>
     <name>ArduPlane V3.7.1</name>
-    <desc />
-    <format_version>13</format_version>
-  </Firmware>
-  <Firmware>
-    <url2560>Plane/stable/apm1-hilsensors/ArduPlane.hex</url2560>
-    <url2560-2>Plane/stable/apm2-hilsensors/ArduPlane.hex</url2560-2>
-    <name>ArduPlane HIL Stable</name>
-    <desc />
+    <desc>ArduPlane Stable</desc>
     <format_version>13</format_version>
   </Firmware>
   <Firmware>
@@ -38,8 +31,8 @@
     <urlvrcorev10>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrcore-v10.vrx</urlvrcorev10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Rover v3.1.0</name>
-    <desc />
+    <name>APM:Rover v3.1.1</name>
+    <desc>ArduRover Stable</desc>
     <format_version>16</format_version>
   </Firmware>
   <Firmware>
@@ -56,7 +49,7 @@
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <urlbebop2>Copter/stable/bebop-quad/arducopter-quad</urlbebop2>
     <name>APM:Copter V3.4.4</name>
-    <desc />
+    <desc>ArduCopter Quad Stable</desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
@@ -72,7 +65,7 @@
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.4.4</name>
-    <desc />
+    <desc>ArduCopter Tri Stable</desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
@@ -88,7 +81,7 @@
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.4.4</name>
-    <desc />
+    <desc>ArduCopter Hexa Stable</desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
@@ -104,7 +97,7 @@
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.4.4</name>
-    <desc />
+    <desc>ArduCopter Y6 Stable</desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
@@ -120,7 +113,7 @@
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.4.4</name>
-    <desc />
+    <desc>ArduCopter Octa Quad Stable</desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
@@ -136,7 +129,7 @@
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.4.4</name>
-    <desc />
+    <desc>ArduCopter Octa Stable</desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
@@ -152,39 +145,7 @@
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <name>APM:Copter V3.4.4</name>
-    <desc />
-    <format_version>120</format_version>
-  </Firmware>
-  <Firmware>
-    <url2560>Copter/stable/apm1-quad-hil/ArduCopter.hex</url2560>
-    <url2560-2>Copter/stable/apm2-quad-hil/ArduCopter.hex</url2560-2>
-    <urlpx4>Copter/stable/PX4-quad-hil/ArduCopter-v1.px4</urlpx4>
-    <urlpx4v2>Copter/stable/PX4-quad-hil/ArduCopter-v2.px4</urlpx4v2>
-    <urlpx4v4>Copter/stable/PX4-quad-hil/ArduCopter-v4.px4</urlpx4v4>
-    <urlvrbrainv45>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
-    <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
-    <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrcorev10>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
-    <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
-    <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad-hil/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>ArduCopter V3.2.1</name>
-    <desc />
-    <format_version>120</format_version>
-  </Firmware>
-  <Firmware>
-    <url2560>Copter/stable/apm1-heli-hil/ArduCopter.hex</url2560>
-    <url2560-2>Copter/stable/apm2-heli-hil/ArduCopter.hex</url2560-2>
-    <urlpx4>Copter/stable/PX4-heli-hil/ArduCopter-v1.px4</urlpx4>
-    <urlpx4v2>Copter/stable/PX4-heli-hil/ArduCopter-v2.px4</urlpx4v2>
-    <urlpx4v4>Copter/stable/PX4-heli-hil/ArduCopter-v4.px4</urlpx4v4>
-    <urlvrbrainv45>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
-    <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
-    <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
-    <urlvrcorev10>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
-    <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
-    <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli-hil/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>ArduCopter V3.2.1</name>
-    <desc />
+    <desc>ArduCopter Heli Stable</desc>
     <format_version>120</format_version>
   </Firmware>
   <Firmware>
@@ -193,7 +154,7 @@
     <urlpx4v2>AntennaTracker/stable/PX4/AntennaTracker-v2.px4</urlpx4v2>
     <urlpx4v4>AntennaTracker/stable/PX4/AntennaTracker-v4.px4</urlpx4v4>
     <name>AntennaTracker V1.0.0</name>
-    <desc />
+    <desc>Antenna Tracker</desc>
     <format_version>0</format_version>
   </Firmware>
   <Firmware>
