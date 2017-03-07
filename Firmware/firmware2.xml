@@ -19,6 +19,14 @@
 		<format_version>13</format_version>
 	</Firmware>
 	<Firmware>
+		<urlpx4>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v1.px4</urlpx4>
+		<urlpx4v2>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v2.px4</urlpx4v2>
+        <urlpx4v4>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v4.px4</urlpx4v4>
+		<name>ArduSub Stable</name>
+		<desc/>
+		<format_version>13</format_version>
+	</Firmware>
+	<Firmware>
 		<url>http://firmware.ardupilot.org/Rover/stable/apm1-1280/APMrover2.hex</url>
 		<url2560>http://firmware.ardupilot.org/Rover/stable/apm1/APMrover2.hex</url2560>
 		<url2560-2>http://firmware.ardupilot.org/Rover/stable/apm2/APMrover2.hex</url2560-2>
