@@ -22,8 +22,8 @@
     <urlpx4>Sub/stable/PX4/ArduSub-v1.px4</urlpx4>
     <urlpx4v2>Sub/stable/PX4/ArduSub-v2.px4</urlpx4v2>
     <urlpx4v4>Sub/stable/PX4/ArduSub-v4.px4</urlpx4v4>
-    <name>ArduSub Stable</name>
-    <desc />
+    <name>ArduSub V3.5</name>
+    <desc>ArduSub Stable</desc>
     <format_version>13</format_version>
   </Firmware>
   <Firmware>
