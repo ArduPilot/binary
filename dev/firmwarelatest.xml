@@ -8,6 +8,7 @@
         <urlpx4v2>http://firmware.ardupilot.org/Plane/latest/PX4/ArduPlane-v2.px4</urlpx4v2>
         <urlpx4v3>http://firmware.ardupilot.org/Plane/latest/PX4/ArduPlane-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/Plane/latest/PX4/ArduPlane-v4.px4</urlpx4v4>
+        <urlpx4v4pro>http://firmware.ardupilot.org/Plane/latest/PX4/ArduPlane-v4pro.px4</urlpx4v4pro>
         <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/latest/VRX/ArduPlane-vrbrain-v45.vrx</urlvrbrainv45>
         <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/latest/VRX/ArduPlane-vrbrain-v51.vrx</urlvrbrainv51>
         <urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/latest/VRX/ArduPlane-vrbrain-v52.vrx</urlvrbrainv52>
@@ -24,6 +25,7 @@
         <urlpx4v2>http://firmware.ardupilot.org/Sub/latest/PX4/ArduSub-v2.px4</urlpx4v2>
         <urlpx4v3>http://firmware.ardupilot.org/Sub/latest/PX4/ArduSub-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/Sub/latest/PX4/ArduSub-v4.px4</urlpx4v4>
+        <urlpx4v4pro>http://firmware.ardupilot.org/Sub/latest/PX4/ArduSub-v4pro.px4</urlpx4v4pro>
         <name>ArduSub Latest</name>
         <desc/>
         <format_version>13</format_version>
@@ -36,6 +38,7 @@
         <urlpx4v2>http://firmware.ardupilot.org/Rover/latest/PX4/APMrover2-v2.px4</urlpx4v2>
         <urlpx4v3>http://firmware.ardupilot.org/Rover/latest/PX4/APMrover2-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/Rover/latest/PX4/APMrover2-v4.px4</urlpx4v4>
+        <urlpx4v4pro>http://firmware.ardupilot.org/Rover/latest/PX4/APMrover2-v4pro.px4</urlpx4v4pro>
         <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/latest/VRX/APMrover2-vrbrain-v45.vrx</urlvrbrainv45>
         <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/latest/VRX/APMrover2-vrbrain-v51.vrx</urlvrbrainv51>
         <urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/latest/VRX/APMrover2-vrbrain-v52.vrx</urlvrbrainv52>
@@ -52,6 +55,7 @@
         <urlpx4v2>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v2.px4</urlpx4v2>
         <urlpx4v3>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4.px4</urlpx4v4>
+        <urlpx4v4pro>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
         <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-quad/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
         <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-quad/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
         <urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-quad/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
@@ -69,6 +73,7 @@
         <urlpx4v2>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v2.px4</urlpx4v2>
         <urlpx4v3>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4.px4</urlpx4v4>
+        <urlpx4v4pro>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
         <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-tri/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
         <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-tri/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
         <urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-tri/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
@@ -85,6 +90,7 @@
         <urlpx4v2>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v2.px4</urlpx4v2>
         <urlpx4v3>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4.px4</urlpx4v4>
+        <urlpx4v4pro>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
         <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-hexa/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
         <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-hexa/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
         <urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-hexa/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
@@ -101,6 +107,7 @@
         <urlpx4v2>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v2.px4</urlpx4v2>
         <urlpx4v3>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4.px4</urlpx4v4>
+        <urlpx4v4pro>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
         <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-y6/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
         <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-y6/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
         <urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-y6/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
@@ -117,6 +124,7 @@
         <urlpx4v2>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v2.px4</urlpx4v2>
         <urlpx4v3>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4.px4</urlpx4v4>
+        <urlpx4v4pro>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
         <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-octa-quad/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
         <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-octa-quad/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
         <urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-octa-quad/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
@@ -133,6 +141,7 @@
         <urlpx4v2>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v2.px4</urlpx4v2>
         <urlpx4v3>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4.px4</urlpx4v4>
+        <urlpx4v4pro>http://firmware.ardupilot.org/Copter/latest/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
         <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-octa/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
         <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-octa/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
         <urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-octa/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
@@ -149,6 +158,7 @@
         <urlpx4v2>http://firmware.ardupilot.org/Copter/latest/PX4-heli/ArduCopter-v2.px4</urlpx4v2>
         <urlpx4v3>http://firmware.ardupilot.org/Copter/latest/PX4-heli/ArduCopter-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/Copter/latest/PX4-heli/ArduCopter-v4.px4</urlpx4v4>
+        <urlpx4v4pro>http://firmware.ardupilot.org/Copter/latest/PX4-heli/ArduCopter-v4pro.px4</urlpx4v4pro>
         <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-heli/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
         <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-heli/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
         <urlvrbrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/latest/VRX-heli/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
@@ -166,6 +176,7 @@
         <urlpx4v2>http://firmware.ardupilot.org/AntennaTracker/latest/PX4/AntennaTracker-v2.px4</urlpx4v2>
         <urlpx4v3>http://firmware.ardupilot.org/AntennaTracker/latest/PX4/AntennaTracker-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/AntennaTracker/latest/PX4/AntennaTracker-v4.px4</urlpx4v4>
+        <urlpx4v4pro>http://firmware.ardupilot.org/AntennaTracker/latest/PX4/AntennaTracker-v4pro.px4</urlpx4v4pro>
         <name>Antenna Tracker</name>
         <desc>
         </desc>
@@ -176,6 +187,7 @@
         <urlpx4v2>http://px4-travis.s3.amazonaws.com/Firmware/stable/px4fmu-v2_default.px4</urlpx4v2>
         <urlpx4v3>http://px4-travis.s3.amazonaws.com/Firmware/stable/px4fmu-v3_default.px4</urlpx4v3>
         <urlpx4v4>http://px4-travis.s3.amazonaws.com/Firmware/stable/px4fmu-v4_default.px4</urlpx4v4>
+        <urlpx4v4pro>http://px4-travis.s3.amazonaws.com/Firmware/stable/px4fmu-v4pro_default.px4</urlpx4v4pro>
         <name>PX4 master</name>
         <desc/>
     </Firmware>
