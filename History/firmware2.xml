@@ -7,6 +7,7 @@
     <urlpx4>Plane/stable/PX4/ArduPlane-v1.px4</urlpx4>
     <urlpx4v2>Plane/stable/PX4/ArduPlane-v2.px4</urlpx4v2>
     <urlpx4v4>Plane/stable/PX4/ArduPlane-v4.px4</urlpx4v4>
+    <urlpx4v4pro>Plane/stable/PX4/ArduPlane-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v52.vrx</urlvrbrainv52>
@@ -14,7 +15,7 @@
     <urlvrubrainv51>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v52.vrx</urlvrubrainv52>
     <urldisco>Plane/stable/disco/arduplane</urldisco>
-    <name>ArduPlane V3.8.2</name>
+    <name>ArduPlane V3.8.3</name>
     <desc>ArduPlane Stable</desc>
     <format_version>13</format_version>
   </Firmware>
@@ -22,7 +23,8 @@
     <urlpx4>Sub/stable/PX4/ArduSub-v1.px4</urlpx4>
     <urlpx4v2>Sub/stable/PX4/ArduSub-v2.px4</urlpx4v2>
     <urlpx4v4>Sub/stable/PX4/ArduSub-v4.px4</urlpx4v4>
-    <name>ArduSub V3.5</name>
+    <urlpx4v4pro>Sub/stable/PX4/ArduSub-v4pro.px4</urlpx4v4pro>
+    <name>ArduSub V3.5.2</name>
     <desc>ArduSub Stable</desc>
     <format_version>13</format_version>
   </Firmware>
@@ -33,6 +35,7 @@
     <urlpx4>Rover/stable/PX4/APMrover2-v1.px4</urlpx4>
     <urlpx4v2>Rover/stable/PX4/APMrover2-v2.px4</urlpx4v2>
     <urlpx4v4>Rover/stable/PX4/APMrover2-v4.px4</urlpx4v4>
+    <urlpx4v4pro>Rover/stable/PX4/APMrover2-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrbrain-v52.vrx</urlvrbrainv52>
@@ -49,6 +52,7 @@
     <urlpx4>Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v4>Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+    <urlpx4v4pro>Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
@@ -56,7 +60,7 @@
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
     <urlbebop2>Copter/stable/bebop-quad/arducopter-quad</urlbebop2>
-    <name>APM:Copter V3.5.2</name>
+    <name>APM:Copter V3.5.3</name>
     <desc>ArduCopter Quad Stable</desc>
     <format_version>120</format_version>
   </Firmware>
@@ -66,13 +70,14 @@
     <urlpx4>Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v4>Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+    <urlpx4v4pro>Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrcorev10>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.5.2</name>
+    <name>APM:Copter V3.5.3</name>
     <desc>ArduCopter Tri Stable</desc>
     <format_version>120</format_version>
   </Firmware>
@@ -82,13 +87,14 @@
     <urlpx4>Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v4>Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+    <urlpx4v4pro>Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrcorev10>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.5.2</name>
+    <name>APM:Copter V3.5.3</name>
     <desc>ArduCopter Hexa Stable</desc>
     <format_version>120</format_version>
   </Firmware>
@@ -98,13 +104,14 @@
     <urlpx4>Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v4>Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+    <urlpx4v4pro>Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrcorev10>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.5.2</name>
+    <name>APM:Copter V3.5.3</name>
     <desc>ArduCopter Y6 Stable</desc>
     <format_version>120</format_version>
   </Firmware>
@@ -114,13 +121,14 @@
     <urlpx4>Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v4>Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+    <urlpx4v4pro>Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrcorev10>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.5.2</name>
+    <name>APM:Copter V3.5.3</name>
     <desc>ArduCopter Octa Quad Stable</desc>
     <format_version>120</format_version>
   </Firmware>
@@ -130,13 +138,14 @@
     <urlpx4>Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v4>Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+    <urlpx4v4pro>Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrcorev10>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.5.2</name>
+    <name>APM:Copter V3.5.3</name>
     <desc>ArduCopter Octa Stable</desc>
     <format_version>120</format_version>
   </Firmware>
@@ -146,13 +155,14 @@
     <urlpx4>Copter/stable/PX4-heli/ArduCopter-v1.px4</urlpx4>
     <urlpx4v2>Copter/stable/PX4-heli/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v4>Copter/stable/PX4-heli/ArduCopter-v4.px4</urlpx4v4>
+    <urlpx4v4pro>Copter/stable/PX4-heli/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
     <urlvrbrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrbrain-v52.vrx</urlvrbrainv52>
     <urlvrcorev10>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Copter V3.5.2</name>
+    <name>APM:Copter V3.5.3</name>
     <desc>ArduCopter Heli Stable</desc>
     <format_version>120</format_version>
   </Firmware>
@@ -161,6 +171,7 @@
     <urlpx4>AntennaTracker/stable/PX4/AntennaTracker-v1.px4</urlpx4>
     <urlpx4v2>AntennaTracker/stable/PX4/AntennaTracker-v2.px4</urlpx4v2>
     <urlpx4v4>AntennaTracker/stable/PX4/AntennaTracker-v4.px4</urlpx4v4>
+    <urlpx4v4pro>AntennaTracker/stable/PX4/AntennaTracker-v4pro.px4</urlpx4v4pro>
     <name>AntennaTracker V1.0.0</name>
     <desc>Antenna Tracker</desc>
     <format_version>0</format_version>
@@ -169,6 +180,7 @@
     <urlpx4>Firmware/stable/px4fmu-v1_default.px4</urlpx4>
     <urlpx4v2>Firmware/stable/px4fmu-v2_default.px4</urlpx4v2>
     <urlpx4v4>Firmware/stable/px4fmu-v4_default.px4</urlpx4v4>
+    <urlpx4v4pro>Firmware/stable/px4fmu-v4pro_default.px4</urlpx4v4pro>
     <name>PX4 Stable</name>
     <desc />
     <format_version>0</format_version>
