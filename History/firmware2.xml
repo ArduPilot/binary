@@ -15,7 +15,7 @@
     <urlvrubrainv51>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v52.vrx</urlvrubrainv52>
     <urldisco>Plane/stable/disco/arduplane</urldisco>
-    <name>ArduPlane V3.8.3</name>
+    <name>ArduPlane V3.8.4</name>
     <desc>ArduPlane Stable</desc>
     <format_version>13</format_version>
   </Firmware>
@@ -42,7 +42,7 @@
     <urlvrcorev10>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrcore-v10.vrx</urlvrcorev10>
     <urlvrubrainv51>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v51.vrx</urlvrubrainv51>
     <urlvrubrainv52>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v52.vrx</urlvrubrainv52>
-    <name>APM:Rover v3.1.2</name>
+    <name>APM:Rover V3.2.0</name>
     <desc>ArduRover Stable</desc>
     <format_version>16</format_version>
   </Firmware>
