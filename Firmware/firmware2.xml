@@ -16,6 +16,9 @@
         <urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v51.vrx</urlvrubrainv51>
         <urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v52.vrx</urlvrubrainv52>
         <urldisco>http://firmware.ardupilot.org/Plane/stable/disco/arduplane</urldisco>
+        <urlfmuv2>http://firmware.ardupilot.org/Plane/stable/fmuv2/arduplane.apj</urlfmuv2>
+        <urlfmuv3>http://firmware.ardupilot.org/Plane/stable/fmuv3/arduplane.apj</urlfmuv3>
+        <urlfmuv4>http://firmware.ardupilot.org/Plane/stable/fmuv4/arduplane.apj</urlfmuv4>
         <name>ArduPlane Stable</name>
         <desc/>
         <format_version>13</format_version>
@@ -26,6 +29,9 @@
         <urlpx4v3>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v3.px4</urlpx4v3>
         <urlpx4v4>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v4.px4</urlpx4v4>
         <urlpx4v4pro>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v4pro.px4</urlpx4v4pro>
+        <urlfmuv2>http://firmware.ardupilot.org/Sub/stable/fmuv2/ardusub.apj</urlfmuv2>
+        <urlfmuv3>http://firmware.ardupilot.org/Sub/stable/fmuv3/ardusub.apj</urlfmuv3>
+        <urlfmuv4>http://firmware.ardupilot.org/Sub/stable/fmuv4/ardusub.apj</urlfmuv4>
         <name>ArduSub Stable</name>
         <desc/>
         <format_version>13</format_version>
@@ -45,6 +51,9 @@
         <urlvrcorev10>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrcore-v10.vrx</urlvrcorev10>
         <urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v51.vrx</urlvrubrainv51>
         <urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v52.vrx</urlvrubrainv52>
+        <urlfmuv2>http://firmware.ardupilot.org/Rover/stable/fmuv2/ardurover.apj</urlfmuv2>
+        <urlfmuv3>http://firmware.ardupilot.org/Rover/stable/fmuv3/ardurover.apj</urlfmuv3>
+        <urlfmuv4>http://firmware.ardupilot.org/Rover/stable/fmuv4/ardurover.apj</urlfmuv4>
         <name>ArduRover Stable</name>
         <desc>
         </desc>
@@ -66,6 +75,9 @@
         <urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
         <urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
         <urlbebop2>http://firmware.ardupilot.org/Copter/stable/bebop-quad/arducopter-quad</urlbebop2>
+        <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
+        <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
+        <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <name>ArduCopter Quad Stable</name>
         <desc>
         </desc>
@@ -86,6 +98,9 @@
         <urlvrcorev10>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
         <urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
         <urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
+        <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
+        <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
+        <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <name>ArduCopter Tri Stable</name>
         <desc>
         </desc>
@@ -106,6 +121,9 @@
         <urlvrcorev10>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
         <urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
         <urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
+        <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
+        <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
+        <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <name>ArduCopter Hexa Stable</name>
         <desc>
         </desc>
@@ -126,6 +144,9 @@
         <urlvrcorev10>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
         <urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
         <urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
+        <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
+        <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
+        <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <name>ArduCopter Y6 Stable</name>
         <desc>
         </desc>
@@ -146,6 +167,9 @@
         <urlvrcorev10>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
         <urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
         <urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
+        <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
+        <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
+        <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <name>ArduCopter Octa Quad Stable</name>
         <desc>
         </desc>
@@ -166,6 +190,9 @@
         <urlvrcorev10>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
         <urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
         <urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
+        <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
+        <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
+        <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <name>ArduCopter Octa Stable</name>
         <desc>
         </desc>
@@ -186,6 +213,9 @@
         <urlvrcorev10>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrcore-v10.vrx</urlvrcorev10>
         <urlvrubrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrubrain-v51.vrx</urlvrubrainv51>
         <urlvrubrainv52>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
+        <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2-heli/arducopter-heli.apj</urlfmuv2>
+        <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3-heli/arducopter-heli.apj</urlfmuv3>
+        <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4-heli/arducopter-heli.apj</urlfmuv4>
         <name>ArduCopter Heli Stable</name>
         <desc>
         </desc>
