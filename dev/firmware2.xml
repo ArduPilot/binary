@@ -19,6 +19,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Plane/beta/fmuv2/arduplane.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Plane/beta/fmuv3/arduplane.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Plane/beta/fmuv4/arduplane.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Plane/beta/fmuv5/arduplane.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Plane/beta/mindpx-v2/arduplane.apj</urlmindpxv2>
     <name>ArduPlane beta</name>
     <desc/>
@@ -33,6 +34,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Sub/beta/fmuv2/ardusub.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Sub/beta/fmuv3/ardusub.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Sub/beta/fmuv4/ardusub.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Sub/beta/fmuv5/ardusub.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Sub/beta/mindpx-v2/ardusub.apj</urlmindpxv2>
     <name>ArduSub beta</name>
     <desc/>
@@ -56,6 +58,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Rover/beta/fmuv2/ardurover.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Rover/beta/fmuv3/ardurover.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Rover/beta/fmuv4/ardurover.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Rover/beta/fmuv5/ardurover.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Rover/beta/mindpx-v2/ardurover.apj</urlmindpxv2>
     <name>ArduRover beta</name>
     <desc>
@@ -81,6 +84,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/beta/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/beta/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/beta/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/beta/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/beta/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Quad beta</name>
     <desc>
@@ -105,6 +109,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/beta/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/beta/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/beta/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/beta/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/beta/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Tri beta</name>
     <desc>
@@ -129,6 +134,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/beta/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/beta/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/beta/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/beta/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/beta/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Hexa beta</name>
     <desc>
@@ -153,6 +159,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/beta/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/beta/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/beta/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/beta/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/beta/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Y6 beta</name>
     <desc>
@@ -177,6 +184,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/beta/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/beta/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/beta/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/beta/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/beta/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Octa Quad beta</name>
     <desc>
@@ -201,6 +209,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/beta/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/beta/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/beta/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/beta/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/beta/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Octa beta</name>
     <desc>
@@ -225,6 +234,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/beta/fmuv2-heli/arducopter-heli.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/beta/fmuv3-heli/arducopter-heli.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/beta/fmuv4-heli/arducopter-heli.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/beta/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/beta/mindpx-v2/arducopter-heli.apj</urlmindpxv2>
     <name>ArduCopter Heli beta</name>
     <desc>
