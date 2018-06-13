@@ -19,6 +19,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Plane/stable/fmuv2/arduplane.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Plane/stable/fmuv3/arduplane.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Plane/stable/fmuv4/arduplane.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Plane/stable/fmuv5/arduplane.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Plane/stable/mindpx-v2/arduplane.apj</urlmindpxv2>
     <name>ArduPlane Stable</name>
     <desc/>
@@ -33,6 +34,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Sub/stable/fmuv2/ardusub.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Sub/stable/fmuv3/ardusub.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Sub/stable/fmuv4/ardusub.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Sub/stable/fmuv5/ardusub.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Sub/stable/mindpx-v2/ardusub.apj</urlmindpxv2>
     <name>ArduSub Stable</name>
     <desc/>
@@ -56,6 +58,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Rover/stable/fmuv2/ardurover.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Rover/stable/fmuv3/ardurover.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Rover/stable/fmuv4/ardurover.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Rover/stable/fmuv5/ardurover.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Rover/stable/mindpx-v2/ardurover.apj</urlmindpxv2>
     <name>ArduRover Stable</name>
     <desc>
@@ -81,6 +84,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Quad Stable</name>
     <desc>
@@ -105,6 +109,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Tri Stable</name>
     <desc>
@@ -129,6 +134,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Hexa Stable</name>
     <desc>
@@ -153,6 +159,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Y6 Stable</name>
     <desc>
@@ -177,6 +184,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Octa Quad Stable</name>
     <desc>
@@ -201,6 +209,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
     <name>ArduCopter Octa Stable</name>
     <desc>
@@ -225,6 +234,7 @@
     <urlfmuv2>http://firmware.ardupilot.org/Copter/stable/fmuv2-heli/arducopter-heli.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Copter/stable/fmuv3-heli/arducopter-heli.apj</urlfmuv3>
     <urlfmuv4>http://firmware.ardupilot.org/Copter/stable/fmuv4-heli/arducopter-heli.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
     <urlmindpxv2>http://firmware.ardupilot.org/Copter/stable/mindpx-v2/arducopter-heli.apj</urlmindpxv2>
     <name>ArduCopter Heli Stable</name>
     <desc>
