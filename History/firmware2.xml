@@ -86,7 +86,7 @@
         <urlfmuv5>Rover/stable/fmuv5/ardurover.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Rover/stable/mindpx-v2/ardurover.apj</urlmindpxv2>
-        <name>ArduRover V3.4.0</name>
+        <name>ArduRover V3.4.2</name>
         <desc>ArduRover Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -116,7 +116,7 @@
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>APM:Copter V3.5.5</name>
+        <name>APM:Copter V3.5.7</name>
         <desc>ArduCopter Quad Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -146,7 +146,7 @@
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>APM:Copter V3.5.5</name>
+        <name>APM:Copter V3.5.7</name>
         <desc>ArduCopter Tri Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -176,7 +176,7 @@
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>APM:Copter V3.5.5</name>
+        <name>APM:Copter V3.5.7</name>
         <desc>ArduCopter Hexa Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -206,7 +206,7 @@
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>APM:Copter V3.5.5</name>
+        <name>APM:Copter V3.5.7</name>
         <desc>ArduCopter Y6 Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -236,7 +236,7 @@
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>APM:Copter V3.5.5</name>
+        <name>APM:Copter V3.5.7</name>
         <desc>ArduCopter Octa Quad Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -266,7 +266,7 @@
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>APM:Copter V3.5.5</name>
+        <name>APM:Copter V3.5.7</name>
         <desc>ArduCopter Octa Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -296,7 +296,7 @@
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter-heli.apj</urlmindpxv2>
-        <name>APM:Copter V3.5.5</name>
+        <name>APM:Copter V3.5.7</name>
         <desc>ArduCopter Heli Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
