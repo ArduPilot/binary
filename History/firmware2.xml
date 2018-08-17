@@ -26,7 +26,7 @@
         <urlfmuv5>Plane/stable/fmuv5/arduplane.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Plane/stable/mindpx-v2/arduplane.apj</urlmindpxv2>
-        <name>ArduPlane V3.8.5</name>
+        <name>ArduPlane V3.9.0</name>
         <desc>ArduPlane Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
