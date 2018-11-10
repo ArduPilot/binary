@@ -1,0 +1,7 @@
+commit ad81760bfd41d7f8f9605fea1bdc868d676b21f0
+Author: Jacob Walser <jwalser90@gmail.com>
+Date:   Tue May 8 13:38:51 2018 -0400
+
+    Sub: Version to 3.5.3
+
+APMVERSION: ArduSub V3.5.3

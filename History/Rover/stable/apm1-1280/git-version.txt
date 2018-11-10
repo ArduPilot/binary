@@ -1,0 +1,7 @@
+commit d0c69b36b6971ecb3667f9309bfd4e8f6d9cc476
+Author: Andrew Tridgell <tridge@samba.org>
+Date:   Mon Jul 1 09:14:02 2013 +1000
+
+    Rover: update version for new release
+
+APMVERSION: ArduRover v2.42

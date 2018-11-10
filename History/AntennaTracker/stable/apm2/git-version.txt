@@ -1,0 +1,7 @@
+commit 705d3d567abfe8d86cbc5f3120bc6b09b879476f
+Author: squilter <s.quilter@aol.com>
+Date:   Fri Aug 21 10:49:01 2015 -0700
+
+    GCS_MAVLink: make arguments mandatory for send_autopilot_version
+
+APMVERSION: AntennaTracker V0.7.2

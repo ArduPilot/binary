@@ -1,0 +1,7 @@
+commit c1fc5a44371e0f8ad5114b71e15a0b21d5e6a4fc
+Author: Andrew Tridgell <andrew@tridgell.net>
+Date:   Thu Sep 24 11:10:40 2015 +1000
+
+    Plane: fixed version number
+
+APMVERSION: ArduPlane V3.4.0
