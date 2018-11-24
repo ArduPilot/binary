@@ -1,7 +1,7 @@
-commit 296132b876efca7672b9d5fa44641502d5c3cf88
+commit 25f725362dd8c959e8963bae4232dba5d372e850
 Author: Randy Mackay <rmackay9@yahoo.com>
-Date:   Sat Nov 10 10:06:31 2018 +0900
+Date:   Sat Nov 24 08:45:58 2018 +0900
 
-    Copter: version to 3.6.1
+    Copter: version to 3.6.2
 
-APMVERSION: ArduCopter V3.6.1
+APMVERSION: ArduCopter V3.6.2
