@@ -8,6 +8,7 @@
     <urlpx4v2>http://firmware.ardupilot.org/Plane/stable/PX4/ArduPlane-v2.px4</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Plane/stable/PX4/ArduPlane-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Plane/stable/PX4/ArduPlane-v4.px4</urlpx4v4>
+     <urlpx4rl>http://www.radiolink.com.cn/firmware/Plane/stable/ArduPlane-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/Plane/stable/PX4/ArduPlane-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrbrain-v51.vrx</urlvrbrainv51>
@@ -30,6 +31,7 @@
     <urlpx4v2>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v2.px4</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v4.px4</urlpx4v4>
+	     <urlpx4rl>http://www.radiolink.com.cn/firmware/Sub/stable/ArduSub-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v4pro.px4</urlpx4v4pro>
     <urlfmuv2>http://firmware.ardupilot.org/Sub/stable/fmuv2/ardusub.apj</urlfmuv2>
     <urlfmuv3>http://firmware.ardupilot.org/Sub/stable/fmuv3/ardusub.apj</urlfmuv3>
@@ -48,6 +50,7 @@
     <urlpx4v2>http://firmware.ardupilot.org/Rover/stable/PX4/APMrover2-v2.px4</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Rover/stable/PX4/APMrover2-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Rover/stable/PX4/APMrover2-v4.px4</urlpx4v4>
+	<urlpx4rl>http://www.radiolink.com.cn/firmware/Rover/stable/APMrover2-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/Rover/stable/PX4/APMrover2-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrbrain-v51.vrx</urlvrbrainv51>
@@ -73,6 +76,7 @@
     <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -99,6 +103,7 @@
     <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -124,6 +129,7 @@
     <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -149,6 +155,7 @@
     <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -174,6 +181,7 @@
     <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -199,6 +207,7 @@
     <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
+	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -224,6 +233,7 @@
     <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4-heli/ArduCopter-v2.px4</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4-heli/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4-heli/ArduCopter-v4.px4</urlpx4v4>
+	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/Copter/stable/PX4-heli/ArduCopter-v4pro.px4</urlpx4v4pro>
     <urlvrbrainv45>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrbrain-v45.vrx</urlvrbrainv45>
     <urlvrbrainv51>http://www.radionav.it/portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrbrain-v51.vrx</urlvrbrainv51>
@@ -249,6 +259,7 @@
     <urlpx4v2>http://firmware.ardupilot.org/AntennaTracker/stable/PX4/AntennaTracker-v2.px4</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/AntennaTracker/stable/PX4/AntennaTracker-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/AntennaTracker/stable/PX4/AntennaTracker-v4.px4</urlpx4v4>
+	<urlpx4rl>http://www.radiolink.com.cn/firmware/AntennaTracker/stable/AntennaTracker-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/AntennaTracker/stable/PX4/AntennaTracker-v4pro.px4</urlpx4v4pro>
     <urlmindpxv2>http://firmware.ardupilot.org/AntennaTracker/stable/mindpx-v2/AntennaTracker.apj</urlmindpxv2>
     <urlvrbrainv45/>
