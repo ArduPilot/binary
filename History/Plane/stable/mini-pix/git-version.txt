@@ -1,7 +1,7 @@
-commit 7c7c5038feee0d5fe3b16697e758d77abfc07ef3
+commit 7e37f2b63843f85c2527c43f9833c74925ff52f9
 Author: Andrew Tridgell <andrew@tridgell.net>
-Date:   Sat Nov 10 14:11:40 2018 +1100
+Date:   Mon Dec 10 07:48:04 2018 +1100
 
-    Plane: prepare for 3.9.3 release
+    Plane: prepare for 3.9.4 release
 
-APMVERSION: ArduPlane V3.9.3
+APMVERSION: ArduPlane V3.9.4
