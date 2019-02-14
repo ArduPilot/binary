@@ -1,7 +1,7 @@
-commit 318a941d15c9d5e4a76b73541eac15cd0f3d50f9
+commit af36fc5ee5a262937e58f1dc850099974bf65bea
 Author: Randy Mackay <rmackay9@yahoo.com>
-Date:   Mon Jul 30 12:19:56 2018 +0900
+Date:   Wed Feb 6 14:55:34 2019 +0900
 
-    Rover: version to 3.4.2
+    Rover: version to 3.5.0
 
-APMVERSION: ArduRover V3.4.2
+APMVERSION: ArduRover V3.5.0
