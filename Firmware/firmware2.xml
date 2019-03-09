@@ -5,7 +5,7 @@
     <url2560>http://firmware.ardupilot.org/Plane/stable/apm1/ArduPlane.hex</url2560>
     <url2560-2>http://firmware.ardupilot.org/Plane/stable/apm2/ArduPlane.hex</url2560-2>
     <urlpx4>http://firmware.ardupilot.org/Plane/stable/PX4/ArduPlane-v1.px4</urlpx4>
-    <urlpx4v2>http://firmware.ardupilot.org/Plane/stable/PX4/ArduPlane-v2.px4</urlpx4v2>
+    <urlpx4v2>http://firmware.ardupilot.org/Plane/stable/fmuv2/arduplane.apj</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Plane/stable/PX4/ArduPlane-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Plane/stable/PX4/ArduPlane-v4.px4</urlpx4v4>
      <urlpx4rl>http://www.radiolink.com.cn/firmware/Plane/stable/ArduPlane-v4.px4</urlpx4rl>
@@ -28,7 +28,7 @@
   </Firmware>
   <Firmware>
     <urlpx4>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v1.px4</urlpx4>
-    <urlpx4v2>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v2.px4</urlpx4v2>
+    <urlpx4v2>http://firmware.ardupilot.org/Sub/stable/fmuv2/ardusub.apj</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Sub/stable/PX4/ArduSub-v4.px4</urlpx4v4>
 	     <urlpx4rl>http://www.radiolink.com.cn/firmware/Sub/stable/ArduSub-v4.px4</urlpx4rl>
@@ -47,7 +47,7 @@
     <url2560>http://firmware.ardupilot.org/Rover/stable/apm1/APMrover2.hex</url2560>
     <url2560-2>http://firmware.ardupilot.org/Rover/stable/apm2/APMrover2.hex</url2560-2>
     <urlpx4>http://firmware.ardupilot.org/Rover/stable/PX4/APMrover2-v1.px4</urlpx4>
-    <urlpx4v2>http://firmware.ardupilot.org/Rover/stable/PX4/APMrover2-v2.px4</urlpx4v2>
+    <urlpx4v2>http://firmware.ardupilot.org/Rover/stable/fmuv2/ardurover.apj</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Rover/stable/PX4/APMrover2-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Rover/stable/PX4/APMrover2-v4.px4</urlpx4v4>
 	<urlpx4rl>http://www.radiolink.com.cn/firmware/Rover/stable/APMrover2-v4.px4</urlpx4rl>
@@ -73,7 +73,7 @@
     <url2560>http://firmware.ardupilot.org/Copter/stable/apm1-quad/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.ardupilot.org/Copter/stable/apm2-quad/ArduCopter.hex</url2560-2>
     <urlpx4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
-    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
+    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
 	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
@@ -100,7 +100,7 @@
     <url2560>http://firmware.ardupilot.org/Copter/stable/apm1-tri/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.ardupilot.org/Copter/stable/apm2-tri/ArduCopter.hex</url2560-2>
     <urlpx4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
-    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
+    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
 	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
@@ -126,7 +126,7 @@
     <url2560>http://firmware.ardupilot.org/Copter/stable/apm1-hexa/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.ardupilot.org/Copter/stable/apm2-hexa/ArduCopter.hex</url2560-2>
     <urlpx4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
-    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
+    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
 	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
@@ -152,7 +152,7 @@
     <url2560>http://firmware.ardupilot.org/Copter/stable/apm1-y6/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.ardupilot.org/Copter/stable/apm2-y6/ArduCopter.hex</url2560-2>
     <urlpx4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
-    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
+    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
 	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
@@ -178,7 +178,7 @@
     <url2560>http://firmware.ardupilot.org/Copter/stable/apm1-octa-quad/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.ardupilot.org/Copter/stable/apm2-octa-quad/ArduCopter.hex</url2560-2>
     <urlpx4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
-    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
+    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
 	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
@@ -204,7 +204,7 @@
     <url2560>http://firmware.ardupilot.org/Copter/stable/apm1-octa/ArduCopter.hex</url2560>
     <url2560-2>http://firmware.ardupilot.org/Copter/stable/apm2-octa/ArduCopter.hex</url2560-2>
     <urlpx4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v1.px4</urlpx4>
-    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v2.px4</urlpx4v2>
+    <urlpx4v2>http://firmware.ardupilot.org/Copter/stable/fmuv2/arducopter.apj</urlpx4v2>
     <urlpx4v3>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v3.px4</urlpx4v3>
     <urlpx4v4>http://firmware.ardupilot.org/Copter/stable/PX4/ArduCopter-v4.px4</urlpx4v4>
 	<urlpx4rl>http://www.radiolink.com.cn/firmware/Copter/stable/ArduCopter-v4.px4</urlpx4rl>
