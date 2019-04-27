@@ -1,0 +1,7 @@
+commit cdf3ba839b38956da8cc8bc0639977a36432aefd
+Author: Randy Mackay <rmackay9@yahoo.com>
+Date:   Mon Aug 8 15:25:39 2016 +0900
+
+    Tracker: ver 1.0.0 official release
+
+APMVERSION: AntennaTracker V1.0.0
