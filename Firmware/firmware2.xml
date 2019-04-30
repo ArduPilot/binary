@@ -262,6 +262,10 @@
 	<urlpx4rl>http://www.radiolink.com.cn/firmware/AntennaTracker/stable/AntennaTracker-v4.px4</urlpx4rl>
     <urlpx4v4pro>http://firmware.ardupilot.org/AntennaTracker/stable/PX4/AntennaTracker-v4pro.px4</urlpx4v4pro>
     <urlmindpxv2>http://firmware.ardupilot.org/AntennaTracker/stable/mindpx-v2/AntennaTracker.apj</urlmindpxv2>
+    <urlfmuv2>http://firmware.ardupilot.org/AntennaTracker/stable/fmuv2/antennatracker.apj</urlfmuv2>
+    <urlfmuv3>http://firmware.ardupilot.org/AntennaTracker/stable/fmuv3/antennatracker.apj</urlfmuv3>
+    <urlfmuv4>http://firmware.ardupilot.org/AntennaTracker/stable/fmuv4/antennatracker.apj</urlfmuv4>
+	<urlfmuv5>http://firmware.ardupilot.org/AntennaTracker/stable/fmuv5/antennatracker.apj</urlfmuv5>
     <urlvrbrainv45/>
     <urlvrbrainv51/>
     <urlvrbrainv52/>
