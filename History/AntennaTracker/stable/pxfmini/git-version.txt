@@ -1,7 +1,7 @@
-commit cdf3ba839b38956da8cc8bc0639977a36432aefd
-Author: Randy Mackay <rmackay9@yahoo.com>
-Date:   Mon Aug 8 15:25:39 2016 +0900
+commit e22170628d5a03a18c0445c5af2d3f3688c37ed4
+Author: Peter Barker <pbarker@barker.dropbear.id.au>
+Date:   Sat Aug 3 11:15:41 2019 +1000
 
-    Tracker: ver 1.0.0 official release
+    Tracker: update version.h for the 1.1.0 release
 
-APMVERSION: AntennaTracker V1.0.0
+APMVERSION: AntennaTracker V1.1.0

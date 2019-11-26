@@ -21,13 +21,14 @@
         <urlvrubrainv52>portale/MissionPlanner/firmware/Plane/stable/VRX/ArduPlane-vrubrain-v52.vrx</urlvrubrainv52>
         <urlbebop2 />
         <urldisco>Plane/stable/disco/arduplane</urldisco>
+        <urlnxpfmuk66 />
         <urlfmuv2>Plane/stable/fmuv2/arduplane.apj</urlfmuv2>
         <urlfmuv3>Plane/stable/fmuv3/arduplane.apj</urlfmuv3>
         <urlfmuv4>Plane/stable/fmuv4/arduplane.apj</urlfmuv4>
         <urlfmuv5>Plane/stable/fmuv5/arduplane.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Plane/stable/mindpx-v2/arduplane.apj</urlmindpxv2>
-        <name>ArduPlane V3.9.7</name>
+        <name>ArduPlane V4.0.1</name>
         <desc>ArduPlane Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -52,6 +53,7 @@
         <urlvrubrainv52 />
         <urlbebop2 />
         <urldisco />
+        <urlnxpfmuk66 />
         <urlfmuv2>Sub/stable/fmuv2/ardusub.apj</urlfmuv2>
         <urlfmuv3>Sub/stable/fmuv3/ardusub.apj</urlfmuv3>
         <urlfmuv4>Sub/stable/fmuv4/ardusub.apj</urlfmuv4>
@@ -83,13 +85,14 @@
         <urlvrubrainv52>portale/MissionPlanner/firmware/Rover/stable/VRX/APMrover2-vrubrain-v52.vrx</urlvrubrainv52>
         <urlbebop2 />
         <urldisco />
+        <urlnxpfmuk66 />
         <urlfmuv2>Rover/stable/fmuv2/ardurover.apj</urlfmuv2>
         <urlfmuv3>Rover/stable/fmuv3/ardurover.apj</urlfmuv3>
         <urlfmuv4>Rover/stable/fmuv4/ardurover.apj</urlfmuv4>
         <urlfmuv5>Rover/stable/fmuv5/ardurover.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Rover/stable/mindpx-v2/ardurover.apj</urlmindpxv2>
-        <name>ArduRover V3.5.0</name>
+        <name>ArduRover V3.5.2</name>
         <desc>ArduRover Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -114,13 +117,14 @@
         <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
         <urlbebop2>Copter/stable/bebop-quad/arducopter-quad</urlbebop2>
         <urldisco />
+        <urlnxpfmuk66 />
         <urlfmuv2>Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
         <urlfmuv3>Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
         <urlfmuv4>Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>ArduCopter V3.6.7</name>
+        <name>ArduCopter V3.6.11</name>
         <desc>ArduCopter Quad Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -145,13 +149,14 @@
         <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-tri/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
         <urlbebop2 />
         <urldisco />
+        <urlnxpfmuk66 />
         <urlfmuv2>Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
         <urlfmuv3>Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
         <urlfmuv4>Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>ArduCopter V3.6.7</name>
+        <name>ArduCopter V3.6.11</name>
         <desc>ArduCopter Tri Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -176,13 +181,14 @@
         <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-hexa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
         <urlbebop2 />
         <urldisco />
+        <urlnxpfmuk66 />
         <urlfmuv2>Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
         <urlfmuv3>Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
         <urlfmuv4>Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>ArduCopter V3.6.7</name>
+        <name>ArduCopter V3.6.11</name>
         <desc>ArduCopter Hexa Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -207,13 +213,14 @@
         <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-y6/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
         <urlbebop2 />
         <urldisco />
+        <urlnxpfmuk66 />
         <urlfmuv2>Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
         <urlfmuv3>Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
         <urlfmuv4>Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>ArduCopter V3.6.7</name>
+        <name>ArduCopter V3.6.11</name>
         <desc>ArduCopter Y6 Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -238,13 +245,14 @@
         <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa-quad/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
         <urlbebop2 />
         <urldisco />
+        <urlnxpfmuk66 />
         <urlfmuv2>Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
         <urlfmuv3>Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
         <urlfmuv4>Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>ArduCopter V3.6.7</name>
+        <name>ArduCopter V3.6.11</name>
         <desc>ArduCopter Octa Quad Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -269,13 +277,14 @@
         <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-octa/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
         <urlbebop2 />
         <urldisco />
+        <urlnxpfmuk66 />
         <urlfmuv2>Copter/stable/fmuv2/arducopter.apj</urlfmuv2>
         <urlfmuv3>Copter/stable/fmuv3/arducopter.apj</urlfmuv3>
         <urlfmuv4>Copter/stable/fmuv4/arducopter.apj</urlfmuv4>
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter.apj</urlmindpxv2>
-        <name>ArduCopter V3.6.7</name>
+        <name>ArduCopter V3.6.11</name>
         <desc>ArduCopter Octa Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -300,13 +309,14 @@
         <urlvrubrainv52>portale/MissionPlanner/firmware/Copter/stable/VRX-heli/ArduCopter-vrubrain-v52.vrx</urlvrubrainv52>
         <urlbebop2 />
         <urldisco />
+        <urlnxpfmuk66 />
         <urlfmuv2>Copter/stable/fmuv2-heli/arducopter-heli.apj</urlfmuv2>
         <urlfmuv3>Copter/stable/fmuv3-heli/arducopter-heli.apj</urlfmuv3>
         <urlfmuv4>Copter/stable/fmuv4-heli/arducopter-heli.apj</urlfmuv4>
         <urlfmuv5>Copter/stable/fmuv5/arducopter.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>Copter/stable/mindpx-v2/arducopter-heli.apj</urlmindpxv2>
-        <name>ArduCopter V3.6.7</name>
+        <name>ArduCopter V3.6.11</name>
         <desc>ArduCopter Heli Stable</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
@@ -331,15 +341,15 @@
         <urlvrubrainv52 />
         <urlbebop2 />
         <urldisco />
-        <urlfmuv2 />
-        <urlfmuv3 />
-        <urlfmuv4 />
-        <urlfmuv5 />
+        <urlnxpfmuk66 />
+        <urlfmuv2>AntennaTracker/stable/fmuv2/antennatracker.apj</urlfmuv2>
+        <urlfmuv3>AntennaTracker/stable/fmuv3/antennatracker.apj</urlfmuv3>
+        <urlfmuv4>AntennaTracker/stable/fmuv4/antennatracker.apj</urlfmuv4>
+        <urlfmuv5>AntennaTracker/stable/fmuv5/antennatracker.apj</urlfmuv5>
         <urlrevomini />
         <urlmindpxv2>AntennaTracker/stable/mindpx-v2/AntennaTracker.apj</urlmindpxv2>
-        <name>Antenna Tracker</name>
-        <desc>
-    </desc>
+        <name>AntennaTracker V1.1.0</name>
+        <desc>Antenna Tracker</desc>
         <k_format_version>0</k_format_version>
     </Firmware>
     <Firmware>
@@ -363,6 +373,7 @@
         <urlvrubrainv52 />
         <urlbebop2 />
         <urldisco />
+        <urlnxpfmuk66 />
         <urlfmuv2 />
         <urlfmuv3 />
         <urlfmuv4 />
