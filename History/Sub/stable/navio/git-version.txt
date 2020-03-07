@@ -1,7 +1,7 @@
-commit 05fed49b8ee1db3c6bca924e0b334b2e0ece980d
+commit 799ac6f741ea3ac6a2271c1bc749058cd9ca45e4
 Author: Jacob Walser <jwalser90@gmail.com>
-Date:   Mon Apr 1 17:57:32 2019 -0400
+Date:   Wed Mar 4 02:51:12 2020 -0500
 
-    sub: version to 3.5.4
+    Sub: version to 4.0.0 STABLE
 
-APMVERSION: ArduSub V3.5.4
+APMVERSION: ArduSub V4.0.0
