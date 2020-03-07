@@ -1,7 +1,7 @@
-commit 463227881aeaa10a5338d2d6b89dc2a8f42cb2a4
+commit c9d8edda4ba6c8ec41da45f944e27cdb9fa74a64
 Author: Andrew Tridgell <andrew@tridgell.net>
-Date:   Tue Jan 21 08:10:51 2020 +1100
+Date:   Sun Feb 16 17:02:47 2020 +1100
 
-    Plane: prepare for 4.0.3 release
+    Plane: prepare for 4.0.4 release
 
-APMVERSION: ArduPlane V4.0.3
+APMVERSION: ArduPlane V4.0.4

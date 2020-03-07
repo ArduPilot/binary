@@ -1,7 +1,7 @@
-commit 61f191dedd42cb108e9ecd17b066252231481ba3
+commit aae944a87dd045b7bcec906ecd42ee63b542c47f
 Author: Randy Mackay <rmackay9@yahoo.com>
-Date:   Sat Jan 25 09:55:06 2020 +0900
+Date:   Tue Feb 11 12:27:33 2020 +0900
 
-    Copter: version to 4.0.1
+    Copter: version to 4.0.2
 
-APMVERSION: ArduCopter V4.0.1
+APMVERSION: ArduCopter V4.0.2
